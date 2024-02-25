@@ -3,8 +3,7 @@
 <h3 align="center">Year 1 Data Science and Analytics at NUS</h3>
 
 # About Me:
-🌱 I’m currently learning pytorch, React Native<br>💬 How to reach me: jerryyangshaoern@gmail.com<br>⚡ Fun fact: I love F1
-
+🌱 I’m a current undergraduate interested in Machine Learning, Data Analytics and Large Language Models.
 <br>
 
 ## 🌐 Socials:
