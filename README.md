@@ -1,9 +1,7 @@
+![Header](./github-header-image.png)
 
-<h1 align="center">Hi 👋, I'm Jerry</h1>
-<h3 align="center">Year 1 Data Science and Analytics at NUS</h3>
-
-# About Me:
-🌱 I’m a current undergraduate interested in Machine Learning, Data Analytics and Large Language Models.
+# 🌱 About Me:
+I’m a current undergraduate interested in Machine Learning, Data Analytics and Large Language Models.
 <br>
 
 ## 🌐 Socials:
