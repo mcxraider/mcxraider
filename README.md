@@ -1,4 +1,4 @@
-![Header](./github-header-image.png)
+![Header](./github-header-image-mcxraider.png)
 
 # 🌱 About Me:
 I’m a current undergraduate interested in Machine Learning, Data Analytics and Large Language Models.
