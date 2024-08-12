@@ -2,10 +2,6 @@
 
 # Hi! I'm Jerry!
 
-# 🌱 About Me:
-I’m a current undergraduate interested in Machine Learning, Data Analytics and Large Language Models.
-<br>
-
 ## GitHub Stats
 <p>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=mcxraider&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
@@ -18,60 +14,61 @@ I’m a current undergraduate interested in Machine Learning, Data Analytics and
 <summary><strong>💬chat-pdf</strong></summary>
 Link to repo: https://github.com/mcxraider/chat-pdf
 <br/>
-This repository contains a project focused on advanced retrieval augmented generation for semi-structured PDFs, aiming to enhance information extraction and content generation processes.
+This repository contains a system for advanced retrieval augmented generation tailored for semi-structured PDF documents, enhancing their accessibility and usability.
 
 ---
 
-The 'chat-pdf' repository underwent several updates and fixes, including improving text cleaning and table extraction accuracy, addressing pipeline issues, and adding examples for reference.
+The chat-pdf repository underwent updates and fixes, including refining table extraction, improving text cleaning, and enhancing PDF ingestion pipelines. Additional features were introduced, like customizing metadata and generating tables to CSV. Fixes addressed inaccuracies in table extraction and output enhancements.
 </details>
 
 <details>
 <summary><strong>📁sph-timeline-project</strong></summary>
 Link to repo: https://github.com/mcxraider/sph-timeline-project
 <br/>
-This repository contains a prototype for an SPH (Smoothed Particle Hydrodynamics) media simulation, showcasing fluid dynamics and particle interactions.
+This repository contains a prototype developed by SPH Media for a media project.
 
 ---
 
-The repository underwent multiple refactorings to update database configurations, convert notebooks to scripts, and enhance code structure for SPH media prototype timeline project. Fixing README and adjusting schema were priorities.
+The repository 'sph-timeline-project' underwent significant refactoring, updating MongoDB configurations, converting scripts to Python, adjusting database schemas, and enhancing documentation with Google-styled docstrings and experimentation notebooks.  
 </details>
 
 <details>
-<summary><strong>⚙️ttsh-test-buddy</strong></summary>
+<summary><strong>🔬ttsh-test-buddy</strong></summary>
 Link to repo: https://github.com/mcxraider/ttsh-test-buddy
 <br/>
-This repository contains a speech-to-speech model for training at Tan Tock Seng Hospital (TTSH). The model aims to facilitate speech recognition and synthesis processes within healthcare settings.
+This repository contains a speech-to-speech model designed for training using the Transformer Transducer with Sharpened Training (TTSH) technique. The model aims to enhance speech recognition and synthesis capabilities through advanced training methodologies.
 
 ---
 
-The repository 'ttsh-test-buddy' underwent various edits and fixes, such as adjusting templates, reformatting data, updating gitignore, and cleaning text files by merging pull requests.
+The commits in the repository "ttsh-test-buddy" include adjustments to data formatting, updating gitignore, merging pull requests for template adjustments, and renaming files for data cleaning. JSON and text file modifications were also made to improve project organization.
 </details>
 
 <details>
-<summary><strong>📊NUS-Fintech-P2P_credit_scoring</strong></summary>
+<summary><strong>💻NUS-Fintech-P2P_credit_scoring</strong></summary>
 Link to repo: https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring
 <br/>
-This repository contains a project by the NUS Fintech Society ML team focused on applying machine learning techniques in the financial technology domain.
+This repository contains a machine learning project developed by the NUS Fintech Society ML team. It showcases applications of ML in the financial technology sector.
 
 ---
 
-The NUS Fintech Society ML team project repository underwent several updates, including README.md changes, tensorboard visualizations updates, and modifications to Model 3 for Neural network.
+The NUS Fintech Society ML team project repository shows multiple README updates, tensorboard visualizations, PCA, feature scaling, and an updated neural network model 3.
 </details>
 
 <details>
 <summary><strong>💻mini-ai-projects</strong></summary>
 Link to repo: https://github.com/mcxraider/mini-ai-projects
 <br/>
-This repository contains a collection of mini AI projects showcasing various artificial intelligence concepts and applications.
+This repository contains a collection of mini artificial intelligence projects showcasing various concepts and techniques in the field.
 
 ---
 
-The repository 'mini-ai-projects' saw various updates and fixes, including bug fixes, markdown improvements, implementation enhancements, and the addition of features like PDF configuration and dense embeddings for table and text processing.
+The repository mini-ai-projects received updates, fixes, and new features. Enhancements include pickle implementation, PDF config for table reading, and integrating dense embeddings with Pinecone.
 </details>
 
 <br>
 
 <br>
+
 ## 🌐 Socials:
 <p align="left">
 <a href="https://linkedin.com/in/jerryyangg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jerryyangg" height="30" width="40" /></a>
