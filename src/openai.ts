@@ -1,101 +1,21 @@
 import OpenAI from "openai"
-import * as dotenv from 'dotenv';
-import * as z from 'zod';
+
 require('dotenv').config()
 
-// const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
+const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
 
-// export async function callGPTForCommits(content: string) {
-//     const prompt =`
-//     You will be provided with a list of git commits. 
-//     Using this, generate a summary paragraph of about 10 to 30 words long. 
-//     Concentrate solely on the Git commits provided. Do not include additional information such as the project description or speculative insights. 
-//     Do not include actions labeled 'add files via upload', as these do not offer specific insights. 
-//     Base your summaries on the information provided in the uploaded documents. 
-//     Refer to this information as your knowledge source. Avoid speculations or incorporating information not contained in the documents. Heavily favor knowledge provided in the documents before using baseline knowledge. Maintain a professional tone in your summaries. Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.
-//     `
-//   const completion = await openai.chat.completions.create({
-//     messages: [{ role: "system", content: prompt }, { role: "user", content: content }],
-//     model: "gpt-3.5-turbo",
-//   });
+//const prompt = `You will be given a repository name and description. You will then be given a list of commits. Please summarise the commits in a few sentences.`
 
-//   return completion.choices[0].message.content;
-// }
+export async function callGPTForCommits(content: string) {
+    const prompt = `You will be provided with a list of git commits. Using this, generate a summary paragraph of about 10 to 30 words long. Concentrate solely on the Git commits provided. Do not include additional information such as the project description or speculative insights. Do not include actions labeled 'add files via upload', as these do not offer specific insights. Base your summaries on the information provided in the uploaded documents. Refer to this information as your knowledge source. Avoid speculations or incorporating information not contained in the documents. Heavily favor knowledge provided in the documents before using baseline knowledge. Maintain a professional tone in your summaries. Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.
+    `
+  const completion = await openai.chat.completions.create({
+    messages: [{ role: "system", content: prompt }, { role: "user", content: content }],
+    model: "gpt-3.5-turbo",
+  });
 
-
-// Load environment variables
-dotenv.config();
-
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const client = new OpenAI({
-    apiKey: GROQ_API_KEY
-});
-
-// Function to extract the JSON answer from a string
-function extractAnswer(inputString: string): Record<string, any> {
-    const jsonStart = inputString.indexOf('{');
-    const jsonEnd = inputString.lastIndexOf('}') + 1;
-
-    if (jsonStart === -1 || jsonEnd === -1) {
-        throw new Error("Invalid input: No JSON data found.");
-    }
-
-    const jsonData = inputString.substring(jsonStart, jsonEnd);
-
-    try {
-        const dataDict = JSON.parse(jsonData);
-        return dataDict;
-    } catch (e) {
-        throw new Error(`An error occurred while parsing JSON: ${e.message}`);
-    }
+  return completion.choices[0].message.content;
 }
-
-// Define the structure of the summary using zod
-const summarySchema = z.object({
-    summary: z.string().describe("Summary of git commits"),
-});
-
-export async function callGPTForCommits(commits: string) {
-    // Define your custom prompt
-    const prompt = `
-    You are provided with a series of git commits. You are tasked with generating a technical summary of these git commits that are roughly 10 to 30 words long. 
-    Elaborate as best as you can based on the information from these commits to write an informative summary paragraph of what the user has been doing with this GitHub repository.
-    Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. 
-    Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.
-    Start the summary with 'In this repository, I have been'
-
-    List of git commits:
-    ${commits}
-    The output should be formatted as a JSON instance that conforms to the JSON schema below.
-
-    As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
-    the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
-
-    Here is the output schema:
-    {"properties": {"summary": {"title": "Summary", "description": "Summary of git commits", "type": "string"}}, "required": ["summary"]}
-    Ensure and double check that the answer is in accordance with the format above.
-    `;
-
-    // Call the OpenAI API with the prompt
-    const completion = await client.chat.completions.create({
-        messages: [{ role: "user", content: prompt }],
-        model: "gpt-3.5-turbo",
-    });
-
-    let answer = '';
-    for await (const chunk of completion) {
-        answer += chunk.choices[0].delta?.content || '';
-    }
-
-    const summaryDict = extractAnswer(answer);
-    const summary = summarySchema.parse(summaryDict);
-    console.log(summary.summary);
-
-    // Return the generated summary
-    return summary;
-}
-
-
 
 
 export async function callGPTForReadme(content: string) {
