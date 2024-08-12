@@ -16,6 +16,32 @@ const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
 
 //   return completion.choices[0].message.content;
 // }
+export async function callGPTForCommits(content: string): Promise<string> {
+    const prompt = `
+        You are provided with a series of git commits. You are tasked with generating a technical summary of these git commits that are roughly 10 to 30 words long. 
+        Elaborate as best as you can based on the information from these commits to write an informative summary paragraph of what the user has been doing with this GitHub repository.
+        Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. 
+        Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.
+        Start the summary with 'In this repository, I have been'.
+
+        List of git commits:
+        ${content}
+        ...
+        {"properties": {"summary": {"title": "Summary", "description": "Summary of git commits", "type": "string"}}, "required": ["summary"]}
+        
+        Ensure and double check that the answer is in accordance with the format above.
+    `;
+
+    const completion = await openai.chat.completions.create({
+        messages: [{ role: "user", content: prompt }],
+        model: "gpt-3.5-turbo",
+    });
+
+    const answer = completion.choices[0].message.content;
+
+    const summary = extractAnswer(answer || '');
+    return summary;
+}
 
 function extractAnswer(inputString: string): string {
     const jsonStart = inputString.indexOf('{');
@@ -31,40 +57,11 @@ function extractAnswer(inputString: string): string {
         const dataDict = JSON.parse(jsonData);
         return dataDict.summary;
     } catch (error) {
-        throw new Error(`An error occurred while parsing JSON: ${error.message}`);
+        const errorMessage = (error as Error).message;
+        throw new Error(`An error occurred while parsing JSON: ${errorMessage}`);
     }
 }
 
-export async function callGPTForCommits(content: string): Promise<string> {
-    const prompt = `
-        You are provided with a series of git commits. You are tasked with generating a technical summary of these git commits that are roughly 10 to 30 words long. 
-        Elaborate as best as you can based on the information from these commits to write an informative summary paragraph of what the user has been doing with this GitHub repository.
-        Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. 
-        Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.
-        Start the summary with 'In this repository, I have been'.
-
-        List of git commits:
-        ${content}
-        The output should be formatted as a JSON instance that conforms to the JSON schema below.
-
-        As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
-        the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
-
-        Here is the output schema:
-        {"properties": {"summary": {"title": "Summary", "description": "Summary of git commits", "type": "string"}}, "required": ["summary"]}        
-        Ensure and double check that the answer is in accordance with the format above.
-    `;
-
-    const completion = await openai.chat.completions.create({
-        messages: [{ role: "user", content: prompt }],
-        model: "gpt-3.5-turbo",
-    });
-
-    const answer = completion.choices[0].message.content;
-
-    const summary = extractAnswer(answer);
-    return summary;
-}
 
 
 
