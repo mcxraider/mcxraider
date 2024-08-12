@@ -26,10 +26,6 @@ export function generateMarkdown(contributions: string) {
 
 # Hi! I'm Jerry!
 
-# 🌱 About Me:
-I’m a current undergraduate interested in Machine Learning, Data Analytics and Large Language Models.
-<br>
-
 ## GitHub Stats
 <p>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=mcxraider&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
@@ -41,6 +37,7 @@ ${contributions}
 <br>
 
 <br>
+
 ## 🌐 Socials:
 <p align="left">
 <a href="https://linkedin.com/in/jerryyangg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jerryyangg" height="30" width="40" /></a>
