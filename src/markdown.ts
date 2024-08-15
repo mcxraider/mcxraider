@@ -1,14 +1,13 @@
 export function generateDropdown(title: string, readmeSummary: string, commitsSummary: string, url: string) {
     return `
 <details>
-<summary><strong>${title}</strong></summary>
-Link to repo: ${url}
+<summary><strong>[${title}](${url})</strong></summary>
 <br/>
-${readmeSummary}
+Repo description: ${readmeSummary}
 
----
+<hr>
 
-${commitsSummary}
+What I've been doing: ${commitsSummary}
 </details>
 `;
 }
@@ -26,19 +25,19 @@ export function generateMarkdown(contributions: string) {
 
 # Hi! I'm Jerry!
 
-## GitHub Stats
+# GitHub Stats
 <p>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=mcxraider&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcxraider&theme=github_dark&bg_color=00000099&exclude_repo=mcxraider.github.io&langs_count=8&size_weight=0.3&count_weight=0.7&hide=css,html&layout=compact" />
 </p>
 
-## 🔨 Here's what I've been working on:
+## 🔨 AI-generated summary of what I've been working on:
 ${contributions}
 <br>
 
 <br>
 
-## 🌐 Socials:
+# 🌐 Socials:
 <p align="left">
 <a href="https://linkedin.com/in/jerryyangg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jerryyangg" height="30" width="40" /></a>
 <a href="https://kaggle.com/jerry yang" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="jerry yang" height="30" width="40" /></a>
