@@ -13,57 +13,46 @@
 <details>
 <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
 <br/>
-- This repository contains advanced techniques for retrieving and generating content from semi-structured PDFs, enhancing retrieval processes with augmented generation capabilities.
+- This repository contains an advanced retrieval augmented generation system tailored for processing semi-structured PDF documents.
 
-- The repository 'chat-pdf' saw updates like improved table extraction to CSV, PDF transformation, and enhanced metadata customization, alongside bug fixes and code refactoring.
+- The repository "chat-pdf" underwent multiple updates and fixes such as refining table extraction, improving text cleaning, and enhancing PDF handling capabilities. Changes also involved addressing pipeline issues and metadata customization for a more efficient retrieval process.
 </details>
 
 <details>
 <summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
 <br/>
-- This repository contains a timeline project with historical events organized in chronological order, facilitating visual representation and understanding of various subjects within a specified time frame.
+- This repository contains a Timeline Project for tracking milestones and events. It provides a structured way to visualize and manage project schedules efficiently.
 
-- The repository underwent significant restructuring: updated MongoDB config, refactored code, converted to Python scripts, adjusted database schema, and incorporated Google NLP features.
+- Updated MongoDB configuration, refactored repo structure, adjusted database fetch names, converted notebooks to python scripts, and added new features like hierarchical experimentation and Google docstrings.
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🌟ttsh-test-buddy</a></strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🤖ttsh-test-buddy</a></strong></summary>
 <br/>
-- This repository contains a speech-to-speech model designed for TTSH training purposes.
+- This repository contains a speech to speech model designed for TTSH training.
 
-- The commits involved significant refactoring by deleting old files and notebooks. Various features were added like generating QA pairs and cross encoder finetuning, improving text formatting, and adjusting prompt templates.
+- The repository experienced significant refactoring, including removing outdated files and adding new functionality for generating question-answer pairs. Progress saw model enhancements and data formatting improvements for QA pair generation.
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring">💻NUS-Fintech-P2P_credit_scoring</a></strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring">🔢NUS-Fintech-P2P_credit_scoring</a></strong></summary>
 <br/>
-- This repository contains a collection of projects developed by the NUS Fintech Society Machine Learning team focusing on financial technology applications.
+- This repository contains a collaborative project by the NUS Fintech Society ML team, focusing on machine learning applications within the financial technology sector.
 
-- The NUS Fintech Society's ML team project repository saw consistent updates on the README file, along with enhancements in tensorboard visualizations and PCA feature scaling.
+- The NUS Fintech Society ML team project repository saw continuous README.md updates, creating and updating tensorboard visualizations, alongside enhancing PCA and feature scaling.
 </details>
 
 <details>
 <summary><strong><a href="https://github.com/mcxraider/mini-ai-projects">💻mini-ai-projects</a></strong></summary>
 <br/>
-- This repository contains a variety of mini AI projects showcasing different algorithms and technologies.
+- This repository contains a compilation of various small-scale artificial intelligence projects.
 
-- The repository "mini-ai-projects" underwent significant updates, including bug fixes, adding functionality for data manipulation, implementing new features for document processing, and refining the RAG model with enhanced embeddings and table/text processing capabilities.
+- The repository underwent comprehensive updates, incorporating fixes, new functionalities, and configurations for various AI projects, notably dense embeddings, data generation, and RAG code improvements.
 </details>
 
 <br>
 
-<br>
-
-# 🌐 Socials:
-<p align="left">
-<a href="https://linkedin.com/in/jerryyangg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jerryyangg" height="30" width="40" /></a>
-<a href="https://kaggle.com/jerry yang" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="jerry yang" height="30" width="40" /></a>
-<a href="https://instagram.com/jer_jerryyy" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="jer_jerryyy" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/mcxraider" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="mcxraider" height="30" width="40" /></a>
-</p>
-<br>
-
-# 💻 Tech Stack:
+# 💻 My Tech Stack:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 <br>
