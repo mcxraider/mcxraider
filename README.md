@@ -2,74 +2,69 @@
 
 # Hi! I'm Jerry!
 
-## GitHub Stats
+# GitHub Stats
 <p>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=mcxraider&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcxraider&theme=github_dark&bg_color=00000099&exclude_repo=mcxraider.github.io&langs_count=8&size_weight=0.3&count_weight=0.7&hide=css,html&layout=compact" />
 </p>
 
-## 🔨 Here's what I've been working on:
+## 🔨 AI-generated summary of what I've been working on:
 
 <details>
-<summary><strong>💬chat-pdf</strong></summary>
-Link to repo: https://github.com/mcxraider/chat-pdf
+<summary><strong>[💬chat-pdf](https://github.com/mcxraider/chat-pdf)</strong></summary>
 <br/>
-This repository contains advanced techniques for extracting and generating content from semi-structured PDF files, enhancing retrieval and manipulation processes.
+Repo description: This repository contains advanced techniques for retrieving and generating information from semi-structured PDF documents.
 
----
+<hr>
 
-Enhanced PDF data extraction with table cleaning, ingestion pipeline fixes, and improved table extraction accuracy and formatting in the 'chat-pdf' repository.
+What I've been doing: Updates include notebook, requirements, and gitignore, with fixes for ingestion, table extraction accuracy, and Groq prompts. Added functionality for text cleaning and metadata customization.
 </details>
 
 <details>
-<summary><strong>📅sph-timeline-project</strong></summary>
-Link to repo: https://github.com/mcxraider/sph-timeline-project
+<summary><strong>[📂sph-timeline-project](https://github.com/mcxraider/sph-timeline-project)</strong></summary>
 <br/>
-This repository contains a structured timeline project, showcasing events and milestones in a particular subject or topic, organized in a visually appealing and informative manner.
+Repo description: This repository contains a timeline project documenting events and milestones. It showcases a chronological representation of data in a visually engaging format.
 
----
+<hr>
 
-The repository underwent multiple refactoring sessions, including renaming, converting scripts to Python, updating configurations, and refining database connections and structures. Multiple README updates and code enhancements were merged during the process.
+What I've been doing: The repository underwent significant refactoring, updating MongoDB configuration, and converting various notebooks into Python scripts, enhancing readability and functionality.
 </details>
 
 <details>
-<summary><strong>🔬ttsh-test-buddy</strong></summary>
-Link to repo: https://github.com/mcxraider/ttsh-test-buddy
+<summary><strong>[🤖ttsh-test-buddy](https://github.com/mcxraider/ttsh-test-buddy)</strong></summary>
 <br/>
-This repository contains a speech-to-speech model designed for TTSH training. It implements advanced techniques for improved speech recognition and synthesis.
+Repo description: This repository contains a speech-to-speech model designed for TTSH training purposes.
 
----
+<hr>
 
-The repository underwent major refactoring, removing redundant files and notebooks. Added functions for cleaner QA pair generation scripts and cross encoder finetuning. Refactored data formatting for QA pairs.
+What I've been doing: The repository underwent major refactoring, deleting old files and adding QA pair generation scripts and cross encoder finetuning. WY files were added, and text formatting was improved.
 </details>
 
 <details>
-<summary><strong>🌐NUS-Fintech-P2P_credit_scoring</strong></summary>
-Link to repo: https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring
+<summary><strong>[🔢NUS-Fintech-P2P_credit_scoring](https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring)</strong></summary>
 <br/>
-This repository contains a collaborative project by the NUS Fintech Society Machine Learning team. It focuses on applying machine learning techniques in a financial technology context.
+Repo description: This repository contains the Fintech Society Machine Learning team project from the National University of Singapore.
 
----
+<hr>
 
-The repository underwent multiple updates, including README revisions, tensorboard visualizations enhancement, and modifications to PCA and feature scaling.
+What I've been doing: The NUS Fintech Society ML team project repository underwent numerous README.md file updates, along with tensorboard visualizations and feature scaling enhancements.
 </details>
 
 <details>
-<summary><strong>💻mini-ai-projects</strong></summary>
-Link to repo: https://github.com/mcxraider/mini-ai-projects
+<summary><strong>[💻mini-ai-projects](https://github.com/mcxraider/mini-ai-projects)</strong></summary>
 <br/>
-This repository contains a variety of mini AI projects showcasing different techniques and algorithms in the field of artificial intelligence.
+Repo description: This repository contains a collection of various mini artificial intelligence projects.
 
----
+<hr>
 
-The repository 'mini-ai-projects' saw updates including bug fixes, structure adjustments, table/text processing, and PDF configurations enhancing AI functionalities like dense embeddings and multi-modal RAG documents.
+What I've been doing: The repository 'mini-ai-projects' underwent diverse updates including bug fixes, structure enhancements, PDF integration, dense embeddings, and RAG code refinement for improved AI functionalities and document processing.
 </details>
 
 <br>
 
 <br>
 
-## 🌐 Socials:
+# 🌐 Socials:
 <p align="left">
 <a href="https://linkedin.com/in/jerryyangg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jerryyangg" height="30" width="40" /></a>
 <a href="https://kaggle.com/jerry yang" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="jerry yang" height="30" width="40" /></a>
