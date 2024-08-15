@@ -14,55 +14,55 @@
 <summary><strong>💬chat-pdf</strong></summary>
 Link to repo: https://github.com/mcxraider/chat-pdf
 <br/>
-This repository contains an advanced retrieval augmented generation system designed for processing semi-structured PDF documents.
+This repository contains advanced techniques for extracting and generating content from semi-structured PDF files, enhancing retrieval and manipulation processes.
 
 ---
 
-Updates include fixing ingestion pipeline and table extraction issues, refining text cleaning, improving table transformation into CSV, and enhancing llama index metadata customization.
+Enhanced PDF data extraction with table cleaning, ingestion pipeline fixes, and improved table extraction accuracy and formatting in the 'chat-pdf' repository.
 </details>
 
 <details>
-<summary><strong>📂sph-timeline-project</strong></summary>
+<summary><strong>📅sph-timeline-project</strong></summary>
 Link to repo: https://github.com/mcxraider/sph-timeline-project
 <br/>
-I'm sorry but the given text "SPH media prototype" is not sufficient for me to generate a summary. Kindly provide me with the content of the README file to generate a summary. Thank you.
+This repository contains a structured timeline project, showcasing events and milestones in a particular subject or topic, organized in a visually appealing and informative manner.
 
 ---
 
-The repository 'sph-timeline-project' has been through multiple refactoring sessions to update configurations, structures, and scripts, along with fixes for MongoDB, Node.js, and schema adjustments. New features include Google NLP integration and hierarchical experimentation.
+The repository underwent multiple refactoring sessions, including renaming, converting scripts to Python, updating configurations, and refining database connections and structures. Multiple README updates and code enhancements were merged during the process.
 </details>
 
 <details>
-<summary><strong>🔍ttsh-test-buddy</strong></summary>
+<summary><strong>🔬ttsh-test-buddy</strong></summary>
 Link to repo: https://github.com/mcxraider/ttsh-test-buddy
 <br/>
-This repository contains a speech-to-speech model designed for TTSH (Text-to-Speech and Speech-to-Text Hybrid) training. It aims to convert spoken language to text and vice versa, providing a versatile tool for speech processing tasks.
+This repository contains a speech-to-speech model designed for TTSH training. It implements advanced techniques for improved speech recognition and synthesis.
 
 ---
 
-The ttsh-test-buddy repository underwent multiple commits including edits, adjustments to prompt templates, reformatting data, fixing file names and gitignore exclusions, merging pull requests, cleaning data files, and updating requirements in JSON files.
+The repository underwent major refactoring, removing redundant files and notebooks. Added functions for cleaner QA pair generation scripts and cross encoder finetuning. Refactored data formatting for QA pairs.
 </details>
 
 <details>
-<summary><strong>💻NUS-Fintech-P2P_credit_scoring</strong></summary>
+<summary><strong>🌐NUS-Fintech-P2P_credit_scoring</strong></summary>
 Link to repo: https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring
 <br/>
-This repository contains the project work of the Machine Learning team within the NUS Fintech Society, focusing on implementing innovative solutions at the intersection of finance and technology.
+This repository contains a collaborative project by the NUS Fintech Society Machine Learning team. It focuses on applying machine learning techniques in a financial technology context.
 
 ---
 
-The NUS Fintech Society ML team project repository underwent multiple updates to the README file, along with revisions to tensorboard visualizations, PCA, feature scaling, and Model 3 for Neural network.
+The repository underwent multiple updates, including README revisions, tensorboard visualizations enhancement, and modifications to PCA and feature scaling.
 </details>
 
 <details>
-<summary><strong>🚀mini-ai-projects</strong></summary>
+<summary><strong>💻mini-ai-projects</strong></summary>
 Link to repo: https://github.com/mcxraider/mini-ai-projects
 <br/>
-This repository contains a collection of various miniature artificial intelligence projects showcasing different AI concepts and applications.
+This repository contains a variety of mini AI projects showcasing different techniques and algorithms in the field of artificial intelligence.
 
 ---
 
-The git commits involve fixing bugs, updating structure, adding new functionality like pickle implementation, PDF configuration, and implementing dense embeddings for RAG data integration with llama. There are updates to the data folder and gitignore as well as the addition of scripts for table and text processing in multi-modal RAG documents.
+The repository 'mini-ai-projects' saw updates including bug fixes, structure adjustments, table/text processing, and PDF configurations enhancing AI functionalities like dense embeddings and multi-modal RAG documents.
 </details>
 
 <br>
