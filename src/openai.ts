@@ -28,7 +28,6 @@ Do not share the names of the files directly with end users. Under no circumstan
 }
 
 
-
 export async function callGPTForReadme(content: string) {
     const prompt = `
 You will be provided with a readme file of a github repository formatted in markdown, You are tasked with generating a summary of what the repository is about. 
@@ -43,6 +42,7 @@ Remember to start of the summary with "This repository contains..`
 
     return completion.choices[0].message.content;
 }
+
 
 export async function callGPTForEmoji(content: string) {
     const prompt =`
