@@ -1,13 +1,11 @@
 export function generateDropdown(title: string, readmeSummary: string, commitsSummary: string, url: string) {
     return `
 <details>
-<summary><strong>[${title}](${url})</strong></summary>
+<summary><strong><a href="${url}">${title}</a></strong></summary>
 <br/>
-Repo description: ${readmeSummary}
+- ${readmeSummary}
 
-<hr>
-
-What I've been doing: ${commitsSummary}
+- ${commitsSummary}
 </details>
 `;
 }
