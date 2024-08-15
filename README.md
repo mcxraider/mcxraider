@@ -11,53 +11,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
 <details>
-<summary><strong>[💬chat-pdf](https://github.com/mcxraider/chat-pdf)</strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
 <br/>
-Repo description: This repository contains advanced techniques for retrieving and generating information from semi-structured PDF documents.
+- This repository contains advanced techniques for retrieving and generating content from semi-structured PDFs, enhancing retrieval processes with augmented generation capabilities.
 
-<hr>
-
-What I've been doing: Updates include notebook, requirements, and gitignore, with fixes for ingestion, table extraction accuracy, and Groq prompts. Added functionality for text cleaning and metadata customization.
+- The repository 'chat-pdf' saw updates like improved table extraction to CSV, PDF transformation, and enhanced metadata customization, alongside bug fixes and code refactoring.
 </details>
 
 <details>
-<summary><strong>[📂sph-timeline-project](https://github.com/mcxraider/sph-timeline-project)</strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
 <br/>
-Repo description: This repository contains a timeline project documenting events and milestones. It showcases a chronological representation of data in a visually engaging format.
+- This repository contains a timeline project with historical events organized in chronological order, facilitating visual representation and understanding of various subjects within a specified time frame.
 
-<hr>
-
-What I've been doing: The repository underwent significant refactoring, updating MongoDB configuration, and converting various notebooks into Python scripts, enhancing readability and functionality.
+- The repository underwent significant restructuring: updated MongoDB config, refactored code, converted to Python scripts, adjusted database schema, and incorporated Google NLP features.
 </details>
 
 <details>
-<summary><strong>[🤖ttsh-test-buddy](https://github.com/mcxraider/ttsh-test-buddy)</strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🌟ttsh-test-buddy</a></strong></summary>
 <br/>
-Repo description: This repository contains a speech-to-speech model designed for TTSH training purposes.
+- This repository contains a speech-to-speech model designed for TTSH training purposes.
 
-<hr>
-
-What I've been doing: The repository underwent major refactoring, deleting old files and adding QA pair generation scripts and cross encoder finetuning. WY files were added, and text formatting was improved.
+- The commits involved significant refactoring by deleting old files and notebooks. Various features were added like generating QA pairs and cross encoder finetuning, improving text formatting, and adjusting prompt templates.
 </details>
 
 <details>
-<summary><strong>[🔢NUS-Fintech-P2P_credit_scoring](https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring)</strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring">💻NUS-Fintech-P2P_credit_scoring</a></strong></summary>
 <br/>
-Repo description: This repository contains the Fintech Society Machine Learning team project from the National University of Singapore.
+- This repository contains a collection of projects developed by the NUS Fintech Society Machine Learning team focusing on financial technology applications.
 
-<hr>
-
-What I've been doing: The NUS Fintech Society ML team project repository underwent numerous README.md file updates, along with tensorboard visualizations and feature scaling enhancements.
+- The NUS Fintech Society's ML team project repository saw consistent updates on the README file, along with enhancements in tensorboard visualizations and PCA feature scaling.
 </details>
 
 <details>
-<summary><strong>[💻mini-ai-projects](https://github.com/mcxraider/mini-ai-projects)</strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/mini-ai-projects">💻mini-ai-projects</a></strong></summary>
 <br/>
-Repo description: This repository contains a collection of various mini artificial intelligence projects.
+- This repository contains a variety of mini AI projects showcasing different algorithms and technologies.
 
-<hr>
-
-What I've been doing: The repository 'mini-ai-projects' underwent diverse updates including bug fixes, structure enhancements, PDF integration, dense embeddings, and RAG code refinement for improved AI functionalities and document processing.
+- The repository "mini-ai-projects" underwent significant updates, including bug fixes, adding functionality for data manipulation, implementing new features for document processing, and refining the RAG model with enhanced embeddings and table/text processing capabilities.
 </details>
 
 <br>
