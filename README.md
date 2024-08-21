@@ -13,41 +13,41 @@
 <details>
 <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
 <br/>
-- This repository contains an advanced retrieval augmented generation system tailored for processing semi-structured PDF documents.
+- This repository contains code for implementing advanced retrieval augmented generation for semi-structured PDFs.
 
-- The repository "chat-pdf" underwent multiple updates and fixes such as refining table extraction, improving text cleaning, and enhancing PDF handling capabilities. Changes also involved addressing pipeline issues and metadata customization for a more efficient retrieval process.
+- Multiple updates and fixes were made in the repository, including refining text cleaning, enhancing table extraction to CSV, and addressing bugs in the ingestion pipeline and PDF parsing. New features like custom metadata and examples were added alongside code refactorings and cleanup.
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📆sph-timeline-project</a></strong></summary>
 <br/>
-- This repository contains a Timeline Project for tracking milestones and events. It provides a structured way to visualize and manage project schedules efficiently.
+- This repository contains a timeline project, detailing events and milestones in a structured manner. It organizes historical or project-based data for easy visualization and comprehension.
 
-- Updated MongoDB configuration, refactored repo structure, adjusted database fetch names, converted notebooks to python scripts, and added new features like hierarchical experimentation and Google docstrings.
+- The repository underwent significant restructuring including refactoring of MongoDB settings, notebook conversions, code cleanups, and hierarchical experimentation enhancements.
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🤖ttsh-test-buddy</a></strong></summary>
+<summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🔬ttsh-test-buddy</a></strong></summary>
 <br/>
-- This repository contains a speech to speech model designed for TTSH training.
+- This repository contains a speech-to-speech model specifically designed for the training of the Tan Tock Seng Hospital (TTSH) medical team.
 
-- The repository experienced significant refactoring, including removing outdated files and adding new functionality for generating question-answer pairs. Progress saw model enhancements and data formatting improvements for QA pair generation.
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring">🔢NUS-Fintech-P2P_credit_scoring</a></strong></summary>
-<br/>
-- This repository contains a collaborative project by the NUS Fintech Society ML team, focusing on machine learning applications within the financial technology sector.
-
-- The NUS Fintech Society ML team project repository saw continuous README.md updates, creating and updating tensorboard visualizations, alongside enhancing PCA and feature scaling.
+- Added functionality for generating cross-encoder datasets, refining QA pair combinations, and improving answer generation processes within the TTSH training model repository. Some changes include script implementations, code refinements, and environment adjustments.
 </details>
 
 <details>
 <summary><strong><a href="https://github.com/mcxraider/mini-ai-projects">💻mini-ai-projects</a></strong></summary>
 <br/>
-- This repository contains a compilation of various small-scale artificial intelligence projects.
+- This repository contains a collection of mini AI projects showcasing various artificial intelligence concepts and technologies.
 
-- The repository underwent comprehensive updates, incorporating fixes, new functionalities, and configurations for various AI projects, notably dense embeddings, data generation, and RAG code improvements.
+- The repository mini-ai-projects saw multiple updates including adding a Telegram scraper, structure refinement, bug fixes, and integration of PDF parsing for table extraction using Adobe API. Additionally, there were improvements in dense embeddings, RAG data, and llama integration.
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/mcxraider/NUS-Fintech-P2P_credit_scoring">💻NUS-Fintech-P2P_credit_scoring</a></strong></summary>
+<br/>
+- This repository contains a project by the NUS Fintech Society's Machine Learning team. It showcases their work and contributions in the field of finance and technology.
+
+- The NUS Fintech Society ML team project repository underwent multiple updates and added a README.md file.
 </details>
 
 <br>
