@@ -18,7 +18,7 @@ export function generateDropdown(
   <summary><strong><a href="${url}">${title}</a></strong></summary>
   <br/>
   > ${readmeSummary} <br/>
-  > ${'-'.repeat(120)} <br/>
+  ${'-'.repeat(126)} <br/>
   > ${commitsSummary}
   </details>
   `;
