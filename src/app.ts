@@ -98,4 +98,4 @@ async function main(commit_summary_prompt: string, repo_summary_prompt: string, 
     fs.writeFileSync("README.md", generateMarkdown(generateDropdowns(replies)));
 }
   
-main();
+main(commit_summary_prompt, repo_summary_prompt, emoji_generation_prompt);
