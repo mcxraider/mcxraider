@@ -3,8 +3,7 @@ export function generateDropdown(title: string, readmeSummary: string, commitsSu
 <details>
 <summary><strong><a href="${url}">${title}</a></strong></summary>
 <br/>
-- ${readmeSummary}
-
+- ${readmeSummary} <br/>
 - ${commitsSummary}
 </details>
 `;
