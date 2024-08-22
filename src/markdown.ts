@@ -1,24 +1,31 @@
-export function generateDropdown(title: string, readmeSummary: string, commitsSummary: string, url: string) {
-    return `
+export function generateDropdown(
+  title: string,
+  readmeSummary: string,
+  commitsSummary: string,
+  url: string
+) {
+  return `
 <details>
 <summary><strong><a href="${url}">${title}</a></strong></summary>
 <br/>
-- ${readmeSummary} <br/>
-- ${commitsSummary}
+> ${readmeSummary} <br/>
+> ${commitsSummary}
 </details>
 `;
 }
 
 export function generateDropdowns(entries: { [name: string]: string }) {
-    let dropdowns = "";
-    for (const [key, value] of Object.entries(entries)) {
-        dropdowns += value;
-    }
-    return dropdowns;
+  let dropdowns = "";
+  for (const [key, value] of Object.entries(entries)) {
+    dropdowns += value;
+  }
+  return dropdowns;
 }
 
-export function generateMarkdown(contributions: string) {
-    return `
+export function generateMarkdown(
+    contributions: string
+) {
+  return `
 
 # Hi! I'm Jerry!
 
@@ -27,6 +34,7 @@ export function generateMarkdown(contributions: string) {
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=mcxraider&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcxraider&theme=github_dark&bg_color=00000099&exclude_repo=mcxraider.github.io&langs_count=8&size_weight=0.3&count_weight=0.7&hide=css,html&layout=compact" />
 </p>
+<br>
 
 ## 🔨 AI-generated summary of what I've been working on:
 ${contributions}
