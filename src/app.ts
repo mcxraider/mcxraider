@@ -5,6 +5,28 @@ import { generateDropdown, generateDropdowns, generateMarkdown } from "./markdow
 
 require('dotenv').config()
 
+const commit_summary_prompt = `
+You will be provided with a list of git commits. 
+Using this, generate a summary paragraph of about 10 to 30 words long. 
+Concentrate solely on the Git commits provided. Do not include additional information such as the project description or speculative insights. 
+Do not include actions labeled 'add files via upload', as these do not offer specific insights. 
+Base your summaries on the information provided in the uploaded documents. 
+Refer to this information as your knowledge source. Avoid speculations or incorporating information not contained in the documents. Heavily favor knowledge provided in the documents before using baseline knowledge. Maintain a professional tone in your summaries. Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. 
+Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.`
+
+
+const repo_summary_prompt = `
+You will be provided with a readme file of a github repository formatted in markdown, You are tasked with generating a summary of what the repository is about. 
+A professional tone should be used for the summary, and it should be between 20 to 50 words.
+Remember to start of the summary with "This repository contains..`
+
+
+const emoji_generation_prompt =`
+Based on the context of a sentence/ phrase, generate for an emoji that best conveys and represents the main topic of that sentence/ phrase. The emoji produced should only be from those found in the iphone operating systems keyboard. 
+If you are unsure of the main topic of that sentence/ phrase, default to either one of this list of 9 emojis: [laptop, computer, desktop computer, keyboard, Rocket, Globe with Meridians, File Folder, Star , Gear]
+I want the output to only be one emoji and nothing else`
+
+
 const octokit = new Octokit({auth: process.env.GH_TOKEN})
 
 async function getRepos() {
@@ -35,8 +57,7 @@ Repository description: ${key.split(",|", 3)[1]}
 Commits:\n${value.join("\n")}\n`;
 }
 
-
-async function main() {
+async function main(commit_summary_prompt: string, repo_summary_prompt: string, emoji_generation_prompt: string,) {
     const repos = await getRepos();
     const entries: { [key: string]: string[] } = {};
 
@@ -69,9 +90,9 @@ async function main() {
 
     for (const [key, value] of sortedEntries) {
         const entryString = entryIntoString(key, value);
-        const reply = await callGPTForCommits(entryString) ?? "No recent commits in this repository"; // Await the callGPT function to resolve the promise
-        const emoji = await callGPTForEmoji(key.split(",|", 3)[0]) ?? "";
-        const readmeSummary = await callGPTForReadme(key.split(",|", 3)[1]) ?? "No readme file in this repository.";
+        const reply = await callGPTForCommits(commit_summary_prompt, entryString) ?? "No recent commits in this repository"; // Await the callGPT function to resolve the promise
+        const emoji = await callGPTForEmoji(emoji_generation_prompt, key.split(",|", 3)[0]) ?? "";
+        const readmeSummary = await callGPTForReadme(repo_summary_prompt, key.split(",|", 3)[1]) ?? "No readme file in this repository.";
         replies[key.split(",|")[0]] = generateDropdown(emoji + key.split(",|", 3)[0], readmeSummary, reply, key.split(",|", 3)[2]) ?? "No recent commits in this repository.";
     }
     fs.writeFileSync("README.md", generateMarkdown(generateDropdowns(replies)));

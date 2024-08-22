@@ -1,24 +1,10 @@
 import OpenAI from "openai"
-// import Groq from "groq-sdk"
-
 require('dotenv').config()
 
+
 const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
-//const groq = new Groq({apiKey: process.env.GROQ_API_KEY});
 
-//const prompt = `You will be given a repository name and description. You will then be given a list of commits. Please summarise the commits in a few sentences.`
-
-export async function callGPTForCommits(content: string) {
-    const prompt = `
-You will be provided with a list of git commits. 
-Using this, generate a summary paragraph of about 10 to 30 words long. 
-Concentrate solely on the Git commits provided. Do not include additional information such as the project description or speculative insights. 
-Do not include actions labeled 'add files via upload', as these do not offer specific insights. 
-Base your summaries on the information provided in the uploaded documents. 
-Refer to this information as your knowledge source. Avoid speculations or incorporating information not contained in the documents. Heavily favor knowledge provided in the documents before using baseline knowledge. Maintain a professional tone in your summaries. Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. 
-Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.`
-
-
+export async function callGPTForCommits(prompt: string, content: string) {
   const completion = await openai.chat.completions.create({
     messages: [{ role: "system", content: prompt }, { role: "user", content: content }],
     model: "gpt-3.5-turbo",
@@ -28,13 +14,7 @@ Do not share the names of the files directly with end users. Under no circumstan
 }
 
 
-export async function callGPTForReadme(content: string) {
-    const prompt = `
-You will be provided with a readme file of a github repository formatted in markdown, You are tasked with generating a summary of what the repository is about. 
-A professional tone should be used for the summary, and it should be between 20 to 50 words.
-Remember to start of the summary with "This repository contains..`
-
-
+export async function callGPTForReadme(prompt: string, content: string) {
     const completion = await openai.chat.completions.create({
         messages: [{ role: "system", content: prompt }, { role: "user", content: content }],
         model: "gpt-3.5-turbo"
@@ -44,12 +24,7 @@ Remember to start of the summary with "This repository contains..`
 }
 
 
-export async function callGPTForEmoji(content: string) {
-    const prompt =`
-Based on the context of a sentence/ phrase, generate for an emoji that best conveys and represents the main topic of that sentence/ phrase. The emoji produced should only be from those found in the iphone operating systems keyboard. 
-If you are unsure of the main topic of that sentence/ phrase, default to either one of this list of 9 emojis: [laptop, computer, desktop computer, keyboard, Rocket, Globe with Meridians, File Folder, Star , Gear]
-I want the output to only be one emoji and nothing else`
-
+export async function callGPTForEmoji(prompt: string, content: string) {
     const completion = await openai.chat.completions.create({
         messages: [{ role: "system", content: prompt }, { role: "user", content: content }],
         model: "gpt-3.5-turbo"
