@@ -14,41 +14,41 @@
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains GPT-generated READMEs for your GitHub profile, aiding in creating professional and informative summaries of your projects. <br/>
+  > This repository contains a collection of GPT-generated READMEs for your GitHub profile, helping you showcase your projects with automated summaries. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository mcxraider underwent markdown formatting, code refactoring, prompt location adjustments, README template edits, and updating of prompts.
+  > The repository "mcxraider" features GPT-generated READMEs. Commits show documentation updates, markdown fixes, code refactoring, and prompt enhancements.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🤖ttsh-test-buddy</a></strong></summary>
   <br/>
-  > This repository contains a speech-to-speech model designed for TTSH (Text-To-Speech Harmonization) training. The model facilitates the conversion of text inputs into speech outputs with a focus on harmonious and natural-sounding results. <br/>
+  > This repository contains a speech-to-speech model designed for TTSH training. It focuses on transforming speech input to speech output, aiding in speech synthesis applications. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The ttsh-test-buddy repository saw enhancements like generating cross-encoder datasets, refining answer generation pipelines, and addressing ASR issues. Jerry and Wenyeong actively contributed to improve speech-to-speech model training.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
-  <br/>
-  > This repository contains a timeline project with a detailed readme file outlining its purpose, features, and instructions for usage. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository underwent significant restructuring, including MongoDB configuration updates, script conversions, and code refactoring for improved efficiency and organization. The commits also involved fixing database and README issues and enhancing code documentation and testing procedures.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
-  <br/>
-  > This repository contains code for implementing advanced retrieval augmented generation techniques tailored for semi-structured PDF documents. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "chat-pdf" repository underwent various updates and fixes including improving text cleaning, refining table extraction to CSV, and enhancing table header decision making. New features like table transformation were added, and there were fixes for accurate and inaccurate table extraction, along with other refinements in the codebase.
+  > Updates to the "ttsh-test-buddy" repository by Jerry and Ethan2 include adding, fixing, and refining datasets and models for speech to speech training, enhancing QA pairs, and refining dataset generation processes.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mini-ai-projects">💻mini-ai-projects</a></strong></summary>
   <br/>
-  > This repository contains a variety of mini Artificial Intelligence projects showcasing different concepts and applications in the field. <br/>
+  > This repository contains a compilation of various small-scale artificial intelligence projects showcasing different AI techniques and implementations. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Implemented Telegram scraper, optimized structures, added pickle functionality, improved retrieval pipeline, enhanced table processing, and integrated Adobe API for accurate data extraction in mini AI projects repository.
+  > The repository 'mini-ai-projects' saw various updates: incorporating a telegram scraper, refining structures, enhancing table data retrieval, integrating Adobe API for accurate table reading, finalizing embedding techniques, and adding multi-modal text processing for RAG documents.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
+  <br/>
+  > This repository contains an advanced system that enhances text retrieval and generation specifically designed for PDF documents. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The "chat-pdf" repository showcases advancements in PDF retrieval and generation. It includes features like a frontend homepage, query rewriter, and hybrid retrieval systems.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
+  <br/>
+  > This repository contains a project focused on timelines. It likely includes code or resources related to displaying, interacting with, or creating timelines. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > In the "sph-timeline-project" repository, commits focused on updating MongoDB configuration, refactoring repo structure, converting scripts to Python, adjusting database entries, and enhancing documentation. Pair reviews and code refinements were also conducted.
   </details>
   
 <br>
