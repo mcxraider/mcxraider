@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💰mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a collection of GPT-generated READMEs suitable for GitHub profiles. Explore for creative and personalized descriptions for your projects. <br/>
+  > This repository contains a detailed summary of GitHub profiles generated using GPT technology. Explore automated readme files for efficient profile descriptions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "mcxraider" repository continuously updated its README using auto-scripts, fixed markdown formatting, and improved code related to prompts and code refactoring.
+  > The 'mcxraider' repository underwent numerous updates including workflow adjustments, markdown script enhancements, and README file refinements, emphasizing automation and code polishing.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🔍ttsh-test-buddy</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🚀ttsh-test-buddy</a></strong></summary>
   <br/>
-  > This repository contains a Speech to Speech model designed for training at TTSH. <br/>
+  > This repository contains a speech-to-speech model designed for TTSH training. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository 'ttsh-test-buddy' saw continuous updates by Jerry, including dataset additions, evaluation improvements, and fine-tuning model enhancements with code refinements such as QA pairs and file naming.
+  > The commits involve adding and finetuning datasets for speech-to-speech training, fixing file naming, and enhancing model evaluation and QA pairs.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
   <br/>
-  > This repository contains a project focused on enhancing retrieval augmented generation techniques specifically designed for PDF documents. <br/>
+  > This repository contains advanced techniques for retrieving and generating content in PDF files. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "chat-pdf" repository underwent significant development, including frontend improvements, memory issue fixes, and the incorporation of various components like query rewriter and retrieval pipelines. Additionally, enhancements were made to the README and tech stack documentation.
+  > The repository "chat-pdf" has seen additions such as a frontend homepage, query rewriter improvements, tech stack updates, and hybrid retrieval system enhancements. Changes include memory fixes and new components.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
   <br/>
-  > This repository contains a timeline project with detailed documentation and code for creating interactive timelines. <br/>
+  > This repository contains a project related to timeline management. It includes code, documentation, and resources for creating and managing timelines efficiently. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Updated MongoDB configuration, refactored repo structure, converted notebooks to Python scripts, adjusted database schema, added Google docstrings.
+  > In the "sph-timeline-project" repository, significant restructuring, updates, and fixes were made to MongoDB configuration, experimentation notebooks, node modules, repo structure, database collection names, and conversion of scripts to Python. Additionally, there were refinements to README files, code refactorings, and incorporation of new features like environment templates and hierarchical experimentation notebooks.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🚀NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains the central hub for code pertaining to the NUS SDS Workshops Committee, serving as a consolidated resource for workshop-related development and collaboration. <br/>
+  > **This repository contains the primary codebase for NUS SDS Workshops Committee, serving as a hub for collaborative coding efforts and projects within the committee's scope.** <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The NUS-SDS-Workshops repository underwent updates such as NLP introduction, requirements enhancement, and README refinements. Files were added, updated, and directories restructured.
+  > Commits involve initial repository setup, updating requirements, improving readability of README, deleting temporary files, and adding data for NUS SDS Workshops.
   </details>
   
 <br>
