@@ -26,8 +26,6 @@ jobs:
           pip install -r requirements.txt
       - name: Install ts-node
         run: npm install -g ts-node typescript '@types/node'
-      - name: Produce wordcloud
-        run: python wordcloud/word_count.py
       - name: Rebuild README.md File
         run: |-
           ts-node src/app.ts "$GH_TOKEN" "$OPENAI_API_KEY"
