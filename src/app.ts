@@ -1,10 +1,6 @@
 import { Octokit } from "octokit";
 import fs from "fs";
-import { callGPTForCommits, 
-    callGPTForEmoji, 
-    callGPTForReadme 
-} 
-    from "./openai";
+import { callGPTForCommits, callGPTForEmoji, callGPTForReadme } from "./openai";
 import {
   generateDropdown,
   generateDropdowns,

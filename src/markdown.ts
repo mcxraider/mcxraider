@@ -8,17 +8,17 @@
  * @returns {string} - A string containing the markdown dropdown section.
  */
 export function generateDropdown(
-    title: string,
-    readmeSummary: string,
-    commitsSummary: string,
-    url: string
+  title: string,
+  readmeSummary: string,
+  commitsSummary: string,
+  url: string
 ): string {
-    return `
+  return `
   <details>
   <summary><strong><a href="${url}">${title}</a></strong></summary>
   <br/>
   > ${readmeSummary} <br/>
-  ${'-'.repeat(126)} <br/>
+  ${"-".repeat(126)} <br/>
   > ${commitsSummary}
   </details>
   `;
@@ -44,9 +44,7 @@ export function generateDropdowns(entries: { [name: string]: string }): string {
  * @param {string} contributions - The AI-generated summary of the user's contributions.
  * @returns {string} - A string containing the markdown content for a GitHub profile README.
  */
-export function generateMarkdown(
-    contributions: string
-): string {
+export function generateMarkdown(contributions: string): string {
   return `
 
 # Hi! I'm Jerry!
