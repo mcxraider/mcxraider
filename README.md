@@ -12,44 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
+  <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
+  <br/>
+  > This repository contains advanced techniques for retrieving and generating content in PDFs, enhancing information extraction and generation processes. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The repository "chat-pdf" underwent various updates, including frontend enhancements, query rewriter addition, and code linting improvements for better PDF generation.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💸nepal-finance-bot</a></strong></summary>
+  <br/>
+  > This repository contains code for a Nepal finance bot, designed to assist with financial inquiries and transactions in Nepal. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The repository "nepal-finance-bot" underwent various improvements like black linting, fixing API key loading, error handling enhancement, and feature addition for proof of payment submission. Additional changes include updating file placements, requirements, and config settings.
+  </details>
+  
+  <details>
   <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🤖ttsh-test-buddy</a></strong></summary>
   <br/>
-  > This repository contains a speech-to-speech model designed for TTSH training. The project focuses on developing and implementing advanced techniques for enhancing speech recognition and synthesis. <br/>
+  > This repository contains a speech-to-speech model developed for training purposes at Tan Tock Seng Hospital (TTSH). <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > In the "ttsh-test-buddy" repository, Jerry made various commits refining the speech-to-speech model. Updates include adding datasets, finetuning, and generating prompting data for training.
+  > The repository 'ttsh-test-buddy' focused on fine-tuning evaluation, merging, adding datasets, and refining prompting scripts by Jerry from pull requests.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains GPT-generated READMEs for GitHub profiles, enabling users to create informative and customized introductions for their repositories. <br/>
+  > This repository contains a collection of GPT-generated READMEs suitable for GitHub profiles. Explore and utilize these to enhance your profile presentation effectively. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mcxraider" underwent numerous documentation auto-updates, markdown script enhancements, and workflow optimizations for cleaner READMEs and improved GitHub workflows.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
-  <br/>
-  > This repository contains advanced techniques combining retrieval and generation for PDF documents. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "chat-pdf" repository saw enhancements like a redesigned homepage, query rewriter, tech stack updates, linting workflows, and hybrid retrieval systems.
+  > The commits in the mcxraider repository focus on refining README files, adjusting GitHub workflows, updating markdown scripts, and modifying code for better functionality.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
   <br/>
-  > This repository contains a timeline project, aimed at showcasing events or milestones in a chronological order. It likely includes HTML, CSS, and JavaScript for interactive visualization of historical data. <br/>
+  > This repository contains a project focused on creating timelines. It likely includes code, resources, or documentation related to timeline creation and management. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Refactored repository structure, updated MongoDB configuration, converted notebooks to Python scripts, and enhanced database schema and naming conventions for Timeline Project.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
-  <br/>
-  > This repository contains the primary codebase for NUS SDS Workshop Committee, providing a centralized location for all related coding activities and projects. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits refined the repository:
-Initial NLP material. Revised requirements. Enhanced README clarity. Added 'sklearn' to requirements. Deleted and updated files.
+  > Several changes were made in the repository, including refactoring, updating MongoDB configurations, adjusting database fetch names, and converting various notebooks to Python scripts. Contributions by multiple team members were merged to enhance project structure and functionality.
   </details>
   
 <br>
