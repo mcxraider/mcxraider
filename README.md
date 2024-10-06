@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🔬ttsh-test-buddy</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a speech-to-speech model designed specifically for Tacotron Text-to-Speech synthesis training. <br/>
+  > This repository contains cron-scheduled scripts that generate GPT-powered READMEs for the user's Github profile, ensuring updated and engaging content. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository 'ttsh-test-buddy' underwent various enhancements, including fine-tuning evaluation, dataset additions, and model evaluation by merging multiple pull requests. Refactoring and script refinements were conducted for further prompting dataset generation.
+  > The repository 'mcxraider' underwent frequent README.md updates, markdown script adjustments, workflow refinements, code refactoring, and template modifications.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🤖ttsh-test-buddy</a></strong></summary>
   <br/>
-  > This repository contains automated readme generation for GitHub profiles using GPT technology. Create professional summaries effortlessly with a touch of personalization. <br/>
+  > This repository contains a speech-to-speech model developed specifically for TTSH training purposes. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "mcxraider" repository underwent multiple README updates, workflow adjustments, markdown refinements, and code edits.
+  > The repository ttsh-test-buddy underwent changes such as adding finetuning data, fixing issues, and refining dataset generation scripts. Evaluation and model enhancement were completed.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
   <br/>
-  > This repository contains advanced techniques for retrieving and generating content from PDF files, enhancing the capabilities of information extraction and document processing. <br/>
+  > This repository contains advanced retrieval augmented generation methods specifically designed for working with PDF documents. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "chat-pdf" received updates on the website frontend, homepage components, query rewriter, memory fix, and linting enhancements.
+  > The repository "chat-pdf" has seen significant updates to its website frontend, including edits, linting improvements, and new components to enhance PDF generation and retrieval.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💼nepal-finance-bot</a></strong></summary>
   <br/>
-  > This repository contains code for a finance bot specifically designed for Nepal. <br/>
+  > This repository contains code for a Nepal finance chatbot, designed to provide financial information and services, facilitating user interaction and assistance in the financial domain. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple updates in the 'nepal-finance-bot' repository including black linting, fixing bot API key loading, adding features for payment submission, enhancing error handling, and updating various configuration files and the readme.
+  > The "nepal-finance-bot" repository saw various updates including lint fixes, API key adjustments, error handling improvements, new features like proof of payment submission, and enhanced configuration settings. Additional features, file modifications, and better documentation were also worked on.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📆sph-timeline-project</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/sph-timeline-project">📅sph-timeline-project</a></strong></summary>
   <br/>
-  > This repository contains a timeline project. <br/>
+  > This repository contains a timeline project, showcasing historical events in a visually engaging and informative manner. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The git commits include updates to MongoDB configuration, refactoring of notebooks, converting scripts to Python, adjusting database fetch names, and adding hierarchical and Google NLP functionalities.
+  > Multiple refactoring efforts were made in the repository, updating MongoDB configuration, converting scripts to Python, and enhancing database fetch functionality. Various README updates and code cleaning activities were also implemented. Google NLP integration and hierarchical experimentation were introduced in the timeline project.
   </details>
   
 <br>
