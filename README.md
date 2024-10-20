@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🌟NUS-SDS-Workshops</a></strong></summary>
-  <br/>
-  > This repository contains the primary codebase for NUS SDS Workshops' Committee, housing various software projects and resources for committee members to collaborate and contribute towards workshop initiatives. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The NUS-SDS-Workshops repository showcases various updates including code additions, editing, and README improvements for workshops on NLP, chatbots, and RAG demos, along with dataset enhancements.
-  </details>
-  
-  <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that generate READMEs using GPT for automatic updates on my Github profile. <br/>
+  > This repository contains cron-scheduled scripts that generate GPT-powered READMEs for a Github profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository mcxraider focuses on automating README updates, adjusting workflows, fixing markdown formatting, and enhancing prompt and script functionalities.
+  > The "mcxraider" repository is frequently updated to automatically generate and modify README files. Changes include workflow adjustments, code refactoring, and markdown formatting fixes.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🔬ttsh-test-buddy</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains a speech-to-speech model designed for training at TTSH, focusing on enhancing audio processing and translation capabilities within a healthcare context. <br/>
+  > This repository contains the primary codebase for NUS SDS Workshops's Committee, centralizing all related coding projects and activities. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "ttsh-test-buddy" for TTSH training saw updates focusing on evaluation, model fine-tuning, data addition, and script enhancements by merging pull requests and refining datasets. Jerry notably contributed to these enhancements.
+  > The repository includes commits for adding contextual bank files, RAG demo code, NLP content, chatbot updates, directory edits, README enhancements, and file organization.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🤖ttsh-test-buddy</a></strong></summary>
+  <br/>
+  > This repository contains a speech to speech model designed for training at TTSH. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The repository 'ttsh-test-buddy' underwent various updates including fixing, merging, adding further data, and enhancing fine-tuning scripts for speech-to-speech training.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
   <br/>
-  > This repository contains advanced tools and techniques for enhancing text retrieval and generation within PDF documents. <br/>
+  > This repository contains implementations for advanced retrieval augmented generation focusing on enhancing PDF documents. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "chat-pdf" received multiple updates, including enhancements to website frontend, query rewriter addition, and code linting improvements.
+  > The repository "chat-pdf" saw updates to the website frontend, homepage components, query rewriter feature, and backend enhancements through various commits.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💼nepal-finance-bot</a></strong></summary>
   <br/>
-  > This repository contains code for a finance bot specifically designed for Nepal. <br/>
+  > This repository contains code for a finance bot tailored for Nepal. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits added features like proof of payment submission, improved error handling, and Google Drive configuration, along with code and documentation enhancements.
+  > Commits include merging branches, improving code formatting, fixing API key loading, enhancing error handling, adding payment submission feature, updating configurations and enhancing file organization in the Nepal Finance Bot repository.
   </details>
   
 <br>
