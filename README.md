@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
-  <br/>
-  > This repository contains cron-scheduled scripts that generate GPT-powered READMEs for a Github profile. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "mcxraider" repository is frequently updated to automatically generate and modify README files. Changes include workflow adjustments, code refactoring, and markdown formatting fixes.
-  </details>
-  
-  <details>
   <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains the primary codebase for NUS SDS Workshops's Committee, centralizing all related coding projects and activities. <br/>
+  > This repository contains the primary codebase for the NUS SDS Workshops Committee, housing all related projects and resources for workshop development and execution. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository includes commits for adding contextual bank files, RAG demo code, NLP content, chatbot updates, directory edits, README enhancements, and file organization.
+  > The repository underwent diverse updates, including NLP code enhancements, structure refinements, text additions, and workshop-related materials like chatbot and NLP demos.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🤖ttsh-test-buddy</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💸mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a speech to speech model designed for training at TTSH. <br/>
+  > This repository contains cron-scheduled scripts that generate GitHub READMEs populated with GPT-generated text for an individual's profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository 'ttsh-test-buddy' underwent various updates including fixing, merging, adding further data, and enhancing fine-tuning scripts for speech-to-speech training.
+  > The repository 'mcxraider' underwent multiple automatic README updates, workflow edits, markdown fixes, and code refactoring to enhance functionality.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🔍ttsh-test-buddy</a></strong></summary>
+  <br/>
+  > This repository contains a speech-to-speech model designed for TTSH training purposes. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The repository "ttsh-test-buddy" saw multiple pull requests merging, fixing, and adding further data for speech-to-speech model training. Commits included evaluations, dataset corrections, and refinements.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
   <br/>
-  > This repository contains implementations for advanced retrieval augmented generation focusing on enhancing PDF documents. <br/>
+  > This repository contains advanced techniques for retrieving and generating content in PDFs, enhancing the document processing capabilities. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "chat-pdf" saw updates to the website frontend, homepage components, query rewriter feature, and backend enhancements through various commits.
+  > The repository "chat-pdf" had several updates to the website frontend, incorporating features like reranking, query rewriting, fast API backend, and code linting.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💼nepal-finance-bot</a></strong></summary>
   <br/>
-  > This repository contains code for a finance bot tailored for Nepal. <br/>
+  > This repository contains code for a finance bot designed specifically for Nepal. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits include merging branches, improving code formatting, fixing API key loading, enhancing error handling, adding payment submission feature, updating configurations and enhancing file organization in the Nepal Finance Bot repository.
+  > The commits involve merging a pull request, implementing linting, fixing API key loading, adding features related to proof of payment submission, updating requirements, improving error handling, adding Google Drive configuration, and updating documentation.
   </details>
   
 <br>
