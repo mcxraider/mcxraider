@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💸nepal-finance-bot</a></strong></summary>
   <br/>
-  > This repository contains the central hub for code relevant to the NUS SDS Workshops' Committee, hosting essential resources and tools for committee members. <br/>
+  > This repository contains code for a Nepal finance bot, designed to provide financial information and assistance related to Nepal. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Updates include final edits to NLP code, restructuring file organization, adding a contextual bank text file, and creating code for a RAG demo in NLP workshops.
+  > The repository 'nepal-finance-bot' underwent enhancements including error handling, API key loading fixes, feature additions, and config updates. Further improvements in coding standards and additional features were also implemented.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💸nepal-finance-bot</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains code for a finance bot tailored for Nepal, offering insights and functionality related to financial services in the region. <br/>
+  > This repository contains the main codebase for the NUS SDS Workshops Committee, centralizing all related coding projects and resources. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits include handling bot API key loading, improving error handling, adding payment submission feature, and enhancing error messages and file configurations.
+  > Multiple updates made to the NUS-SDS-Workshops repository including NLP code final edits, file structure cleaning, RAG demo codes, chatbot class & Vector Store additions.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains scheduled generation of GPT-powered READMEs for maintaining an updated Github profile with engaging content. <br/>
+  > This repository contains cron-scheduled tasks that generate GPT-powered READMEs for a Github profile, enabling automatic and personalized updates. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository mcxraider features cron-scheduled README.md updates, script modifications, workflow adjustments, and wordcloud removal.
+  > The repository "mcxraider" focuses on automatic updates to the README using GPT-generated content while tweaking the GitHub workflow and markdown scripting.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">💼interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers tailored for preparing individuals for data science and data analyst interviews. <br/>
+  > This repository contains a collection of questions and answers tailored for individuals preparing for data science and data analyst interviews. It serves as a valuable resource for interview preparation in the field. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "interview-preparation" now includes data analyst questions, SQL cheatsheet, theory questions, and reading material links.
+  > The repository 'interview-preparation' now includes data analyst questions, SQL cheatsheet, theory questions, and updated reading links.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">⚙️ttsh-test-buddy</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
   <br/>
-  > This repository contains a speech-to-speech model designed for TTSH (Tan Tock Seng Hospital) training purposes, facilitating real-time translation for enhanced communication efficiency. <br/>
+  > This repository contains advanced techniques for retrieving and generating content from PDFs, enhancing the document processing experience. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > In the "ttsh-test-buddy" repository, recent commits involve adding scripts, generating questions, linting, merging, and including data for further prompting testing and finetuning evaluation by contributors Jerry and MEDiMakers.
+  > The chat-pdf repository saw updates to its website frontend, with edits to the home page image and footer, along with code refactoring.
   </details>
   
 <br>
