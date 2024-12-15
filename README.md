@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💸nepal-finance-bot</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains code for a Nepal finance bot, designed to provide financial information and assistance related to Nepal. <br/>
+  > This repository contains comprehensive code resources for NUS SDS Workshops Committee, serving as the central hub for all development-related activities and projects. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository 'nepal-finance-bot' underwent enhancements including error handling, API key loading fixes, feature additions, and config updates. Further improvements in coding standards and additional features were also implemented.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
-  <br/>
-  > This repository contains the main codebase for the NUS SDS Workshops Committee, centralizing all related coding projects and resources. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple updates made to the NUS-SDS-Workshops repository including NLP code final edits, file structure cleaning, RAG demo codes, chatbot class & Vector Store additions.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
-  <br/>
-  > This repository contains cron-scheduled tasks that generate GPT-powered READMEs for a Github profile, enabling automatic and personalized updates. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mcxraider" focuses on automatic updates to the README using GPT-generated content while tweaking the GitHub workflow and markdown scripting.
+  > Commits involve refining NLP code, updating files for organization, adding contextual bank text file, and enhancing chatbot class for a workshop in the NUS-SDS-Workshops repository.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers tailored for individuals preparing for data science and data analyst interviews. It serves as a valuable resource for interview preparation in the field. <br/>
+  > This repository contains a set of questions and answers tailored for studying and preparing for data science and data analyst interviews. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository 'interview-preparation' now includes data analyst questions, SQL cheatsheet, theory questions, and updated reading links.
+  > The repository was updated with data analyst study materials, including SQL cheatsheets, theory questions, and video & reading links.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💼nepal-finance-bot</a></strong></summary>
+  <br/>
+  > This repository contains code for a Nepal finance bot, designed to provide financial information and assistance. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Updates include merging pull request #1, linting code, fixing bot API key loading, editing file placement, requirements, and procfile. Added feature for proof of payment submission.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💰mcxraider</a></strong></summary>
+  <br/>
+  > This repository contains cron-scheduled GPT-generated READMEs for my Github profile. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The commits in the 'mcxraider' repository revolve around automatically updating the README.md file.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
   <br/>
-  > This repository contains advanced techniques for retrieving and generating content from PDFs, enhancing the document processing experience. <br/>
+  > This repository contains tools and code for implementing advanced retrieval augmented generation techniques specifically tailored for working with PDF documents. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The chat-pdf repository saw updates to its website frontend, with edits to the home page image and footer, along with code refactoring.
+  > The repository "chat-pdf" saw enhancements in frontend design, website updates, linting, and frontend editing.
   </details>
   
 <br>
