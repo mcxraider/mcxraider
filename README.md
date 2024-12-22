@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains comprehensive code resources for NUS SDS Workshops Committee, serving as the central hub for all development-related activities and projects. <br/>
+  > This repository contains the primary codebase for NUS SDS Workshops Committee, hosting various projects and resources related to workshop activities. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits involve refining NLP code, updating files for organization, adding contextual bank text file, and enhancing chatbot class for a workshop in the NUS-SDS-Workshops repository.
+  > The NUS-SDS-Workshops repository saw revisions such as removing APKey, formatting output, finalizing NLP code, amending files, and adding contextual data and demo codes. Additionally, updates were made to README, story text, chatbot functionality, and file structures.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a set of questions and answers tailored for studying and preparing for data science and data analyst interviews. <br/>
+  > This repository contains a collection of questions and answers tailored for those preparing for data science and data analyst interviews. Ideal for studying and honing interview skills in the field. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository was updated with data analyst study materials, including SQL cheatsheets, theory questions, and video & reading links.
+  > The repository 'interview-preparation' now includes data analyst Q&A, SQL cheatsheet, video links, theory questions, and reading material.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💼nepal-finance-bot</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains code for a Nepal finance bot, designed to provide financial information and assistance. <br/>
+  > This repository contains automated generation of README files utilizing GPT technology scheduled through cron jobs. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Updates include merging pull request #1, linting code, fixing bot API key loading, editing file placement, requirements, and procfile. Added feature for proof of payment submission.
+  > The repository "mcxraider" features frequent automated updates to the README.md file using cron-scheduling and GPT-generated content.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💰mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/better-lstm">🚀better-lstm</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled GPT-generated READMEs for my Github profile. <br/>
+  > This repository contains a comprehensive LSTM model trained on public data aimed at predicting stock prices efficiently. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The commits in the 'mcxraider' repository revolve around automatically updating the README.md file.
+  > The repository "better-lstm" was created with an LSTM model for stock price prediction. Multiple updates were made to the README file after the initial commit.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/chat-pdf">💬chat-pdf</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🔬ttsh-test-buddy</a></strong></summary>
   <br/>
-  > This repository contains tools and code for implementing advanced retrieval augmented generation techniques specifically tailored for working with PDF documents. <br/>
+  > This repository contains a speech-to-speech model designed for TTSH training purposes. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "chat-pdf" saw enhancements in frontend design, website updates, linting, and frontend editing.
+  > Commits in the "ttsh-test-buddy" repository by Jerry include adding a script for prompting testing and generating additional prompting questions, along with lint checks.
   </details>
   
 <br>
