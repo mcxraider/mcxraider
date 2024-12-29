@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains the primary codebase for NUS SDS Workshops Committee, hosting various projects and resources related to workshop activities. <br/>
+  > This repository contains the central code hub for NUS SDS Workshops Committee, encompassing various projects and resources for workshop endeavors. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The NUS-SDS-Workshops repository saw revisions such as removing APKey, formatting output, finalizing NLP code, amending files, and adding contextual data and demo codes. Additionally, updates were made to README, story text, chatbot functionality, and file structures.
+  > Commit updates include refining NLP code, organizing file structure, adding contextual bank files, and enhancing chatbot class in the NUS-SDS-Workshops repository.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">📚interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers tailored for those preparing for data science and data analyst interviews. Ideal for studying and honing interview skills in the field. <br/>
+  > This repository contains a compilation of questions and answers tailored for individuals to study and prepare for data science and data analyst interviews. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository 'interview-preparation' now includes data analyst Q&A, SQL cheatsheet, video links, theory questions, and reading material.
+  > The repository for interview preparation underwent several updates including adding data analyst questions, SQL cheatsheet, video links, and theory questions with supporting reading material.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💼mcxraider</a></strong></summary>
   <br/>
-  > This repository contains automated generation of README files utilizing GPT technology scheduled through cron jobs. <br/>
+  > This repository contains cron-scheduled scripts that use GPT to generate READMEs for a Github profile at regular intervals. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mcxraider" features frequent automated updates to the README.md file using cron-scheduling and GPT-generated content.
+  > Multiple commits were made to automatically update the README.md file in the repository, ensuring its content remains current and relevant.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/better-lstm">🚀better-lstm</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mini-ai-projects">💻mini-ai-projects</a></strong></summary>
   <br/>
-  > This repository contains a comprehensive LSTM model trained on public data aimed at predicting stock prices efficiently. <br/>
+  > This repository contains a variety of small AI projects showcasing different applications and implementations within the field. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "better-lstm" was created with an LSTM model for stock price prediction. Multiple updates were made to the README file after the initial commit.
+  > Commits involved updating, deleting data, addressing bug fixes, and adjusting .gitignore file in the mini-ai-projects repository.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/ttsh-test-buddy">🔬ttsh-test-buddy</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/student-performance">📚student-performance</a></strong></summary>
   <br/>
-  > This repository contains a speech-to-speech model designed for TTSH training purposes. <br/>
+  > This repository contains a machine learning project focused on predicting students' performance on tests. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits in the "ttsh-test-buddy" repository by Jerry include adding a script for prompting testing and generating additional prompting questions, along with lint checks.
+  > The repository for the ML project "student-performance" saw commits involving updating ML and DL models, conducting EDA, and two initial commits.
   </details>
   
 <br>
