@@ -12,35 +12,35 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🌟NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains the central code hub for NUS SDS Workshops Committee, encompassing various projects and resources for workshop endeavors. <br/>
+  > **This repository contains code related to NUS SDS Workshops' Committee.** <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commit updates include refining NLP code, organizing file structure, adding contextual bank files, and enhancing chatbot class in the NUS-SDS-Workshops repository.
+  > The commits include removing API keys, editing NLP code, updating files, organizing file structure, adding demo code, and updating chatbot classes for NUS SDS Workshops Repository.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">📚interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a compilation of questions and answers tailored for individuals to study and prepare for data science and data analyst interviews. <br/>
+  > This repository contains a curated collection of questions and answers designed to aid in preparing for data science and data analyst interviews. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository for interview preparation underwent several updates including adding data analyst questions, SQL cheatsheet, video links, and theory questions with supporting reading material.
+  > The repository "interview-preparation" was updated with data analyst and data science content, including theory, technical questions, SQL cheatsheet, and reading material links.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💼mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that use GPT to generate READMEs for a Github profile at regular intervals. <br/>
+  > This repository contains cron-scheduled scripts that automatically generate README files using GPT technology for the user's Github profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits were made to automatically update the README.md file in the repository, ensuring its content remains current and relevant.
+  > The repository "mcxraider" features multiple automatic updates to the README.md file, likely through a cron-scheduled process for generating GPT-based READMEs.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mini-ai-projects">💻mini-ai-projects</a></strong></summary>
   <br/>
-  > This repository contains a variety of small AI projects showcasing different applications and implementations within the field. <br/>
+  > This repository contains a variety of miniature artificial intelligence projects. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits involved updating, deleting data, addressing bug fixes, and adjusting .gitignore file in the mini-ai-projects repository.
+  > The repository "mini-ai-projects" received updates including bug fixes, directory deletions, and .gitignore modifications for improved performance and organization.
   </details>
   
   <details>
@@ -48,7 +48,7 @@
   <br/>
   > This repository contains a machine learning project focused on predicting students' performance on tests. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository for the ML project "student-performance" saw commits involving updating ML and DL models, conducting EDA, and two initial commits.
+  > The repository 'student-performance' underwent updates on ML and DL models, EDA, and several initial commits.
   </details>
   
 <br>
