@@ -12,43 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🌟NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > **This repository contains code related to NUS SDS Workshops' Committee.** <br/>
+  > This repository contains the main codebase for NUS SDS Workshops Committee, centralizing all related programming assets and projects. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The commits include removing API keys, editing NLP code, updating files, organizing file structure, adding demo code, and updating chatbot classes for NUS SDS Workshops Repository.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
-  <br/>
-  > This repository contains a curated collection of questions and answers designed to aid in preparing for data science and data analyst interviews. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "interview-preparation" was updated with data analyst and data science content, including theory, technical questions, SQL cheatsheet, and reading material links.
+  > The commits involve removing API key, updating README, finalizing NLP code, restructuring file organization, and making minor adjustments to the files.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that automatically generate README files using GPT technology for the user's Github profile. <br/>
+  > This repository contains cron-scheduled GPT-generated READMEs for enhancing the Github profile with automated content updates. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mcxraider" features multiple automatic updates to the README.md file, likely through a cron-scheduled process for generating GPT-based READMEs.
+  > The commits involve the automatic updating of the README.md file in the repository, likely through a scheduled task.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
+  <br/>
+  > This repository contains a collection of questions and answers tailored for studying and preparing for data science and data analyst interviews. Ideal for interview practice and skill enhancement. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Commits include creating a data analyst study document, adding an SQL cheatsheet, updating README.md with video links, and general README.md updates in the repository 'interview-preparation'.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mini-ai-projects">💻mini-ai-projects</a></strong></summary>
   <br/>
-  > This repository contains a variety of miniature artificial intelligence projects. <br/>
+  > This repository contains a collection of miniature artificial intelligence projects showcasing various concepts and implementations. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mini-ai-projects" received updates including bug fixes, directory deletions, and .gitignore modifications for improved performance and organization.
+  > The repository "mini-ai-projects" underwent updates, bug fixes, and modifications to the .gitignore file. A directory deletion was made to improve project organization.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/student-performance">📚student-performance</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a machine learning project focused on predicting students' performance on tests. <br/>
+  > This repository contains a collection of code snippets and examples showcasing various programming concepts and techniques. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository 'student-performance' underwent updates on ML and DL models, EDA, and several initial commits.
+  > The Cheatsheets repository saw a commit including a file rename and the addition of content related to 2324 S2 finals.
   </details>
   
 <br>
