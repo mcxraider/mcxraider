@@ -12,27 +12,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
+  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
+  <br/>
+  > This repository contains a detailed guide on setting up and using a specific software tool, including installation instructions, features, and troubleshooting tips. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The "seh_feedback" repository saw significant enhancements including the addition of labelled data, pipeline improvements, and integrating translation functions for a more efficient workflow. Error handling and data updates were prioritized.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">⚙️NUS-SDS-Workshops</a></strong></summary>
+  <br/>
+  > This repository contains code related to NUS SDS Workshops's Committee, serving as the central location for collaborative coding efforts and project management. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The repository for NUS SDS Workshops underwent updates and additions, including README revisions, dataset inclusion, and Colab-created EDA workshop materials.
+  </details>
+  
+  <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that generate GitHub profile README files using GPT-3, ensuring dynamic and personalized content updates regularly. <br/>
+  > This repository contains scheduled generation of GPT-powered READMEs for a Github profile, automated through cron. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits were made to auto-update the README.md in the repository, focusing on maintaining it dynamically and automatically using cron scheduling.
+  > The repository underwent multiple automated README.md updates through cron-scheduling, enhancing documentation accessibility and relevance.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/nepal-finance-bot">💼nepal-finance-bot</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains code for a finance bot designed for Nepal. <br/>
+  > This repository contains a collection of scripts and tools designed for optimizing website performance and automating deployment processes. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "nepal-finance-bot" was updated with changes to the README.md file. A pull request was also merged.
+  > The repository "Cheatsheets" saw the addition of a cheatsheet for 2102 and the deletion of DSA2101 cheatsheet.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">⚙️interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers designed to aid in studying and preparing for data science/data analyst interviews. <br/>
+  > This repository contains a collection of questions and answers designed to aid individuals in preparing for data science and data analyst interviews. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added a markdown file named Data_analyst.md to the repository for preparing data analyst interview questions and answers.
+  > Added LLM interview questions to the repository for data science/data analyst interview preparation.
   </details>
   
 <br>
