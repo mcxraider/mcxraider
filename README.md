@@ -14,41 +14,41 @@
   <details>
   <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains a collection of scripts and tools for automating common tasks within a network infrastructure. It aims to simplify network management and enhance operational efficiency. <br/>
+  > This repository contains a collection of scripts and tools for automating common tasks in web development. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The commits in the repository "seh_feedback" involved finalizing data pipelines, updating files, adding functions, and enhancing error handling. Jupyter was recognized as necessary for the translation model.
+  > Enhanced translation and data processing pipeline, refined SG labeling, integrated Jupyter for model work, and improved error handling.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💰mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled GPT-generated READMEs for a Github profile, automating the process of updating and maintaining profile information. <br/>
+  > This repository contains cron-scheduled scripts to generate GPT-created READMEs for a Github profile. Automate the process and keep your profile dynamic and engaging. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository `mcxraider` now automates README updates every 3 weeks on Mondays, enhancing profile management efficiency.
+  > Multiple commits were made to automate the updating of the README.md file and adjust scheduling to run every 3 weeks on Mondays.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains code related to NUS SDS Workshops's Committee, serving as the main hub for collaborative projects and activities. <br/>
+  > This repository contains the central collection of code for NUS SDS Workshops' Committee, serving as the main hub for workshop-related projects and collaborative development efforts. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository underwent updates with added datasets, EDA insights, and README enhancements, utilizing Colab for creation.
+  > Recent commits in the NUS-SDS-Workshops repository include updating and creating README.md files, adding a dataset, deleting an EDA.ipynb file, and creating Colab notebooks for EDA workshops.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a detailed guide on using various machine learning algorithms for image classification. It provides code examples and explanations for implementation. <br/>
+  > This repository contains a detailed guide on creating web applications using modern JavaScript frameworks. It covers project setup, development best practices, and deployment strategies. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The Cheatsheets repository underwent changes with the deletion of DSA2101_cheatsheet.R and addition of a 2102 cheatsheet.
+  > The "Cheatsheets" repository included the deletion of "DSA2101_cheatsheet.R" and an addition of the "2102 cheatsheet."
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">💼interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">📝interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers tailored for studying and preparing for data science and data analyst interviews. <br/>
+  > This repository contains a collection of questions and answers tailored for data science/data analyst interviews to aid in study and preparation. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added LLM interview questions to the repository for data science/data analyst interview preparation.
+  > Added LLM interview questions to the repository for interview preparation in data science and data analysis.
   </details>
   
 <br>
