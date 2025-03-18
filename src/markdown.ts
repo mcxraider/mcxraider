@@ -50,6 +50,7 @@ export function generateMarkdown(contributions: string): string {
 # Hi! I'm Jerry!
 <p>
   > Data Analyst Intern @Shopee
+  <br>
   > Incoming Data Science Intern @Govtech
 </p>
 
