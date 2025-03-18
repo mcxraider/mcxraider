@@ -48,6 +48,10 @@ export function generateMarkdown(contributions: string): string {
   return `
 
 # Hi! I'm Jerry!
+<p>
+  > Data Analyst Intern @Shopee
+  > Incoming Data Science Intern @Govtech
+</p>
 
 # GitHub Stats
 <p>
