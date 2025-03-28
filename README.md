@@ -2,8 +2,6 @@
 
 # Hi! I'm Jerry!
 <p>
-  > Data Analyst Intern @Shopee
-  <br>
   > Incoming Data Science Intern @Govtech
 </p>
 
@@ -17,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">📝seh_feedback</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">🌟seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains a detailed guide for setting up and using the software application. It includes instructions, troubleshooting tips, and best practices, serving as a comprehensive resource for users. <br/>
+  > This repository contains a README file with information on analyzing Shopee seller feedback on the CMS platform. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "seh_feedback" underwent various updates including data preparation, pipeline enhancements, and error handling improvements for the translation model and labelling tasks.
+  > Multiple updates and fixes were made: prompt fix, path adjustments, data pipeline finalizations, translation improvements, and addition of new data and functions.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💼mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that automate the generation of GPT-powered READMEs for my Github profile. <br/>
+  > This repository contains cron-scheduled scripts that automate the generation of GPT-generated READMEs for a Github profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits to the mcxraider repository involve auto-updating the README.md file, updating markdown.ts, and adjusting the markdown template and build.yml scheduling for periodic execution.
+  > The repository "mcxraider" features automated updates to its README.md using GPT-generated content, markdown, and scheduled builds every three weeks on Monday.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains the primary codebase for NUS SDS Workshops' Committee, hosting various projects related to data science. <br/>
+  > This repository contains essential code and projects pertaining to the NUS SDS Workshops Committee. It serves as a centralized hub for collaborative development and resource sharing. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository for NUS SDS Workshops underwent README updates, dataset addition, EDA workshop, and the creation of files using Colab.
+  > The repository for NUS SDS Workshops was updated, including the addition and deletion of files, and the creation of README.md file and EDA workshop using Colab.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📑Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a collection of tools and resources for web developers to enhance their workflow and create efficient and dynamic websites. <br/>
+  > This repository contains a collection of code snippets and examples demonstrating various programming concepts and techniques. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "Cheatsheets" saw the addition of a cheatsheet for 2102, and the deletion of DSA2101 cheatsheet file.
+  > The repository "Cheatsheets" underwent changes including adding a new cheatsheet and deleting a specific file.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">📚interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers tailored for preparing individuals for data science and data analyst interviews. <br/>
+  > This repository contains a collection of questions and answers curated for studying and preparing for data science and data analyst interviews. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "interview-preparation" now includes LLM interview questions following the initial commit. Ideal for data science/analyst interview preparation.
+  > The repository "interview-preparation" now includes LLM interview questions following the recent commit.
   </details>
   
 <br>
