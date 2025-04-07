@@ -15,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">⚙️seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains an analysis of Shopee seller feedback using the CMS platform. It offers insights into seller performance and customer responses on the platform. <br/>
+  > This repository contains information and resources regarding the analysis of seller feedback on the Shopee e-commerce platform through a Content Management System (CMS). <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The seh_feedback repository underwent various updates, fixes, and modifications. Changes include fixing prompts, updating file paths, finalizing data pipelines, and adding translation functions and pipeline improvements.
+  > The 'seh_feedback' repository saw various updates including fixes, path updates, data preparation improvements, pipeline modifications, translation model enhancements, and CSV edits.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💰mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💼mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a set of cron-scheduled tasks to automatically generate README files using GPT-3, enriching the Github profile with dynamically created content. <br/>
+  > This repository contains automated scripts for generating README files using GPT-3 and scheduling them to publish on a Github profile at regular intervals. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits by jerry focused on automatic updates of README.md, markdown adjustments, and cron schedule configurations for the repository mcxraider.
+  > Multiple commits to the 'mcxraider' repository focus on automating README updates and modifying related files like 'markdown.ts' and 'build.yml'. The commits are signed-off by 'jerry'.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">📚NUS-SDS-Workshops</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🌟NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains the main codebase for NUS SDS Workshops' Committee. It serves as a centralized hub for all workshop-related coding projects and materials. <br/>
+  > This repository contains the central codebase for NUS SDS Workshops Committee, featuring code related to organizing and facilitating workshops. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository was updated with a README, dataset added, EDA.ipynb deleted, and Colab used for creation and an EDA workshop conducted.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/dsa2101-project">📁dsa2101-project</a></strong></summary>
-  <br/>
-  > This repository contains data visualization of Himalayan mountain data. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits involve updating the README, adding code for exporting data, and including Himalayan mountain data in the project repository for data visualization.
+  > Commits include updates to the README file, dataset addition, deletion of EDA.ipynb, and creation of notebooks using Colab for an EDA workshop in NUS SDS Workshops.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a detailed documentation of project X, including setup instructions, code snippets, and usage guidelines. <br/>
+  > This repository contains a collection of scripts and tools for automating software deployment processes. It includes scripts for CI/CD pipelines, infrastructure as code, and configuration management. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "Cheatsheets" saw the addition of a cheatsheet for '2102' alongside the deletion of 'DSA2101_cheatsheet.R'.
+  > The 'Cheatsheets' repository now includes an updated 2102 cheatsheet, with a prior deletion of DSA2101_cheatsheet.R file.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
+  <br/>
+  > This repository contains a collection of questions and answers tailored for data science/data analyst interviews, aiding in preparation and study for job interviews in the field. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The repository 'interview-preparation' now includes LLM interview questions following the initial commit.
   </details>
   
 <br>
