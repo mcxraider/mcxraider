@@ -49,7 +49,7 @@ export function generateMarkdown(contributions: string): string {
 
 # Hi! I'm Jerry!
 <p>
-  > Incoming Data Science Intern @Govtech
+  > Data Science Intern @Govtech SG
 </p>
 
 # GitHub Stats
