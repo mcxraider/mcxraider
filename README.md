@@ -2,7 +2,7 @@
 
 # Hi! I'm Jerry!
 <p>
-  > Incoming Data Science Intern @Govtech
+  > Data Science Intern @Govtech SG
 </p>
 
 # GitHub Stats
@@ -15,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">⭐seh_feedback</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains data analysis tools for evaluating seller feedback on the Shopee commerce platform. <br/>
+  > This repository contains an analysis of Shopee seller feedback using the CMS platform. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Implemented fixes, updated file paths, finalized data preparation pipeline, added translation features, improved SG pipeline, updated API configurations, and edited CSV files in the repository.
+  > The "seh_feedback" repository saw various updates: fixing prompts, improving data pipelines, adding labeled data, and enhancing the translation pipeline using Jupyter.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that generate GPT-powered README files for the user's Github profile. <br/>
+  > This repository contains cron-scheduled tasks for generating GPT-based READMEs, enhancing Github profile presentation with dynamic content updates. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits focus on automating README updates, markdown file adjustments, and schedule modifications, enhancing the project's maintenance and user accessibility.
+  > The "mcxraider" repository received multiple commits updating README files and markdown templates, incorporating automation and scheduled tasks for regular updates.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains the primary codebase for the NUS SDS Workshops's Committee, serving as a centralized hub for collaboration and development of workshop-related projects. <br/>
+  > This repository contains the primary codebase for NUS SDS Workshop's Committee, consolidating all relevant code and projects in one central location. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits were made in the repository, including updating and creating a README file, adding a dataset, deleting a Jupyter notebook, and creating content using Colab for an EDA workshop.
+  > The repository was updated with a README file, dataset added, EDA.ipynb deleted, and Colab was used to create during an EDA workshop.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a comprehensive guide on using various machine learning algorithms for predictive modeling. It covers topics such as data preprocessing, model evaluation, and implementation in Python. <br/>
+  > This repository contains a collection of code and projects related to machine learning and data analysis. It showcases various algorithms and techniques for predictive modeling and pattern recognition. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The Cheatsheets repository updated with a new cheatsheet for DSA2102, replacing the previous DSA2101 cheatsheet.
+  > The repository Cheatsheets underwent updates, including deletion of DSA2101_cheatsheet.R and addition of 2102 cheatsheet.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">💼interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">📝interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers tailored for individuals looking to study and prepare for data science and data analyst interviews. <br/>
+  > This repository contains a collection of questions and answers tailored for data science and data analyst interviews, serving as a study resource for interview preparation. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "interview-preparation" now includes LLM interview questions, marking the initial commit for data science/data analyst interview preparation.
+  > The repository "interview-preparation" now includes LLM interview questions after the initial commit. Ideal for data science/ data analyst interview preparation.
   </details>
   
 <br>
