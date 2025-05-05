@@ -15,41 +15,33 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
-  <br/>
-  > This repository contains code for analyzing Shopee seller feedback on the CMS platform. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "seh_feedback" repository saw fixes, updates, pipeline finalizations, labeled data addition, pipeline improvements, and a shift to using Jupyter for translation models.
-  </details>
-  
-  <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled GPT-generated READMEs for a Github profile, automating the process of updating and maintaining profile content. <br/>
+  > This repository contains automatically generated READMEs that are scheduled to run using cron jobs, showcasing GPT-generated content on the owner's GitHub profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mcxraider" contains cron-scheduled GPT-generated READMEs. Recent commits include auto-updating README.md and adjusting markdown files for scheduled updates.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">⚙️NUS-SDS-Workshops</a></strong></summary>
-  <br/>
-  > This repository contains the primary codebase for NUS SDS Workshops' Committee, centralizing all related code and projects. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository underwent changes with the addition of a dataset, README updates, and the creation of EDA workshops using Colab.
+  > The repository "mcxraider" contains automated updates of README files and markdown templates, scheduled via cron jobs.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a detailed guide for setting up and using various Python libraries for data analysis and visualization. <br/>
+  > This repository contains a collection of Python scripts for data analysis and visualization. It includes examples of handling different data types and creating insightful visualizations for various datasets. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The Cheatsheets repository has an updated version labeled '2102 cheatsheet' with the deletion of 'DSA2101_cheatsheet.R'.
+  > The repository has updates like a finalized cheatsheet for DSA2101, deletion of previous version, and addition of a cheatsheet for DSA2102.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">💼interview-preparation</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers designed to help individuals prepare for data science and data analyst interviews. <br/>
+  > This repository contains code for NUS SDS Workshops's Committee, serving as the central hub for all related programming tasks and projects. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Commits include updating README, adding dataset, and creating EDA workshop using Colab. EDA.ipynb file was deleted.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
+  <br/>
+  > This repository contains a collection of questions and answers designed to help individuals study and prepare for data science and data analyst interviews. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
   > The repository "interview-preparation" now includes LLM interview questions alongside the initial commit.
   </details>
