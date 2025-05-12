@@ -15,35 +15,27 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💰mcxraider</a></strong></summary>
   <br/>
-  > This repository contains automatically generated READMEs that are scheduled to run using cron jobs, showcasing GPT-generated content on the owner's GitHub profile. <br/>
+  > This repository contains cron-scheduled scripts that generate GPT-powered READMEs for a Github profile. Automatically updating README files for enhanced profile presentation. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mcxraider" contains automated updates of README files and markdown templates, scheduled via cron jobs.
+  > Multiple auto-updates to README.md and markdown files utilizing GPT-generated content. Additional updates to build configuration for biweekly runs on Mondays.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a collection of Python scripts for data analysis and visualization. It includes examples of handling different data types and creating insightful visualizations for various datasets. <br/>
+  > This repository contains a collection of tools and scripts for automating software deployment processes in various environments. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository has updates like a finalized cheatsheet for DSA2101, deletion of previous version, and addition of a cheatsheet for DSA2102.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/NUS-SDS-Workshops">🔧NUS-SDS-Workshops</a></strong></summary>
-  <br/>
-  > This repository contains code for NUS SDS Workshops's Committee, serving as the central hub for all related programming tasks and projects. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits include updating README, adding dataset, and creating EDA workshop using Colab. EDA.ipynb file was deleted.
+  > The Cheatsheets repository was updated with final DSA2101 cheatsheet, removal, and addition of files, and inclusion of a 2102 cheatsheet.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains a collection of questions and answers designed to help individuals study and prepare for data science and data analyst interviews. <br/>
+  > This repository contains a collection of questions and answers tailored for data science and data analyst interviews, aiding in study and preparation for these roles. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "interview-preparation" now includes LLM interview questions alongside the initial commit.
+  > Added LLM interview questions to the repository for data science/data analyst interview preparation.
   </details>
   
 <br>
