@@ -15,27 +15,19 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💰mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that generate GPT-powered READMEs for a Github profile. Automatically updating README files for enhanced profile presentation. <br/>
+  > This repository contains a collection of cron-scheduled scripts that automatically generate README files for a Github profile using GPT-based technology. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple auto-updates to README.md and markdown files utilizing GPT-generated content. Additional updates to build configuration for biweekly runs on Mondays.
+  > Multiple automatic updates to the repository README.md file along with changes to markdown.ts and build.yml. Scheduled README updates and template modifications were conducted by the contributor.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📄Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a collection of tools and scripts for automating software deployment processes in various environments. <br/>
+  > This repository contains a collection of code and files related to the project. It serves as a central hub for collaboration and version control. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The Cheatsheets repository was updated with final DSA2101 cheatsheet, removal, and addition of files, and inclusion of a 2102 cheatsheet.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">🚀interview-preparation</a></strong></summary>
-  <br/>
-  > This repository contains a collection of questions and answers tailored for data science and data analyst interviews, aiding in study and preparation for these roles. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added LLM interview questions to the repository for data science/data analyst interview preparation.
+  > The repository "Cheatsheets" contains commits for finalizing DSA2101 cheatsheet, deleting and reuploading DSA2101 cheatsheet, and adding a 2102 cheatsheet.
   </details>
   
 <br>
