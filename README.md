@@ -15,19 +15,19 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💼mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a collection of cron-scheduled scripts that automatically generate README files for a Github profile using GPT-based technology. <br/>
+  > This repository contains Cron-scheduled GPT-generated READMEs for the user's Github profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple automatic updates to the repository README.md file along with changes to markdown.ts and build.yml. Scheduled README updates and template modifications were conducted by the contributor.
+  > The "mcxraider" repository underwent continuous auto-updating of the README.md file with periodic markdown.ts and build.yml adjustments by the contributor, Jerry.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📄Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📑Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a collection of code and files related to the project. It serves as a central hub for collaboration and version control. <br/>
+  > This repository contains a comprehensive guide on machine learning algorithms for beginners. It covers a wide range of topics to help individuals understand and implement various algorithms effectively. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "Cheatsheets" contains commits for finalizing DSA2101 cheatsheet, deleting and reuploading DSA2101 cheatsheet, and adding a 2102 cheatsheet.
+  > The repository "Cheatsheets" underwent updates, including finalizing a Data Structures and Algorithms cheatsheet, removing and adding files for DSA2101 and introducing a cheatsheet for DSA2102.
   </details>
   
 <br>
