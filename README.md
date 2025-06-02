@@ -15,19 +15,27 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💼mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/notion-mcp">💻notion-mcp</a></strong></summary>
   <br/>
-  > This repository contains Cron-scheduled GPT-generated READMEs for the user's Github profile. <br/>
+  > This repository contains a project focused on integrating artificial intelligence with Notion, a workspace collaboration tool. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "mcxraider" repository underwent continuous auto-updating of the README.md file with periodic markdown.ts and build.yml adjustments by the contributor, Jerry.
+  > Implemented updates include adding node-fetch, support for more blocks, reorganizing project structure, fixing dependencies, and adjusting database creation parameters. Versions were also incrementally updated.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📑Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a comprehensive guide on machine learning algorithms for beginners. It covers a wide range of topics to help individuals understand and implement various algorithms effectively. <br/>
+  > This repository contains cron-scheduled scripts that generate READMEs using GPT technology for a personalized touch on a Github profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "Cheatsheets" underwent updates, including finalizing a Data Structures and Algorithms cheatsheet, removing and adding files for DSA2101 and introducing a cheatsheet for DSA2102.
+  > The repository mcxraider underwent multiple automatic README.md updates and markdown file modifications scheduled through a cron job. Additionally, a build.yml was updated for a monthly run. Signed-off by: jerry.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📝Cheatsheets</a></strong></summary>
+  <br/>
+  > This repository contains a collection of tools and resources for data analysis and visualization. It covers various techniques and best practices in the field of data science. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The Cheatsheets repository underwent updates with the final DSA2101 cheatsheet added and previous versions deleted.
   </details>
   
 <br>
