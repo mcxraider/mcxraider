@@ -15,27 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/notion-mcp">💻notion-mcp</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jst-gt">🔑jst-gt</a></strong></summary>
   <br/>
-  > This repository contains a project focused on integrating artificial intelligence with Notion, a workspace collaboration tool. <br/>
+  > This repository contains a system for tagging skills within an Instructional Design and Development (IDD) team to streamline skill identification and enhance collaboration. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Implemented updates include adding node-fetch, support for more blocks, reorganizing project structure, fixing dependencies, and adjusting database creation parameters. Versions were also incrementally updated.
+  > The repository "jst-gt" underwent various updates including deployment configuration, AWS S3 integration, and backend refactoring for improved file handling and error management.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that generate READMEs using GPT technology for a personalized touch on a Github profile. <br/>
+  > This repository contains cron-scheduled scripts to generate GPT-powered READMEs automatically for a Github profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository mcxraider underwent multiple automatic README.md updates and markdown file modifications scheduled through a cron job. Additionally, a build.yml was updated for a monthly run. Signed-off by: jerry.
+  > The commits in the 'mcxraider' repository focus on automatically updating README.md and markdown files, along with adjusting the build.yml schedule for biweekly runs.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📝Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a collection of tools and resources for data analysis and visualization. It covers various techniques and best practices in the field of data science. <br/>
+  > This repository contains a voice-integrated Assistant project designed with MCP technology, akin to a Jarvis-like AI. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The Cheatsheets repository underwent updates with the final DSA2101 cheatsheet added and previous versions deleted.
+  > The repository "jarvis-mcp" saw updates like integrating Todoist, GPT voice processing, and adding Telegram bot functionality. Multiple commits refined voice integration and added features.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
+  <br/>
+  > This repository contains code for analyzing seller feedback from Shopee platform using the CMS platform. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The commits involved in the 'seh_feedback' repository include deleting directories, adding fixes, updating file paths, managing CSV files, implementing a virtual environment, and preparing for handover. A translation notebook was also mentioned, although still in a previous version.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
+  <br/>
+  > This repository contains a detailed guide on implementing machine learning algorithms for image recognition tasks using Python and TensorFlow. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > The Cheatsheets repository was updated with the final DSA2101 cheatsheet and removed an older version.
   </details>
   
 <br>
