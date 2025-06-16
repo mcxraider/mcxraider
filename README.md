@@ -17,41 +17,41 @@
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jst-gt">🔑jst-gt</a></strong></summary>
   <br/>
-  > This repository contains a system for tagging skills within an Instructional Design and Development (IDD) team to streamline skill identification and enhance collaboration. <br/>
+  > This repository contains code for implementing skills tagging for the IDD team, facilitating efficient categorization and management within the project. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "jst-gt" underwent various updates including deployment configuration, AWS S3 integration, and backend refactoring for improved file handling and error management.
+  > The repository "jst-gt" underwent significant backend and AWS S3 integration refactoring, Dockerfile updates, and GitLab configuration for deployment. Additionally, deployment configuration and documentation improvements were made.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts to generate GPT-powered READMEs automatically for a Github profile. <br/>
+  > This repository contains cron-scheduled scripts that generate READMEs for Github profiles using GPT. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The commits in the 'mcxraider' repository focus on automatically updating README.md and markdown files, along with adjusting the build.yml schedule for biweekly runs.
+  > Multiple automatic updates to the README.md file were made, along with modifications to markdown.ts and the markdown template. Signed-off by contributor.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🔧jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a voice-integrated Assistant project designed with MCP technology, akin to a Jarvis-like AI. <br/>
+  > This repository contains a voice-integrated JARVIS-like assistant utilizing the Minecraft mod, Minecraft Coder Pack (MCP), offering a hands-free experience. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "jarvis-mcp" saw updates like integrating Todoist, GPT voice processing, and adding Telegram bot functionality. Multiple commits refined voice integration and added features.
+  > Developed voice-integrated Jarvis-like assistant with MCP, integrated Todoist, GPT processing, and Telegram bot functionalities. Workflow optimizations included gitignore updates and repository restructuring.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains code for analyzing seller feedback from Shopee platform using the CMS platform. <br/>
+  > This repository contains an analysis of Shopee seller feedback on the CMS platform. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The commits involved in the 'seh_feedback' repository include deleting directories, adding fixes, updating file paths, managing CSV files, implementing a virtual environment, and preparing for handover. A translation notebook was also mentioned, although still in a previous version.
+  > The repository "seh_feedback" underwent several changes, including directory deletions, bug fixes, updates to file paths, and addition of a virtual environment for handover.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📄Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a detailed guide on implementing machine learning algorithms for image recognition tasks using Python and TensorFlow. <br/>
+  > This repository contains a collection of code and files related to a project or software development. It serves as a central location for collaboration and version control among team members. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The Cheatsheets repository was updated with the final DSA2101 cheatsheet and removed an older version.
+  > Multiple commits were made in the Cheatsheets repository, focusing on the final cheatsheet for DSA2101. Specific updates included deleting and adding the DSA2101_cheatsheet.R file.
   </details>
   
 <br>
