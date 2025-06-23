@@ -15,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jst-gt">🔑jst-gt</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jst-gt">🌟jst-gt</a></strong></summary>
   <br/>
-  > This repository contains code for implementing skills tagging for the IDD team, facilitating efficient categorization and management within the project. <br/>
+  > This repository contains a set of tools and guidelines for implementing skills tagging within an Instructional Design and Development team, facilitating efficient organization and retrieval of skill-specific information. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "jst-gt" underwent significant backend and AWS S3 integration refactoring, Dockerfile updates, and GitLab configuration for deployment. Additionally, deployment configuration and documentation improvements were made.
+  > The repository underwent significant backend restructuring, including AWS S3 integration, deployment setup, and Docker configurations. Frontend and backend were refactored for enhanced functionality.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
+  <br/>
+  > This repository contains a voice-integrated project, similar to a Jarvis assistant, implemented with MCP (Minecraft Coder Pack) functionalities. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Developed voice-integrated Jarvis-like assistant with MCP. Integrated Todoist, GPT processing, and Telegrambot functionality, including updates and configuration files.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that generate READMEs for Github profiles using GPT. <br/>
+  > This repository contains cron-scheduled GPT-generated READMEs for Github profiles, automating the process of updating and customizing profile content. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple automatic updates to the README.md file were made, along with modifications to markdown.ts and the markdown template. Signed-off by contributor.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🔧jarvis-mcp</a></strong></summary>
-  <br/>
-  > This repository contains a voice-integrated JARVIS-like assistant utilizing the Minecraft mod, Minecraft Coder Pack (MCP), offering a hands-free experience. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Developed voice-integrated Jarvis-like assistant with MCP, integrated Todoist, GPT processing, and Telegram bot functionalities. Workflow optimizations included gitignore updates and repository restructuring.
+  > Multiple commits were made to the mcxraider repository, mainly focusing on auto-updating README.md files and updating markdown.ts by contributor Jerry.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains an analysis of Shopee seller feedback on the CMS platform. <br/>
+  > This repository contains an analysis of Shopee seller feedback on the CMS platform for insights and improvements. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "seh_feedback" underwent several changes, including directory deletions, bug fixes, updates to file paths, and addition of a virtual environment for handover.
+  > Commits involved deleting directories, adding fixes, updating file paths, and revising the readme in the seh_feedback repository for analyzing Shopee seller feedback on the CMS platform.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📄Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a collection of code and files related to a project or software development. It serves as a central location for collaboration and version control among team members. <br/>
+  > This repository contains a detailed guide on setting up and using a web scraper tool, including source code and instructions for data extraction from various websites. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits were made in the Cheatsheets repository, focusing on the final cheatsheet for DSA2101. Specific updates included deleting and adding the DSA2101_cheatsheet.R file.
+  > The repository "Cheatsheets" underwent revisions, including finalizing and deleting the DSA2101 cheatsheet files.
   </details>
   
 <br>
