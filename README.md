@@ -15,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jst-gt">🌟jst-gt</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jst-gt">🔑jst-gt</a></strong></summary>
   <br/>
-  > This repository contains a set of tools and guidelines for implementing skills tagging within an Instructional Design and Development team, facilitating efficient organization and retrieval of skill-specific information. <br/>
+  > This repository contains a system for tagging skills within the IDD team, facilitating efficient identification and utilization of team members' expertise. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository underwent significant backend restructuring, including AWS S3 integration, deployment setup, and Docker configurations. Frontend and backend were refactored for enhanced functionality.
+  > The repository underwent various updates including bug fixes, AWS credential setup, Dockerfile modifications, and AWS S3 integration for improved functionality.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a voice-integrated project, similar to a Jarvis assistant, implemented with MCP (Minecraft Coder Pack) functionalities. <br/>
+  > This repository contains a voice-integrated Jarvis-like assistant project utilizing Minecraft's Mod Coder Pack (MCP). <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Developed voice-integrated Jarvis-like assistant with MCP. Integrated Todoist, GPT processing, and Telegrambot functionality, including updates and configuration files.
+  > The "jarvis-mcp" repository saw the integration of Todoist and voice features, GPT processing, and the implementation of a Telegram bot with various improvements.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled GPT-generated READMEs for Github profiles, automating the process of updating and customizing profile content. <br/>
+  > This repository contains automated generation of READMEs for Github profiles using GPT through a cron-scheduled process. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits were made to the mcxraider repository, mainly focusing on auto-updating README.md files and updating markdown.ts by contributor Jerry.
+  > The 'mcxraider' repository underwent multiple README.md auto-updates, along with a markdown.ts modification.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💬seh_feedback</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains an analysis of Shopee seller feedback on the CMS platform for insights and improvements. <br/>
+  > This repository contains a detailed guide on optimizing website performance through efficient coding practices and utilizing modern tools. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits involved deleting directories, adding fixes, updating file paths, and revising the readme in the seh_feedback repository for analyzing Shopee seller feedback on the CMS platform.
+  > The Cheatsheets repository underwent updates, with the addition and deletion of a final DSA2101 cheatsheet.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📄Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">🚀bert-finetuning</a></strong></summary>
   <br/>
-  > This repository contains a detailed guide on setting up and using a web scraper tool, including source code and instructions for data extraction from various websites. <br/>
+  > This repository contains a template for fine-tuning BERT models, with both Grid and Randomized search strategies included for hyperparameter optimization. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "Cheatsheets" underwent revisions, including finalizing and deleting the DSA2101 cheatsheet files.
+  > The repository "bert-finetuning" was created, and a README file was added, then subsequently deleted in the initial commit.
   </details>
   
 <br>
