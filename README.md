@@ -15,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jst-gt">🔑jst-gt</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jst-gt">💻jst-gt</a></strong></summary>
   <br/>
-  > This repository contains a system for tagging skills within the IDD team, facilitating efficient identification and utilization of team members' expertise. <br/>
+  > This repository contains information on skills tagging for the Instructional Design and Development (IDD) team, helping categorize expertise and streamline project assignments effectively. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository underwent various updates including bug fixes, AWS credential setup, Dockerfile modifications, and AWS S3 integration for improved functionality.
+  > Multiple updates were made to the deployment process, addressing AWS configurations, Docker images, and streamlit theme adjustments. Additionally, GitHub workflows were removed for integration purposes.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a voice-integrated Jarvis-like assistant project utilizing Minecraft's Mod Coder Pack (MCP). <br/>
+  > This repository contains a voice-integrated JARVIS-like assistant integrated with Minecraft Protocol (MCP). <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The "jarvis-mcp" repository saw the integration of Todoist and voice features, GPT processing, and the implementation of a Telegram bot with various improvements.
+  > The repository "jarvis-mcp" now includes features like full integration with Todoist, GPT processing, and a Telegram bot prepared.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💼mcxraider</a></strong></summary>
   <br/>
-  > This repository contains automated generation of READMEs for Github profiles using GPT through a cron-scheduled process. <br/>
+  > This repository contains GPT-generated READMEs that are scheduled to be updated using Cron for Github profiles. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The 'mcxraider' repository underwent multiple README.md auto-updates, along with a markdown.ts modification.
+  > The 'mcxraider' repository features automated updates to the README.md file and a markdown.ts update.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
   <br/>
-  > This repository contains a detailed guide on optimizing website performance through efficient coding practices and utilizing modern tools. <br/>
+  > This repository contains a collection of code snippets and examples for various programming languages, aimed at assisting developers in learning new techniques and best practices. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The Cheatsheets repository underwent updates, with the addition and deletion of a final DSA2101 cheatsheet.
+  > The repository 'Cheatsheets' underwent updates, including the addition and deletion of a final cheatsheet for DSA2101.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">🚀bert-finetuning</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">🔧bert-finetuning</a></strong></summary>
   <br/>
-  > This repository contains a template for fine-tuning BERT models, with both Grid and Randomized search strategies included for hyperparameter optimization. <br/>
+  > This repository contains a template for fine-tuning BERT models using both Grid and Randomized methods, facilitating NLP model optimization. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "bert-finetuning" was created, and a README file was added, then subsequently deleted in the initial commit.
+  > The repository "bert-finetuning" now includes a README.md file after an initial commit that also involved deleting another README.md file.
   </details>
   
 <br>
