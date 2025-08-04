@@ -15,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jst-gt">🌐jst-gt</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jst-gt">💻jst-gt</a></strong></summary>
   <br/>
-  > This repository contains a skills tagging system designed for the IDD team to categorize and organize skill sets efficiently. <br/>
+  > This repository contains a project focused on skills tagging for the Instructional Design and Development team. It aims to streamline skill identification and management within the team. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The recent Git commits for the repository focused on deployment improvements, S3 operations enhancements, and OpenAI client health checks. Fixes for upload methods and local path tests were also made.
+  > The latest commits focus on deployment enhancements such as progress bar details, estimated process time, and S3 client optimizations for the skills tagging repository.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">⚙️jarvis-mcp</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a voice-integrated Jarvis-like assistant with MCP functionalities. <br/>
+  > This repository contains a voice-integrated Jarvis-like assistant project using MCP (Minecraft Coder Pack). <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "jarvis-mcp" saw significant updates: Todoist integration, voice processing, Telegram bot refinement, and initial configurations and setups.
+  > The repository "jarvis-mcp" underwent significant enhancements, including fully integrated Todoist and voice features, GPT processing, and telegram bot improvements.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled READMEs that are generated using GPT for Github profiles, offering automated and dynamic content updates. <br/>
+  > This repository contains cron-scheduled GPT-generated READMEs for Github profiles, automating the process of creating unique and personalized bio descriptions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple commits were made to automatically update the README.md file in the repository. This indicates periodic automated changes to the project's description.
+  > The repository mcxraider focuses on automatically updating README.md files through scheduled tasks.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/Cheatsheets">📚Cheatsheets</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">⚙️bert-finetuning</a></strong></summary>
   <br/>
-  > This repository contains a detailed guide and code samples for implementing machine learning algorithms in Python for beginners. <br/>
+  > This repository contains a template for fine-tuning BERT models using both Grid and Randomised methods, providing a structured approach for efficient model optimization. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "Cheatsheets" was updated with the final cheatsheet for DSA2101, and previous versions of the DSA2101_cheatsheet.R were deleted.
+  > Two initial commits made to the BERT fine tuning template repository, involving the creation, and subsequent deletion, of the README.md file.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">🔧bert-finetuning</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">⚙️seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains a BERT fine-tuning template implemented with Grid and Randomized search techniques for optimizing model performance. <br/>
+  > This repository contains code for analyzing Shopee seller feedback on the CMS platform. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "bert-finetuning" was created with a README.md, followed by its deletion in the initial commit.
+  > Removed 'docs' and 'data' directories from the repository seh_feedback.
   </details>
   
 <br>
