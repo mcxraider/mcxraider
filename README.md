@@ -15,43 +15,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jst-gt">💻jst-gt</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jst-gt">⌨️jst-gt</a></strong></summary>
   <br/>
-  > This repository contains a project focused on skills tagging for the Instructional Design and Development team. It aims to streamline skill identification and management within the team. <br/>
+  > This repository contains a collection of scripts and tools for tagging skills in the IDD team, enabling efficient management and organization of specialized knowledge within the team. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The latest commits focus on deployment enhancements such as progress bar details, estimated process time, and S3 client optimizations for the skills tagging repository.
+  > Several updates merged into the main branch for the JST-GT repository, including deployment fixes, progress bar details, and enhancements to S3 operations and OpenAI client methods.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🔧jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a voice-integrated Jarvis-like assistant project using MCP (Minecraft Coder Pack). <br/>
+  > This repository contains a voice-integrated, Jarvis-like assistant software utilizing Minecraft's Mod Coder Pack (MCP). <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "jarvis-mcp" underwent significant enhancements, including fully integrated Todoist and voice features, GPT processing, and telegram bot improvements.
+  > The 'jarvis-mcp' repository saw significant updates: Todoist integration, voice commands with GPT processing, and Telegrambot enhancements were implemented.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled GPT-generated READMEs for Github profiles, automating the process of creating unique and personalized bio descriptions. <br/>
+  > This repository contains cron-scheduled scripts that generate GPT-powered READMEs for Github profiles. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository mcxraider focuses on automatically updating README.md files through scheduled tasks.
+  > The repository "mcxraider" features automated updates to its README.md file using cron scheduling for GitHub profiles.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">⚙️bert-finetuning</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">💻bert-finetuning</a></strong></summary>
   <br/>
-  > This repository contains a template for fine-tuning BERT models using both Grid and Randomised methods, providing a structured approach for efficient model optimization. <br/>
+  > This repository contains a BERT fine-tuning template implementing both Grid and Randomised search for optimizing hyperparameters effectively. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Two initial commits made to the BERT fine tuning template repository, involving the creation, and subsequent deletion, of the README.md file.
+  > The repository "bert-finetuning" underwent an initial commit, including the creation and subsequent deletion of the README.md file.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">⚙️seh_feedback</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💡seh_feedback</a></strong></summary>
   <br/>
-  > This repository contains code for analyzing Shopee seller feedback on the CMS platform. <br/>
+  > This repository contains a detailed analysis of Shopee seller feedback on the CMS platform, providing valuable insights for improving seller performance and customer satisfaction. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Removed 'docs' and 'data' directories from the repository seh_feedback.
+  > Removed the `docs` and `data` directories from the repository for the 'seh_feedback' project.
   </details>
   
 <br>
