@@ -2,7 +2,7 @@
 
 # Hi! I'm Jerry!
 <p>
-  > Data Science Intern @Govtech SG
+  > Y3 Data Science and Analytics @NUS
 </p>
 
 # GitHub Stats
@@ -12,7 +12,7 @@
 </p>
 <br>
 
-## 🔨 AI-generated summary of what I've been working on:
+## 🔨 A summary of what I've been working on (AI):
 
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jst-gt">⌨️jst-gt</a></strong></summary>
