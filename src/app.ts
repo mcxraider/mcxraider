@@ -5,6 +5,7 @@ import {
   generateDropdown,
   generateDropdowns,
   generateMarkdown,
+  type ProfileIdentity,
 } from "./markdown";
 import {
   getRepoSummaryContent,
@@ -44,6 +45,11 @@ type RepoActivity = {
   commitMessages: string[];
 };
 
+function getOptionalEnv(name: string): string | undefined {
+  const value = process.env[name]?.trim();
+  return value ? value : undefined;
+}
+
 function logStageError(stage: string, target: string, error: unknown) {
   console.error(`[${stage}] ${target}: ${getErrorMessage(error)}`, error);
 }
@@ -80,6 +86,47 @@ async function getCommits(repo: string, start: string, end: string) {
     { shouldRetry: isRetryableExternalError }
   );
   return commits.data;
+}
+
+async function getProfileIdentity(): Promise<ProfileIdentity> {
+  if (!process.env.GH_USER) throw new Error("GH_USER not set");
+
+  const username = process.env.GH_USER.trim();
+  const configuredDisplayName = getOptionalEnv("GH_DISPLAY_NAME");
+  const configuredBio = getOptionalEnv("GH_BIO");
+
+  if (configuredDisplayName && configuredBio) {
+    return {
+      username,
+      displayName: configuredDisplayName,
+      bio: configuredBio,
+    };
+  }
+
+  try {
+    const profile = await withRetry(
+      `GitHub profile for ${username}`,
+      () =>
+        octokit.rest.users.getByUsername({
+          username,
+        }),
+      { shouldRetry: isRetryableExternalError }
+    );
+
+    return {
+      username,
+      displayName: configuredDisplayName ?? profile.data.name?.trim() ?? username,
+      bio: configuredBio ?? profile.data.bio?.trim() ?? "",
+    };
+  } catch (error) {
+    logStageError("profile-identity", username, error);
+
+    return {
+      username,
+      displayName: configuredDisplayName ?? username,
+      bio: configuredBio ?? "",
+    };
+  }
 }
 
 function entryIntoString(repo: RepoActivity) {
@@ -192,6 +239,7 @@ async function main(): Promise<void> {
   const currTime = new Date();
   const prevTime = new Date(currTime.getTime() - 90 * 24 * 60 * 60 * 1000); // 90 days ago
 
+  const profileIdentity = await getProfileIdentity();
   const repos = await getRepos();
   const entries: RepoActivity[] = [];
 
@@ -237,7 +285,10 @@ async function main(): Promise<void> {
     );
   }
 
-  fs.writeFileSync("README.md", generateMarkdown(generateDropdowns(replies)));
+  fs.writeFileSync(
+    "README.md",
+    generateMarkdown(profileIdentity, generateDropdowns(replies))
+  );
 }
 
 main().catch((error) => {
