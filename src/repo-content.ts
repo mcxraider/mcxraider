@@ -63,6 +63,30 @@ export function normalizeReadmeSummary(
     : normalized;
 }
 
+export function normalizeCommitSummary(
+  summary: string | null | undefined
+): string | null {
+  const trimmed = summary?.trim();
+
+  if (!trimmed) {
+    return null;
+  }
+
+  const normalized = trimmed.replace(/\s+/g, " ");
+  const withoutLeadIn = normalized
+    .replace(
+      /^(here(?:'s| is)\s+)?(?:a\s+)?summary(?:\s+(?:of|for|based on)\s+the\s+(?:provided\s+)?commits?)?(?::\s*|\s*-\s*)/i,
+      ""
+    )
+    .replace(
+      /^here(?:'s| is)\s+(?:a\s+)?summary(?:\s+(?:of|for|based on)\s+the\s+(?:provided\s+)?commits?)?(?::\s*|\s*-\s*)/i,
+      ""
+    )
+    .trim();
+
+  return withoutLeadIn || null;
+}
+
 export async function getRepoSummaryContent(
   fetchReadme: () => Promise<ReadmeResponse>,
   description?: string | null

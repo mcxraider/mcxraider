@@ -8,6 +8,7 @@ const {
   getRepoSummaryContent,
   hasFetchedReadme,
   NO_README_FOUND,
+  normalizeCommitSummary,
   normalizeReadmeSummary,
 } = require("../src/repo-content");
 
@@ -117,4 +118,22 @@ test("rejects assistant-style filler in README summaries", () => {
 
 test("preserves explicit missing README output", () => {
   assert.equal(NO_README_FOUND, "No README found.");
+});
+
+test("normalizes commit summaries by stripping summary lead-ins", () => {
+  assert.equal(
+    normalizeCommitSummary(
+      "Here's a summary of the provided commits: Refactored agent orchestration, improved logging, and added API response tracking."
+    ),
+    "Refactored agent orchestration, improved logging, and added API response tracking."
+  );
+});
+
+test("keeps commit summaries that are already direct", () => {
+  assert.equal(
+    normalizeCommitSummary(
+      "Refactored agent orchestration, improved logging, and added API response tracking."
+    ),
+    "Refactored agent orchestration, improved logging, and added API response tracking."
+  );
 });

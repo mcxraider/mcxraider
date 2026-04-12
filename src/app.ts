@@ -11,6 +11,7 @@ import {
   getRepoSummaryContent,
   hasFetchedReadme,
   NO_README_FOUND,
+  normalizeCommitSummary,
   normalizeReadmeSummary,
   README_SUMMARY_UNAVAILABLE,
   type RepoSummaryContent,
@@ -28,12 +29,17 @@ require("dotenv").config();
 // GPT prompts
 const commit_summary_prompt = `
 You will be provided with a list of git commits. 
-Using this, generate a summary paragraph of about 10 to 30 words long. 
+Using this, generate a plain-text summary of about 10 to 30 words long. 
 Concentrate solely on the Git commits provided. Do not include additional information such as the project description or speculative insights. 
 Do not include actions labeled 'add files via upload', as these do not offer specific insights. 
 Base your summaries on the information provided in the uploaded documents. 
 Refer to this information as your knowledge source. Avoid speculations or incorporating information not contained in the documents. Heavily favor knowledge provided in the documents before using baseline knowledge. Maintain a professional tone in your summaries. Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences. 
-Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.`;
+Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.
+
+Output contract:
+- Return only the summary text.
+- Do not use lead-ins or labels such as "Here's a summary", "Summary:", or "Based on the provided commits".
+- Do not use markdown, bullets, or quotation marks.`;
 
 const repo_summary_prompt = `
 You summarize GitHub repository READMEs.
@@ -195,8 +201,9 @@ async function buildRepoDropdown(repo: RepoActivity) {
       commit_summary_prompt,
       entryIntoString(repo)
     );
-    if (summary) {
-      commitsSummary = summary;
+    const normalizedSummary = normalizeCommitSummary(summary);
+    if (normalizedSummary) {
+      commitsSummary = normalizedSummary;
     }
   } catch (error) {
     logStageError("commit-summary", repo.name, error);
