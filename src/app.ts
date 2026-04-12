@@ -10,6 +10,12 @@ import {
   getRepoSummaryContent,
   type RepoSummaryContent,
 } from "./repo-content";
+import {
+  getPaginatedCommitMessages,
+  rankRepoActivities,
+  shortlistRepos,
+  type RepoActivity,
+} from "./repo-activity";
 import { getErrorMessage, isRetryableExternalError, withRetry } from "./retry";
 
 require("dotenv").config();
@@ -37,13 +43,6 @@ I want the output to only be one emoji and nothing else`;
 
 const octokit = new Octokit({ auth: process.env.GH_TOKEN });
 
-type RepoActivity = {
-  name: string;
-  description: string;
-  url: string;
-  commitMessages: string[];
-};
-
 function logStageError(stage: string, target: string, error: unknown) {
   console.error(`[${stage}] ${target}: ${getErrorMessage(error)}`, error);
 }
@@ -68,18 +67,25 @@ async function getRepos() {
 async function getCommits(repo: string, start: string, end: string) {
   if (!process.env.GH_USER) throw new Error("GH_USER not set");
   const username = process.env.GH_USER;
-  const commits = await withRetry(
-    `GitHub commits for ${repo}`,
-    () =>
-      octokit.rest.repos.listCommits({
-        owner: username,
-        repo: repo,
-        since: start,
-        until: end,
-      }),
-    { shouldRetry: isRetryableExternalError }
+
+  return getPaginatedCommitMessages((page, perPage) =>
+    withRetry(
+      `GitHub commits for ${repo} page ${page}`,
+      async () => {
+        const commits = await octokit.rest.repos.listCommits({
+          owner: username,
+          repo: repo,
+          since: start,
+          until: end,
+          page,
+          per_page: perPage,
+        });
+
+        return commits.data;
+      },
+      { shouldRetry: isRetryableExternalError }
+    )
   );
-  return commits.data;
 }
 
 function entryIntoString(repo: RepoActivity) {
@@ -195,21 +201,24 @@ async function main(): Promise<void> {
   const repos = await getRepos();
   const entries: RepoActivity[] = [];
 
-  for (const repo of repos) {
+  // Repositories are already returned sorted by `pushed`. We keep that as the
+  // recency signal, inspect only a bounded shortlist, then rank by full
+  // 90-day commit volume so busy repos are not penalized by pagination.
+  for (const repo of shortlistRepos(repos)) {
     try {
-      const commits = await getCommits(
+      const commitMessages = await getCommits(
         repo.name,
         prevTime.toISOString(),
         currTime.toISOString()
       );
 
-      if (commits.length > 0) {
-        const messages = commits.map((commit) => commit.commit.message);
+      if (commitMessages.length > 0) {
         entries.push({
           name: repo.name,
           description: repo.description ?? "",
           url: repo.html_url,
-          commitMessages: messages,
+          commitMessages,
+          lastPushedAt: repo.pushed_at ?? null,
         });
       }
     } catch (error) {
@@ -217,10 +226,7 @@ async function main(): Promise<void> {
     }
   }
 
-  const sortedEntries = entries
-    .filter((entry) => entry.commitMessages.length > 0)
-    .sort((a, b) => b.commitMessages.length - a.commitMessages.length)
-    .slice(0, 5);
+  const sortedEntries = rankRepoActivities(entries);
 
   const replies: { [name: string]: string } = {};
   for (const repo of sortedEntries) {
