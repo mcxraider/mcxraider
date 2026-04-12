@@ -1,12 +1,13 @@
 import { Octokit } from "octokit";
 import fs from "fs";
-import { callGPTForCommits, callGPTForEmoji, callGPTForReadme } from "./openai";
+import { callLLMForCommits, callLLMForEmoji, callLLMForReadme } from "./llm";
 import {
   generateDropdown,
   generateDropdowns,
   generateMarkdown,
 } from "./markdown";
 import { getRepoSummaryContent } from "./repo-content";
+import { getErrorMessage, isRetryableExternalError, withRetry } from "./retry";
 
 require("dotenv").config();
 
@@ -33,47 +34,138 @@ I want the output to only be one emoji and nothing else`;
 
 const octokit = new Octokit({ auth: process.env.GH_TOKEN });
 
+type RepoActivity = {
+  name: string;
+  description: string;
+  url: string;
+  commitMessages: string[];
+};
+
+function logStageError(stage: string, target: string, error: unknown) {
+  console.error(`[${stage}] ${target}: ${getErrorMessage(error)}`, error);
+}
+
 async function getRepos() {
   if (!process.env.GH_USER) throw new Error("GH_USER not set");
   const username = process.env.GH_USER;
-  const repos = await octokit.rest.repos.listForUser({
-    username: username,
-    sort: "pushed",
-    direction: "desc",
-    per_page: 100, // Fetch more repos if necessary
-  });
+  const repos = await withRetry(
+    `GitHub repo list for ${username}`,
+    () =>
+      octokit.rest.repos.listForUser({
+        username: username,
+        sort: "pushed",
+        direction: "desc",
+        per_page: 100,
+      }),
+    { shouldRetry: isRetryableExternalError }
+  );
   return repos.data;
 }
 
 async function getCommits(repo: string, start: string, end: string) {
   if (!process.env.GH_USER) throw new Error("GH_USER not set");
   const username = process.env.GH_USER;
-  const commits = await octokit.rest.repos.listCommits({
-    owner: username,
-    repo: repo,
-    since: start, // start of the time range
-    until: end, // end of the time range
-  });
+  const commits = await withRetry(
+    `GitHub commits for ${repo}`,
+    () =>
+      octokit.rest.repos.listCommits({
+        owner: username,
+        repo: repo,
+        since: start,
+        until: end,
+      }),
+    { shouldRetry: isRetryableExternalError }
+  );
   return commits.data;
 }
 
-function entryIntoString(key: string, value: string[]) {
-  return `Repository name: ${key.split(",|", 3)[0]}
-Repository description: ${key.split(",|", 3)[1]}
+function entryIntoString(repo: RepoActivity) {
+  return `Repository name: ${repo.name}
+Repository description: ${repo.description}
     
-Commits:\n${value.join("\n")}\n`;
+Commits:\n${repo.commitMessages.join("\n")}\n`;
 }
 
-async function main(
-  commit_summary_prompt: string,
-  repo_summary_prompt: string,
-  emoji_generation_prompt: string
-): Promise<void> {
+function fallbackCommitSummary(commitMessages: string[]) {
+  const commitCount = commitMessages.length;
+  const suffix = commitCount === 1 ? "" : "s";
+  return `Recent work recorded across ${commitCount} commit${suffix} in the last 90 days.`;
+}
+
+function fallbackReadmeSummary(description: string) {
+  return description.trim() || "Repository summary unavailable.";
+}
+
+async function buildRepoDropdown(repo: RepoActivity) {
+  let commitsSummary = fallbackCommitSummary(repo.commitMessages);
+  let emoji = "⭐";
+  let readmeSummary = fallbackReadmeSummary(repo.description);
+
+  try {
+    const summary = await callLLMForCommits(
+      commit_summary_prompt,
+      entryIntoString(repo)
+    );
+    if (summary) {
+      commitsSummary = summary;
+    }
+  } catch (error) {
+    logStageError("commit-summary", repo.name, error);
+  }
+
+  try {
+    const generatedEmoji = await callLLMForEmoji(
+      emoji_generation_prompt,
+      repo.name
+    );
+    if (generatedEmoji) {
+      emoji = generatedEmoji;
+    }
+  } catch (error) {
+    logStageError("emoji-generation", repo.name, error);
+  }
+
+  try {
+    const repoSummaryContent = await getRepoSummaryContent(
+      () =>
+        withRetry(
+          `GitHub README for ${repo.name}`,
+          () =>
+            octokit.rest.repos.getReadme({
+              owner: process.env.GH_USER as string,
+              repo: repo.name,
+            }),
+          { shouldRetry: isRetryableExternalError }
+        ),
+      repo.description
+    );
+    const generatedReadmeSummary = await callLLMForReadme(
+      repo_summary_prompt,
+      repoSummaryContent.content
+    );
+    if (generatedReadmeSummary) {
+      readmeSummary = generatedReadmeSummary;
+    }
+  } catch (error) {
+    logStageError("readme-summary", repo.name, error);
+  }
+
+  return (
+    generateDropdown(
+      `${emoji}${repo.name}`,
+      readmeSummary,
+      commitsSummary,
+      repo.url
+    ) ?? "No recent commits in this repository."
+  );
+}
+
+async function main(): Promise<void> {
   const currTime = new Date();
   const prevTime = new Date(currTime.getTime() - 90 * 24 * 60 * 60 * 1000); // 90 days ago
 
   const repos = await getRepos();
-  const entries: { [key: string]: string[] } = {};
+  const entries: RepoActivity[] = [];
 
   for (const repo of repos) {
     try {
@@ -85,53 +177,42 @@ async function main(
 
       if (commits.length > 0) {
         const messages = commits.map((commit) => commit.commit.message);
-        const repoString = `${repo.name},|${repo.description ?? ""},|${
-          repo.html_url
-        }`;
-        entries[repoString] = messages;
+        entries.push({
+          name: repo.name,
+          description: repo.description ?? "",
+          url: repo.html_url,
+          commitMessages: messages,
+        });
       }
     } catch (error) {
-      console.log(`Error processing repo: ${repo.name}`, error);
+      logStageError("repo-commits", repo.name, error);
     }
   }
 
-  const sortedEntries = Object.entries(entries)
-    .filter(([, value]) => value.length > 0)
-    .sort(([, a], [, b]) => b.length - a.length)
+  const sortedEntries = entries
+    .filter((entry) => entry.commitMessages.length > 0)
+    .sort((a, b) => b.commitMessages.length - a.commitMessages.length)
     .slice(0, 5);
 
   const replies: { [name: string]: string } = {};
-
-  for (const [key, value] of sortedEntries) {
-    const entryString = entryIntoString(key, value);
-    const reply =
-      (await callGPTForCommits(commit_summary_prompt, entryString)) ??
-      "No recent commits in this repository";
-    const emoji =
-      (await callGPTForEmoji(emoji_generation_prompt, key.split(",|", 3)[0])) ??
-      "";
-    const repoSummaryContent = await getRepoSummaryContent(
-      () =>
-        octokit.rest.repos.getReadme({
-          owner: process.env.GH_USER as string,
-          repo: key.split(",|", 3)[0],
-        }),
-      key.split(",|", 3)[1]
-    );
-    const readmeSummary =
-      (await callGPTForReadme(
-        repo_summary_prompt,
-        repoSummaryContent.content
-      )) ?? "No readme file in this repository.";
-    replies[key.split(",|")[0]] =
-      generateDropdown(
-        emoji + key.split(",|", 3)[0],
-        readmeSummary,
-        reply,
-        key.split(",|", 3)[2]
-      ) ?? "No recent commits in this repository.";
+  for (const repo of sortedEntries) {
+    try {
+      replies[repo.name] = await buildRepoDropdown(repo);
+    } catch (error) {
+      logStageError("repo-render", repo.name, error);
+    }
   }
+
+  if (Object.keys(replies).length === 0) {
+    console.warn(
+      "[workflow] No repository summaries were generated. Writing README with an empty activity section."
+    );
+  }
+
   fs.writeFileSync("README.md", generateMarkdown(generateDropdowns(replies)));
 }
 
-main(commit_summary_prompt, repo_summary_prompt, emoji_generation_prompt);
+main().catch((error) => {
+  logStageError("workflow", "main", error);
+  process.exitCode = 1;
+});

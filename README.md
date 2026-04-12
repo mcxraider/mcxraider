@@ -2,7 +2,7 @@
 
 # Hi! I'm Jerry!
 <p>
-  > Y3 Data Science and Analytics @NUS
+  > Data Science and Analytics @NUS
 </p>
 
 # GitHub Stats
@@ -12,46 +12,54 @@
 </p>
 <br>
 
-## 🔨 A summary of what I've been working on (AI):
+## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jst-gt">⌨️jst-gt</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">☸️agentic-travel-planner</a></strong></summary>
   <br/>
-  > This repository contains a collection of scripts and tools for tagging skills in the IDD team, enabling efficient management and organization of specialized knowledge within the team. <br/>
+  > I don't see the contents of the repository. Please provide the markdown readme file, and I'll be happy to assist you in generating a summary of 20-50 words. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Several updates merged into the main branch for the JST-GT repository, including deployment fixes, progress bar details, and enhancements to S3 operations and OpenAI client methods.
+  > Here is a summary paragraph of about 10 to 30 words long based on the provided Git commits:
+
+The project underwent extensive frontend development, including refactorings, bug fixes, and feature enhancements, such as implementing Google Calendar integration and itinerary version history.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🔧jarvis-mcp</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">🌐agentic-travel-planner-backend</a></strong></summary>
   <br/>
-  > This repository contains a voice-integrated, Jarvis-like assistant software utilizing Minecraft's Mod Coder Pack (MCP). <br/>
+  > I'm ready to assist you. Please provide the readme file of the github repository in markdown format, and I will generate a professional summary of 20-50 words. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The 'jarvis-mcp' repository saw significant updates: Todoist integration, voice commands with GPT processing, and Telegrambot enhancements were implemented.
+  > Several improvements were made to the agentic travel planner backend, including code base refactor, logging updates, and FastAPI best practices implementation, while removing dead code and updating documentation.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">🤔attention-mechanism-visually-explained</a></strong></summary>
   <br/>
-  > This repository contains cron-scheduled scripts that generate GPT-powered READMEs for Github profiles. <br/>
+  > I don't see any markdown text provided. Please provide the markdown text from the README file, and I'll be happy to generate a professional summary of the repository within 20-50 words. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "mcxraider" features automated updates to its README.md file using cron scheduling for GitHub profiles.
+  > Here is a summary of the commits in 10 to 30 words:
+
+The commits enhance the attention mechanism visually explained project by improving layout, charts, and user experience, adding deep dive pages, and fixing various issues and bugs.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/bert-finetuning">💻bert-finetuning</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a BERT fine-tuning template implementing both Grid and Randomised search for optimizing hyperparameters effectively. <br/>
+  > Here's a possible summary for the repository:
+
+This repository contains an implementation of a voice-integrated, jarvis-like assistant that utilizes natural language processing and machine learning algorithms to provide users with a personalized experience, enabling voice commands, text-to-speech functionality, and automation of various tasks through an intuitive and user-friendly interface. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The repository "bert-finetuning" underwent an initial commit, including the creation and subsequent deletion of the README.md file.
+  > Here is a summary paragraph of about 10 to 30 words long, based on the provided Git commits:
+
+Key refactor changes removed dead code, improved infrastructure, and cleaned up sloppy code, while resolving pre-existing lint errors and confirmed bugs, and enhanced documentation.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/seh_feedback">💡seh_feedback</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a detailed analysis of Shopee seller feedback on the CMS platform, providing valuable insights for improving seller performance and customer satisfaction. <br/>
+  > This repository contains a script that automatically generates custom README files for GitHub profiles using GPT-3 and a cron scheduling system, enabling developers to maintain up-to-date and standardized README content seamlessly, saving time and effort. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Removed the `docs` and `data` directories from the repository for the 'seh_feedback' project.
+  > Changes were made to the repository, including adding an audit report, updating the README, and disabling workflow triggers.
   </details>
   
 <br>
