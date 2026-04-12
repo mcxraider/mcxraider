@@ -6,7 +6,7 @@ Coolprofiles creates a *cool* README for your GitHub profile, so you can easily 
 ### How Does it Work?
 1. GitHub Repository Transformation: CoolProfiles dives into your GitHub repository and forks it to create a unique and whimsical summary of your most recent commits from the past three months.
 
-2. README.md Magic: But we don't stop there! We magically transform your repository's README.md file into an engaging summary that captures the essence of your project. Most importantly, this personal README will be automatically updated every month. 
+2. README.md Magic: But we don't stop there! We transform your repository activity into an engaging summary that captures the essence of your recent work. Most importantly, this personal README will be automatically updated every month. 
 
 3. Emoji Auto-Generation: The cherry on top is our emoji feature! Our system smartly auto-generates an emoji that perfectly matches the title of your GitHub repo. Imagine a repository named "SolarSystem" getting paired with a planet emoji, or "MusicBox" finding its rhythm with a musical note emoji. It's the perfect blend of functionality and frivolity.
 
@@ -28,19 +28,25 @@ This project isn't just about enhancing profiles; it's about bringing a smile, a
 
 * Name your *New Secret* "ENV_FILE"
 
-* Fill in the *Secrets* section with the following template and replace the respective fields with your [GitHub personal access token](https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), [OpenAI key](https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt), and GitHub username. 
+* Fill in the *Secrets* section with the following template and replace the respective fields with your [GitHub personal access token](https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), [Groq API key](https://console.groq.com/keys), and GitHub username.
 ```
 GH_TOKEN=(Change this to your GitHub personal access token)
-OPENAI_API_KEY=(Change this to your OpenAI key)
+GROQ_API_KEY=(Change this to your Groq API key)
 GH_USER=(Change this to your GitHub username)
+LLM_PROVIDER=groq
+LLM_MODEL=llama-3.1-8b-instant
 ```
 Example:
 ```
 GH_TOKEN=WJd3rnf8snvSDdNs93rnv5ny9cdJHKndgNjgdk
-OPENAI_API_KEY=sk-S7nVFDJIYdnhNFjmndDShmsjfuBF933nDUFhjkda
+GROQ_API_KEY=gsk_example_key
 GH_USER=username
+LLM_PROVIDER=groq
+LLM_MODEL=llama-3.1-8b-instant
 ```
 <img width="560" alt="image" src="https://github.com/lshaoqin/coolprofiles/assets/103313573/bc4543c1-88fa-4400-ac85-18b50b4b2cb9">
+
+* `LLM_PROVIDER` defaults to `groq` and `LLM_MODEL` defaults to `llama-3.1-8b-instant`, so you can omit them unless you want to override the defaults.
 
 4. Go to *Actions* -> Click *I understand my workflows, go ahead and enable them*
 <img width="560" alt="image" src="https://github.com/lshaoqin/coolprofiles/assets/103313573/6eba231f-ef94-4efb-a96f-38d1d376c938">

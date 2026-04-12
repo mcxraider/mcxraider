@@ -1,6 +1,6 @@
 import { Octokit } from "octokit";
 import fs from "fs";
-import { callGPTForCommits, callGPTForEmoji, callGPTForReadme } from "./openai";
+import { callLLMForCommits, callLLMForEmoji, callLLMForReadme } from "./llm";
 import {
   generateDropdown,
   generateDropdowns,
@@ -103,13 +103,13 @@ async function main(
   for (const [key, value] of sortedEntries) {
     const entryString = entryIntoString(key, value);
     const reply =
-      (await callGPTForCommits(commit_summary_prompt, entryString)) ??
+      (await callLLMForCommits(commit_summary_prompt, entryString)) ??
       "No recent commits in this repository";
     const emoji =
-      (await callGPTForEmoji(emoji_generation_prompt, key.split(",|", 3)[0])) ??
+      (await callLLMForEmoji(emoji_generation_prompt, key.split(",|", 3)[0])) ??
       "";
     const readmeSummary =
-      (await callGPTForReadme(repo_summary_prompt, key.split(",|", 3)[1])) ??
+      (await callLLMForReadme(repo_summary_prompt, key.split(",|", 3)[1])) ??
       "No readme file in this repository.";
     replies[key.split(",|")[0]] =
       generateDropdown(
@@ -122,4 +122,10 @@ async function main(
   fs.writeFileSync("README.md", generateMarkdown(generateDropdowns(replies)));
 }
 
-main(commit_summary_prompt, repo_summary_prompt, emoji_generation_prompt);
+main(commit_summary_prompt, repo_summary_prompt, emoji_generation_prompt).catch(
+  (error) => {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`README generation failed: ${message}`);
+    process.exitCode = 1;
+  }
+);
