@@ -9,8 +9,18 @@ import {
 } from "./markdown";
 import {
   getRepoSummaryContent,
+  hasFetchedReadme,
+  NO_README_FOUND,
+  normalizeReadmeSummary,
+  README_SUMMARY_UNAVAILABLE,
   type RepoSummaryContent,
 } from "./repo-content";
+import {
+  getPaginatedCommitMessages,
+  rankRepoActivities,
+  shortlistRepos,
+  type RepoActivity,
+} from "./repo-activity";
 import { getErrorMessage, isRetryableExternalError, withRetry } from "./retry";
 
 require("dotenv").config();
@@ -26,10 +36,21 @@ Refer to this information as your knowledge source. Avoid speculations or incorp
 Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.`;
 
 const repo_summary_prompt = `
-You will be provided with either the README file of a GitHub repository formatted in markdown or, when no README is available, the repository description. You are tasked with generating a summary of what the repository is about.
-A professional tone should be used for the summary, and it should be between 20 to 50 words.
-Use the provided content as the grounding source, favor README details when present, and do not invent missing information.
-Remember to start of the summary with "This repository contains..`;
+You summarize GitHub repository READMEs.
+
+Output contract:
+- Return exactly one line of plain text.
+- If the provided content does not contain substantive README markdown, return exactly: No README found.
+- Otherwise return exactly one sentence between 20 and 50 words.
+- That sentence must start with: This repository contains
+
+Rules:
+- Use only facts grounded in the provided README markdown.
+- Do not ask the user for files, links, or more context.
+- Do not mention missing context, the prompt, or the repository description.
+- Do not invent features, technologies, or purpose that are not stated in the README.
+- Do not use markdown, bullets, labels, or quotation marks.
+`;
 
 const emoji_generation_prompt = `
 Based on the context of a sentence/ phrase, generate for an emoji that best conveys and represents the main topic of that sentence/ phrase. The emoji produced should only be from those found in the iphone operating systems keyboard. 
@@ -38,18 +59,10 @@ I want the output to only be one emoji and nothing else`;
 
 const octokit = new Octokit({ auth: process.env.GH_TOKEN });
 
-type RepoActivity = {
-  name: string;
-  description: string;
-  url: string;
-  commitMessages: string[];
-};
-
 function getOptionalEnv(name: string): string | undefined {
   const value = process.env[name]?.trim();
   return value ? value : undefined;
 }
-
 function logStageError(stage: string, target: string, error: unknown) {
   console.error(`[${stage}] ${target}: ${getErrorMessage(error)}`, error);
 }
@@ -74,18 +87,25 @@ async function getRepos() {
 async function getCommits(repo: string, start: string, end: string) {
   if (!process.env.GH_USER) throw new Error("GH_USER not set");
   const username = process.env.GH_USER;
-  const commits = await withRetry(
-    `GitHub commits for ${repo}`,
-    () =>
-      octokit.rest.repos.listCommits({
-        owner: username,
-        repo: repo,
-        since: start,
-        until: end,
-      }),
-    { shouldRetry: isRetryableExternalError }
+
+  return getPaginatedCommitMessages((page, perPage) =>
+    withRetry(
+      `GitHub commits for ${repo} page ${page}`,
+      async () => {
+        const commits = await octokit.rest.repos.listCommits({
+          owner: username,
+          repo: repo,
+          since: start,
+          until: end,
+          page,
+          per_page: perPage,
+        });
+
+        return commits.data;
+      },
+      { shouldRetry: isRetryableExternalError }
+    )
   );
-  return commits.data;
 }
 
 async function getProfileIdentity(): Promise<ProfileIdentity> {
@@ -142,10 +162,6 @@ function fallbackCommitSummary(commitMessages: string[]) {
   return `Recent work recorded across ${commitCount} commit${suffix} in the last 90 days.`;
 }
 
-function fallbackReadmeSummary(description: string) {
-  return description.trim() || "Repository summary unavailable.";
-}
-
 function getLocalRepoSummaryContent(repo: RepoActivity): RepoSummaryContent | null {
   const profileRepoName = process.env.GH_USER?.trim();
 
@@ -172,7 +188,7 @@ function getLocalRepoSummaryContent(repo: RepoActivity): RepoSummaryContent | nu
 async function buildRepoDropdown(repo: RepoActivity) {
   let commitsSummary = fallbackCommitSummary(repo.commitMessages);
   let emoji = "⭐";
-  let readmeSummary = fallbackReadmeSummary(repo.description);
+  let readmeSummary = NO_README_FOUND;
 
   try {
     const summary = await callLLMForCommits(
@@ -214,12 +230,20 @@ async function buildRepoDropdown(repo: RepoActivity) {
           ),
         repo.description
       ));
-    const generatedReadmeSummary = await callLLMForReadme(
-      repo_summary_prompt,
-      repoSummaryContent.content
-    );
-    if (generatedReadmeSummary) {
-      readmeSummary = generatedReadmeSummary;
+
+    if (hasFetchedReadme(repoSummaryContent)) {
+      readmeSummary = README_SUMMARY_UNAVAILABLE;
+
+      const generatedReadmeSummary = await callLLMForReadme(
+        repo_summary_prompt,
+        repoSummaryContent.content
+      );
+      const normalizedReadmeSummary =
+        normalizeReadmeSummary(generatedReadmeSummary);
+
+      if (normalizedReadmeSummary) {
+        readmeSummary = normalizedReadmeSummary;
+      }
     }
   } catch (error) {
     logStageError("readme-summary", repo.name, error);
@@ -243,21 +267,24 @@ async function main(): Promise<void> {
   const repos = await getRepos();
   const entries: RepoActivity[] = [];
 
-  for (const repo of repos) {
+  // Repositories are already returned sorted by `pushed`. We keep that as the
+  // recency signal, inspect only a bounded shortlist, then rank by full
+  // 90-day commit volume so busy repos are not penalized by pagination.
+  for (const repo of shortlistRepos(repos)) {
     try {
-      const commits = await getCommits(
+      const commitMessages = await getCommits(
         repo.name,
         prevTime.toISOString(),
         currTime.toISOString()
       );
 
-      if (commits.length > 0) {
-        const messages = commits.map((commit) => commit.commit.message);
+      if (commitMessages.length > 0) {
         entries.push({
           name: repo.name,
           description: repo.description ?? "",
           url: repo.html_url,
-          commitMessages: messages,
+          commitMessages,
+          lastPushedAt: repo.pushed_at ?? null,
         });
       }
     } catch (error) {
@@ -265,10 +292,7 @@ async function main(): Promise<void> {
     }
   }
 
-  const sortedEntries = entries
-    .filter((entry) => entry.commitMessages.length > 0)
-    .sort((a, b) => b.commitMessages.length - a.commitMessages.length)
-    .slice(0, 5);
+  const sortedEntries = rankRepoActivities(entries);
 
   const replies: { [name: string]: string } = {};
   for (const repo of sortedEntries) {
