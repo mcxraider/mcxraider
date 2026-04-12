@@ -1,8 +1,11 @@
 {
+  "scripts": {
+    "generate": "ts-node src/app.ts"
+  },
   "dependencies": {
     "dotenv": "^16.3.2",
+    "groq-sdk": "^0.30.0",
     "octokit": "^3.1.2",
-    "openai": "^4.24.7",
     "ts-node": "^10.9.2"
   }
 }

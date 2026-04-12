@@ -1,6 +1,6 @@
 import { Octokit } from "octokit";
 import fs from "fs";
-import { callGPTForCommits, callGPTForEmoji, callGPTForReadme } from "./openai";
+import { callLLMForCommits, callLLMForEmoji, callLLMForReadme } from "./llm";
 import {
   generateDropdown,
   generateDropdowns,
@@ -100,7 +100,7 @@ async function buildRepoDropdown(repo: RepoActivity) {
   let readmeSummary = fallbackReadmeSummary(repo.description);
 
   try {
-    const summary = await callGPTForCommits(
+    const summary = await callLLMForCommits(
       commit_summary_prompt,
       entryIntoString(repo)
     );
@@ -112,7 +112,10 @@ async function buildRepoDropdown(repo: RepoActivity) {
   }
 
   try {
-    const generatedEmoji = await callGPTForEmoji(emoji_generation_prompt, repo.name);
+    const generatedEmoji = await callLLMForEmoji(
+      emoji_generation_prompt,
+      repo.name
+    );
     if (generatedEmoji) {
       emoji = generatedEmoji;
     }
@@ -121,7 +124,7 @@ async function buildRepoDropdown(repo: RepoActivity) {
   }
 
   try {
-    const generatedReadmeSummary = await callGPTForReadme(
+    const generatedReadmeSummary = await callLLMForReadme(
       repo_summary_prompt,
       repo.description
     );
