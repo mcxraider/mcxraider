@@ -6,6 +6,7 @@ import {
   generateDropdowns,
   generateMarkdown,
 } from "./markdown";
+import { getRepoSummaryContent } from "./repo-content";
 import { getErrorMessage, isRetryableExternalError, withRetry } from "./retry";
 
 require("dotenv").config();
@@ -21,8 +22,9 @@ Refer to this information as your knowledge source. Avoid speculations or incorp
 Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.`;
 
 const repo_summary_prompt = `
-You will be provided with a readme file of a github repository formatted in markdown, You are tasked with generating a summary of what the repository is about. 
+You will be provided with either the README file of a GitHub repository formatted in markdown or, when no README is available, the repository description. You are tasked with generating a summary of what the repository is about.
 A professional tone should be used for the summary, and it should be between 20 to 50 words.
+Use the provided content as the grounding source, favor README details when present, and do not invent missing information.
 Remember to start of the summary with "This repository contains..`;
 
 const emoji_generation_prompt = `
@@ -124,9 +126,22 @@ async function buildRepoDropdown(repo: RepoActivity) {
   }
 
   try {
+    const repoSummaryContent = await getRepoSummaryContent(
+      () =>
+        withRetry(
+          `GitHub README for ${repo.name}`,
+          () =>
+            octokit.rest.repos.getReadme({
+              owner: process.env.GH_USER as string,
+              repo: repo.name,
+            }),
+          { shouldRetry: isRetryableExternalError }
+        ),
+      repo.description
+    );
     const generatedReadmeSummary = await callLLMForReadme(
       repo_summary_prompt,
-      repo.description
+      repoSummaryContent.content
     );
     if (generatedReadmeSummary) {
       readmeSummary = generatedReadmeSummary;
@@ -180,7 +195,6 @@ async function main(): Promise<void> {
     .slice(0, 5);
 
   const replies: { [name: string]: string } = {};
-
   for (const repo of sortedEntries) {
     try {
       replies[repo.name] = await buildRepoDropdown(repo);
