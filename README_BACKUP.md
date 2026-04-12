@@ -6,7 +6,7 @@ Coolprofiles creates a *cool* README for your GitHub profile, so you can easily 
 ### How Does it Work?
 1. GitHub Repository Transformation: CoolProfiles dives into your GitHub repository and forks it to create a unique and whimsical summary of your most recent commits from the past three months.
 
-2. README.md Magic: But we don't stop there! We magically transform your repository's README.md file into an engaging summary that captures the essence of your project. Most importantly, this personal README will be automatically updated every month. 
+2. README.md Magic: But we don't stop there! We transform each repository's README.md file into an engaging summary that captures the essence of your project. If a repository README is missing or inaccessible, we fall back to the repository description instead. Most importantly, this personal README will be automatically updated every month. 
 
 3. Emoji Auto-Generation: The cherry on top is our emoji feature! Our system smartly auto-generates an emoji that perfectly matches the title of your GitHub repo. Imagine a repository named "SolarSystem" getting paired with a planet emoji, or "MusicBox" finding its rhythm with a musical note emoji. It's the perfect blend of functionality and frivolity.
 

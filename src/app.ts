@@ -6,6 +6,7 @@ import {
   generateDropdowns,
   generateMarkdown,
 } from "./markdown";
+import { getRepoSummaryContent } from "./repo-content";
 
 require("dotenv").config();
 
@@ -20,8 +21,9 @@ Refer to this information as your knowledge source. Avoid speculations or incorp
 Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.`;
 
 const repo_summary_prompt = `
-You will be provided with a readme file of a github repository formatted in markdown, You are tasked with generating a summary of what the repository is about. 
+You will be provided with either the README file of a GitHub repository formatted in markdown or, when no README is available, the repository description. You are tasked with generating a summary of what the repository is about.
 A professional tone should be used for the summary, and it should be between 20 to 50 words.
+Use the provided content as the grounding source, favor README details when present, and do not invent missing information.
 Remember to start of the summary with "This repository contains..`;
 
 const emoji_generation_prompt = `
@@ -108,9 +110,19 @@ async function main(
     const emoji =
       (await callGPTForEmoji(emoji_generation_prompt, key.split(",|", 3)[0])) ??
       "";
+    const repoSummaryContent = await getRepoSummaryContent(
+      () =>
+        octokit.rest.repos.getReadme({
+          owner: process.env.GH_USER as string,
+          repo: key.split(",|", 3)[0],
+        }),
+      key.split(",|", 3)[1]
+    );
     const readmeSummary =
-      (await callGPTForReadme(repo_summary_prompt, key.split(",|", 3)[1])) ??
-      "No readme file in this repository.";
+      (await callGPTForReadme(
+        repo_summary_prompt,
+        repoSummaryContent.content
+      )) ?? "No readme file in this repository.";
     replies[key.split(",|")[0]] =
       generateDropdown(
         emoji + key.split(",|", 3)[0],
