@@ -1,4 +1,5 @@
 import Groq from "groq-sdk";
+import { isRetryableExternalError, withRetry } from "./retry";
 
 require("dotenv").config();
 
@@ -21,13 +22,18 @@ class GroqLLMClient implements LLMClient {
   }
 
   async complete(prompt: string, content: string): Promise<string | null> {
-    const completion = await this.client.chat.completions.create({
-      messages: [
-        { role: "system", content: prompt },
-        { role: "user", content: content },
-      ],
-      model: this.model,
-    });
+    const completion = await withRetry(
+      "Groq chat completion",
+      () =>
+        this.client.chat.completions.create({
+          messages: [
+            { role: "system", content: prompt },
+            { role: "user", content: content },
+          ],
+          model: this.model,
+        }),
+      { shouldRetry: isRetryableExternalError }
+    );
 
     return extractMessageText(completion.choices[0]?.message?.content);
   }
