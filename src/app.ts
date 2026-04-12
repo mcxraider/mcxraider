@@ -6,7 +6,10 @@ import {
   generateDropdowns,
   generateMarkdown,
 } from "./markdown";
-import { getRepoSummaryContent } from "./repo-content";
+import {
+  getRepoSummaryContent,
+  type RepoSummaryContent,
+} from "./repo-content";
 import { getErrorMessage, isRetryableExternalError, withRetry } from "./retry";
 
 require("dotenv").config();
@@ -96,6 +99,29 @@ function fallbackReadmeSummary(description: string) {
   return description.trim() || "Repository summary unavailable.";
 }
 
+function getLocalRepoSummaryContent(repo: RepoActivity): RepoSummaryContent | null {
+  const profileRepoName = process.env.GH_USER?.trim();
+
+  if (!profileRepoName || repo.name !== profileRepoName) {
+    return null;
+  }
+
+  const backupReadmePath = "README_BACKUP.md";
+  if (!fs.existsSync(backupReadmePath)) {
+    return null;
+  }
+
+  const backupReadme = fs.readFileSync(backupReadmePath, "utf8").trim();
+  if (!backupReadme) {
+    return null;
+  }
+
+  return {
+    content: backupReadme,
+    source: "readme",
+  };
+}
+
 async function buildRepoDropdown(repo: RepoActivity) {
   let commitsSummary = fallbackCommitSummary(repo.commitMessages);
   let emoji = "⭐";
@@ -126,19 +152,21 @@ async function buildRepoDropdown(repo: RepoActivity) {
   }
 
   try {
-    const repoSummaryContent = await getRepoSummaryContent(
-      () =>
-        withRetry(
-          `GitHub README for ${repo.name}`,
-          () =>
-            octokit.rest.repos.getReadme({
-              owner: process.env.GH_USER as string,
-              repo: repo.name,
-            }),
-          { shouldRetry: isRetryableExternalError }
-        ),
-      repo.description
-    );
+    const repoSummaryContent =
+      getLocalRepoSummaryContent(repo) ??
+      (await getRepoSummaryContent(
+        () =>
+          withRetry(
+            `GitHub README for ${repo.name}`,
+            () =>
+              octokit.rest.repos.getReadme({
+                owner: process.env.GH_USER as string,
+                repo: repo.name,
+              }),
+            { shouldRetry: isRetryableExternalError }
+          ),
+        repo.description
+      ));
     const generatedReadmeSummary = await callLLMForReadme(
       repo_summary_prompt,
       repoSummaryContent.content

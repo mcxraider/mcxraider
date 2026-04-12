@@ -2,9 +2,9 @@ name: Profile README
 
 on:
   # push:
-  # workflow_dispatch:
-  # schedule:
-  #   - cron: "50 3 * * 1"
+  workflow_dispatch:
+  schedule:
+    - cron: "50 3 * * 1"
 
 jobs:
   build:
@@ -29,9 +29,9 @@ jobs:
           npm run generate
       - name: Commit and Push if Changed
         run: |-
-          git add .
-          git diff
+          git add README.md
+          git diff --cached -- README.md
           git config --global user.email "your.email@here.com"
           git config --global user.name "coolprofiles-bot"
-          git commit -m "docs: auto-update README.md" -a || exit 0
+          git commit -m "docs: auto-update README.md" || exit 0
           git push
