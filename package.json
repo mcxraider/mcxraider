@@ -1,7 +1,7 @@
 {
   "scripts": {
     "generate": "ts-node src/app.ts",
-    "test": "node -r ts-node/register --test test/repo-content.test.cjs"
+    "test": "node -r ts-node/register --test test/*.test.cjs"
   },
   "dependencies": {
     "dotenv": "^16.3.2",
