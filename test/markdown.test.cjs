@@ -5,7 +5,7 @@ const assert = require("node:assert/strict");
 
 const { generateMarkdown } = require("../src/markdown");
 
-test("renders configured display name, bio, and GitHub stats username", () => {
+test("renders configured display name and bio without GitHub stats", () => {
   const markdown = generateMarkdown(
     {
       username: "octocat",
@@ -17,9 +17,8 @@ test("renders configured display name, bio, and GitHub stats username", () => {
 
   assert.match(markdown, /# Hi! I'm The Octocat!/);
   assert.match(markdown, /> Ship code and keep the README generic\./);
-  assert.match(markdown, /api\?username=octocat&count_private=true/);
-  assert.match(markdown, /top-langs\/\?username=octocat/);
-  assert.match(markdown, /exclude_repo=octocat\.github\.io/);
+  assert.doesNotMatch(markdown, /github-readme-stats\.vercel\.app/);
+  assert.doesNotMatch(markdown, /# GitHub Stats/);
 });
 
 test("omits the bio section when no bio is provided", () => {

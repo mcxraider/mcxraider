@@ -5,14 +5,6 @@
   > i like making useful stuff
 </p>
 
-
-# GitHub Stats
-<p>
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=mcxraider&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcxraider&theme=github_dark&bg_color=00000099&exclude_repo=mcxraider.github.io&langs_count=8&size_weight=0.3&count_weight=0.7&hide=css,html&layout=compact" />
-</p>
-<br>
-
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
@@ -56,4 +48,3 @@
   </details>
   
 <br>
-

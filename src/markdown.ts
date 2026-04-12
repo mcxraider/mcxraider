@@ -45,9 +45,9 @@ export type ProfileIdentity = {
 };
 
 /**
- * Generates a complete markdown string, including GitHub stats, a summary of contributions, and a tech stack section.
+ * Generates a complete markdown string with a profile header and contribution summary.
  *
- * @param {ProfileIdentity} profile - Identity data used to render the profile header and stats.
+ * @param {ProfileIdentity} profile - Identity data used to render the profile header.
  * @param {string} contributions - The AI-generated summary of the user's contributions.
  * @returns {string} - A string containing the markdown content for a GitHub profile README.
  */
@@ -66,13 +66,6 @@ export function generateMarkdown(
 
 # Hi! I'm ${profile.displayName}!
 ${bioSection}
-
-# GitHub Stats
-<p>
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=${profile.username}&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=${profile.username}&theme=github_dark&bg_color=00000099&exclude_repo=${profile.username}.github.io&langs_count=8&size_weight=0.3&count_weight=0.7&hide=css,html&layout=compact" />
-</p>
-<br>
 
 ## 🔨 AI-generated summary of what I've been working on:
 ${contributions}
