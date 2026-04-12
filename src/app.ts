@@ -8,6 +8,10 @@ import {
 } from "./markdown";
 import {
   getRepoSummaryContent,
+  hasFetchedReadme,
+  NO_README_FOUND,
+  normalizeReadmeSummary,
+  README_SUMMARY_UNAVAILABLE,
   type RepoSummaryContent,
 } from "./repo-content";
 import { getErrorMessage, isRetryableExternalError, withRetry } from "./retry";
@@ -25,10 +29,21 @@ Refer to this information as your knowledge source. Avoid speculations or incorp
 Do not share the names of the files directly with end users. Under no circumstances provide a download link to any of the files.`;
 
 const repo_summary_prompt = `
-You will be provided with either the README file of a GitHub repository formatted in markdown or, when no README is available, the repository description. You are tasked with generating a summary of what the repository is about.
-A professional tone should be used for the summary, and it should be between 20 to 50 words.
-Use the provided content as the grounding source, favor README details when present, and do not invent missing information.
-Remember to start of the summary with "This repository contains..`;
+You summarize GitHub repository READMEs.
+
+Output contract:
+- Return exactly one line of plain text.
+- If the provided content does not contain substantive README markdown, return exactly: No README found.
+- Otherwise return exactly one sentence between 20 and 50 words.
+- That sentence must start with: This repository contains
+
+Rules:
+- Use only facts grounded in the provided README markdown.
+- Do not ask the user for files, links, or more context.
+- Do not mention missing context, the prompt, or the repository description.
+- Do not invent features, technologies, or purpose that are not stated in the README.
+- Do not use markdown, bullets, labels, or quotation marks.
+`;
 
 const emoji_generation_prompt = `
 Based on the context of a sentence/ phrase, generate for an emoji that best conveys and represents the main topic of that sentence/ phrase. The emoji produced should only be from those found in the iphone operating systems keyboard. 
@@ -95,10 +110,6 @@ function fallbackCommitSummary(commitMessages: string[]) {
   return `Recent work recorded across ${commitCount} commit${suffix} in the last 90 days.`;
 }
 
-function fallbackReadmeSummary(description: string) {
-  return description.trim() || "Repository summary unavailable.";
-}
-
 function getLocalRepoSummaryContent(repo: RepoActivity): RepoSummaryContent | null {
   const profileRepoName = process.env.GH_USER?.trim();
 
@@ -125,7 +136,7 @@ function getLocalRepoSummaryContent(repo: RepoActivity): RepoSummaryContent | nu
 async function buildRepoDropdown(repo: RepoActivity) {
   let commitsSummary = fallbackCommitSummary(repo.commitMessages);
   let emoji = "⭐";
-  let readmeSummary = fallbackReadmeSummary(repo.description);
+  let readmeSummary = NO_README_FOUND;
 
   try {
     const summary = await callLLMForCommits(
@@ -167,12 +178,20 @@ async function buildRepoDropdown(repo: RepoActivity) {
           ),
         repo.description
       ));
-    const generatedReadmeSummary = await callLLMForReadme(
-      repo_summary_prompt,
-      repoSummaryContent.content
-    );
-    if (generatedReadmeSummary) {
-      readmeSummary = generatedReadmeSummary;
+
+    if (hasFetchedReadme(repoSummaryContent)) {
+      readmeSummary = README_SUMMARY_UNAVAILABLE;
+
+      const generatedReadmeSummary = await callLLMForReadme(
+        repo_summary_prompt,
+        repoSummaryContent.content
+      );
+      const normalizedReadmeSummary =
+        normalizeReadmeSummary(generatedReadmeSummary);
+
+      if (normalizedReadmeSummary) {
+        readmeSummary = normalizedReadmeSummary;
+      }
     }
   } catch (error) {
     logStageError("readme-summary", repo.name, error);

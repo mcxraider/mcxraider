@@ -6,6 +6,9 @@ const assert = require("node:assert/strict");
 const {
   decodeReadmeContent,
   getRepoSummaryContent,
+  hasFetchedReadme,
+  NO_README_FOUND,
+  normalizeReadmeSummary,
 } = require("../src/repo-content");
 
 test("uses README content when base64 decoding succeeds", async () => {
@@ -74,4 +77,44 @@ test("returns empty string when both README and description are unavailable", as
 
 test("ignores unsupported encodings", () => {
   assert.equal(decodeReadmeContent("plain-text", "utf8"), null);
+});
+
+test("detects when actual README content was fetched", () => {
+  assert.equal(
+    hasFetchedReadme({
+      content: "# Demo\nA real README",
+      source: "readme",
+    }),
+    true
+  );
+
+  assert.equal(
+    hasFetchedReadme({
+      content: "fallback description",
+      source: "description",
+    }),
+    false
+  );
+});
+
+test("normalizes valid README summaries", () => {
+  assert.equal(
+    normalizeReadmeSummary(
+      "  This repository contains a TypeScript CLI that summarizes GitHub activity for profile README generation.  "
+    ),
+    "This repository contains a TypeScript CLI that summarizes GitHub activity for profile README generation."
+  );
+});
+
+test("rejects assistant-style filler in README summaries", () => {
+  assert.equal(
+    normalizeReadmeSummary(
+      "Please provide the markdown readme file so I can summarize the repository."
+    ),
+    null
+  );
+});
+
+test("preserves explicit missing README output", () => {
+  assert.equal(NO_README_FOUND, "No README found.");
 });

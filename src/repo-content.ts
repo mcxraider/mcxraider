@@ -12,6 +12,9 @@ export type RepoSummaryContent = {
   source: RepoSummarySource;
 };
 
+export const NO_README_FOUND = "No README found.";
+export const README_SUMMARY_UNAVAILABLE = "README summary unavailable.";
+
 type RepoContentError = {
   status?: number;
 };
@@ -25,6 +28,39 @@ export function decodeReadmeContent(
   }
 
   return Buffer.from(content, "base64").toString("utf8");
+}
+
+export function hasFetchedReadme(
+  repoSummaryContent: RepoSummaryContent | null | undefined
+): boolean {
+  return (
+    repoSummaryContent?.source === "readme" &&
+    repoSummaryContent.content.trim().length > 0
+  );
+}
+
+export function normalizeReadmeSummary(
+  summary: string | null | undefined
+): string | null {
+  const trimmed = summary?.trim();
+
+  if (!trimmed) {
+    return null;
+  }
+
+  const normalized = trimmed.replace(/\s+/g, " ");
+  const invalidPatterns = [
+    /please provide/i,
+    /i do not see/i,
+    /i don't see/i,
+    /missing context/i,
+    /repository description/i,
+    /^no readme found\.?$/i,
+  ];
+
+  return invalidPatterns.some((pattern) => pattern.test(normalized))
+    ? null
+    : normalized;
 }
 
 export async function getRepoSummaryContent(
