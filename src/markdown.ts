@@ -38,24 +38,39 @@ export function generateDropdowns(entries: { [name: string]: string }): string {
   return dropdowns;
 }
 
+export type ProfileIdentity = {
+  username: string;
+  displayName: string;
+  bio: string;
+};
+
 /**
  * Generates a complete markdown string, including GitHub stats, a summary of contributions, and a tech stack section.
  *
+ * @param {ProfileIdentity} profile - Identity data used to render the profile header and stats.
  * @param {string} contributions - The AI-generated summary of the user's contributions.
  * @returns {string} - A string containing the markdown content for a GitHub profile README.
  */
-export function generateMarkdown(contributions: string): string {
+export function generateMarkdown(
+  profile: ProfileIdentity,
+  contributions: string
+): string {
+  const bioSection = profile.bio
+    ? `<p>
+  > ${profile.bio}
+</p>
+`
+    : "";
+
   return `
 
-# Hi! I'm Jerry!
-<p>
-  > Data Science and Analytics @NUS
-</p>
+# Hi! I'm ${profile.displayName}!
+${bioSection}
 
 # GitHub Stats
 <p>
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=mcxraider&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcxraider&theme=github_dark&bg_color=00000099&exclude_repo=mcxraider.github.io&langs_count=8&size_weight=0.3&count_weight=0.7&hide=css,html&layout=compact" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=${profile.username}&count_private=true&show_icons=true&theme=github_dark&bg_color=00000099&rank_icon=percentile" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=${profile.username}&theme=github_dark&bg_color=00000099&exclude_repo=${profile.username}.github.io&langs_count=8&size_weight=0.3&count_weight=0.7&hide=css,html&layout=compact" />
 </p>
 <br>
 
