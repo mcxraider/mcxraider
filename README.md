@@ -5,46 +5,48 @@
   > i like making useful stuff
 </p>
 
+
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">⭐agentic-travel-planner</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">✈agentic-travel-planner</a></strong></summary>
   <br/>
-  > This repository contains an application that creates daily itineraries with AI-driven user preference understanding and conflict-free editing. <br/>
+  > This repository contains an interactive trip planning app with conversational AI features for creating and editing itineraries, aiming to simplify and automate trip planning processes previously managed with Google Docs and Sheets. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Refactor frontend state and routing, improve UI and flow, add endpoints and features including itinerary version history, drag and drop functionality, and Google calendar integration.
+  > The agentic-travel-planner project involves frontend refactorization, research and select page development, itinerary history tracking, UI improvements, and agent link clarification.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">➡️agentic-travel-planner-backend</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">⭐agentic-travel-planner-backend</a></strong></summary>
   <br/>
-  > This repository contains the backend for an "agentic" travel planner that clarifies requests, gathers context, drafts a structured itinerary, and sanity-checks the output by moving through phases of clarification, research, planning, and validation. <br/>
+  > This repository contains a travel planning system that models a decision-and-step graph to produce a coherent travel plan by asking clarifying questions, researching details, assembling an itinerary, and validating the result, all organized around key phases of the planning process. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Improved logging and API response tracking added. Agent backend clarified with multiple refactorings, system prompt caching, and best practices implemented for FastAPI.
+  > Major backend improvements including code structure updates, logging enhancements, and FastAPI best practices implementation with various refactorings and cleanups.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">🤖attention-mechanism-visually-explained</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">🤔attention-mechanism-visually-explained</a></strong></summary>
   <br/>
-  > This repository contains a client-side educational tool with interactive, animated explanations of the six core attention mechanisms used in transformer-based language models. <br/>
+  > This repository contains a client-side educational tool that visually explains six core attention mechanisms used in transformer-based language models through step-by-step animations and grid visualizations. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Implementation and refinement of user interface and visualizations for the attention mechanism, including layout adjustments and chart updates.
+  > Fixed deep dive pages and animation cycle, implemented regular chart and sidebar layout, improved chart readability, and removed unnecessary separator.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💡mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a tool for creating a unique and whimsical README for your GitHub profile, summarizing recent commits from the past three months and transforming your repository READMEs into engaging summaries, auto-generating emojis, and creating word clouds. <br/>
+  > This repository contains a GitHub profile enhancement tool that automatically generates a unique and whimsical README for users based on their recent commits, repository titles, and descriptions, featuring emojis and word clouds, aiming to celebrate the joy of the beautifully useless in a world obsessed with utility. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Implementation changes to README automation workflow, commits are parameterized, and history is paginated while handling missing summaries.
+  > README automation updated with fixes and features including auto-updates, profile parameterization, and repository audit reports.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a fully-featured Telegram bot created with TypeScript and Express, utilizing the BotFather API and ngrok for secure webhook connections, along with advanced functionality such as audio processing, voice message handling, and command handling, all well-documented and easily customizable for future integrations. <br/>
+  > This repository contains a comprehensive setup and testing guide for a chatbot built using Node.js and Express, designed to handle Telegram webhook requests and integrate with services like ChatGPT and Todoist. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Removed over 430 lines of dead code with infrastructure refactoring and code cleanup. Improved GPT limits, fixed lint errors, and addressed confirmed bugs.
+  > Improved Telegram command health status, integrated SQLite persistence, and Todoist natural language processing, plus numerous code cleanups and bug resolutions.
   </details>
   
 <br>
+
