@@ -9,43 +9,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">✈agentic-travel-planner</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">⭐agentic-travel-planner</a></strong></summary>
   <br/>
-  > This repository contains an interactive trip planning app with conversational AI features for creating and editing itineraries, aiming to simplify and automate trip planning processes previously managed with Google Docs and Sheets. <br/>
+  > This repository contains an app that helps users create day-by-day itineraries through a conversational interface and a clean, editable format for trip planning that replaces Google Docs/Sheets. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > The agentic-travel-planner project involves frontend refactorization, research and select page development, itinerary history tracking, UI improvements, and agent link clarification.
+  > Frontend improvements and refactor for smooth travel planning including bug fixes, feature additions, and minor UI updates.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">⭐agentic-travel-planner-backend</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">👥agentic-travel-planner-backend</a></strong></summary>
   <br/>
-  > This repository contains a travel planning system that models a decision-and-step graph to produce a coherent travel plan by asking clarifying questions, researching details, assembling an itinerary, and validating the result, all organized around key phases of the planning process. <br/>
+  > This repository contains a travel planning system with a predictive workflow that clarifies requests, conducts research, and produces structured itineraries with validation based on user constraints and preferences from a decision-and-step graph model. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Major backend improvements including code structure updates, logging enhancements, and FastAPI best practices implementation with various refactorings and cleanups.
+  > Significant code refactoring and cleanup, including removal of versioning artifacts, improved logging, and implementation of FastAPI best practices.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">🤔attention-mechanism-visually-explained</a></strong></summary>
   <br/>
-  > This repository contains a client-side educational tool that visually explains six core attention mechanisms used in transformer-based language models through step-by-step animations and grid visualizations. <br/>
+  > This repository contains an interactive educational tool that visually explains six core attention mechanisms used in transformer-based language models through step-by-step grid visualizations and plain-English descriptions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Fixed deep dive pages and animation cycle, implemented regular chart and sidebar layout, improved chart readability, and removed unnecessary separator.
+  > Improved visual explanations for attention mechanisms with deep dive pages and animation fixes, and refined chart and sidebar layouts.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💡mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a GitHub profile enhancement tool that automatically generates a unique and whimsical README for users based on their recent commits, repository titles, and descriptions, featuring emojis and word clouds, aiming to celebrate the joy of the beautifully useless in a world obsessed with utility. <br/>
+  > This repository contains a tool to create a customized, automatically updating README for your GitHub profile that showcases your recent commits, GitHub repository names and titles, and emoji auto-generation. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > README automation updated with fixes and features including auto-updates, profile parameterization, and repository audit reports.
+  > Repository commits involve automated README updates, profile parameterization, missing summary handling, commit history pagination, LLMD integration migration, automation flow hardening, and feature and bug fixes.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a comprehensive setup and testing guide for a chatbot built using Node.js and Express, designed to handle Telegram webhook requests and integrate with services like ChatGPT and Todoist. <br/>
+  > This repository contains a comprehensive setup and testing guide for a Telegram bot implementation, with steps for fixing environment variables, understanding application structure and flow, and troubleshooting common issues. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Improved Telegram command health status, integrated SQLite persistence, and Todoist natural language processing, plus numerous code cleanups and bug resolutions.
+  > Implementation of SQLite database persisted task queue with asynchronous job execution and Todoist natural language integration. Removal of legacy MCP infrastructure and refactoring of code for improved structure and organization.
   </details>
   
 <br>
