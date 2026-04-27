@@ -9,43 +9,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">✈agentic-travel-planner</a></strong></summary>
-  <br/>
-  > This repository contains a trip planning application that uses conversational AI to assist users in creating day-by-day itineraries and provides a clean, editable format for viewing and modifying the final plan. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Frontend refactoring and development with updates to state, routing, and UI.
-  </details>
-  
-  <details>
   <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">⭐agentic-travel-planner-backend</a></strong></summary>
   <br/>
-  > This repository contains a highly interactive and adaptable travel planning system that clarifies user requests, conducts research, and generates structured plans with validation to ensure accuracy. <br/>
+  > This repository contains the backend for a travel planner system that feels like a collaboration with a small team, modeling a workflow with phases: clarifying unknowns, researching details, generating a structured plan, and validating its consistency. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Significant improvements to agent code structure, logging, and API response tracking with various refactorings and best practices implemented.
+  > Major improvements included code structure and logging, system prompt caching, and FastAPI best practices. Leftover versioning suffixes were removed and logging and API response tracking improved.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">🤔attention-mechanism-visually-explained</a></strong></summary>
   <br/>
-  > This repository contains an interactive, animated visual reference for six core attention mechanisms in transformer-based language models, providing step-by-step explanations, plain-English descriptions, and comparison modes. <br/>
+  > This repository contains a visually explainer for six core attention mechanisms used in transformer-based language models, providing interactive animations, grid visualisations, and step-by-step descriptions for each mechanism. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added deep dive pages and refined UI layout, animation, and chart intervals for visually explaining attention mechanisms.
+  > Improved user interface and visualizations for attention mechanism explanations including deep dive pages, compact headers, and enhanced chart labels and spacing.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">😐mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a GitHub profile generator that creates a unique and whimsical summary of recent commits, README files, and pull requests, with features like emoji auto-generation and word cloud creation. <br/>
+  > This repository contains a GitHub profile enhancement tool called CoolProfiles that automatically generates a unique and whimsical README for your profile, showcasing your recent commits, repository titles, descriptions, and commits, with features like emoji auto-generation and word cloud creation. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Automated README updates for GitHub profiles with changes to template, commit history, and llm integration.
+  > Automatic README updates for mcxraider repository, fixes for stats, summaries, and templates, and improved automation and Groq integration.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">✈️agentic-travel-planner</a></strong></summary>
+  <br/>
+  > This repository contains an application that assists users in creating day-by-day itineraries through conversational interaction, and offers a clean format for editing the itinerary. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Improvements made to frontend components and UI, including state and routing refactoring, adding endpoints, and fixing bugs, with focus on itinerary and research functionality.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">💻jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a comprehensive setup and testing guide for a Telegram bot that can receive, process, and respond to different types of messages, including text, audio files, and voice messages, with optional features like ChatGPT/Claude integration and advanced commands. <br/>
+  > This repository contains an implementation of a Telegram bot with features for text and audio message handling, command processing, and logging support, along with instructions for setup and testing. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Major code refactoring and cleanup completed, with improved persistence, job queue, and natural language integration, and enhanced documentation added.
+  > Merge async task execution into main, refactor MCP infrastructure, improve Telegram health status, and fix lint errors and confirmed bugs for a more robust single-user app.
   </details>
   
 <br>
