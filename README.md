@@ -9,43 +9,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">⚖attention-mechanism-visually-explained</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">⭐️attention-mechanism-visually-explained</a></strong></summary>
   <br/>
-  > This repository contains a visually explained reference for the six core attention mechanisms used in modern transformer-based language models, implemented in a client-side educational tool. <br/>
+  > This repository contains an interactive and animated educational tool visualizing the six core attention mechanisms used in transformer-based language models, including dense, linear, sparse, flash, paged, and local attention, with grid visualizations and plain-English descriptions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Deep dive pages added for 6 attention mechanisms with rich write-up sections, and UI improvements including linear scales, animation cycle fixes, and layout adjustments.
+  > Improve mechanism explanation pages with animated cycles fix and enhance chart visualization with linear scales and even intervals, improve layout and sidebar design.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⭐mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a GitHub profile transformer that auto-generates a unique, whimsical summary of your recent commits and repositories, featuring emojis, word clouds, and more to bring a fun twist to your profile. <br/>
+  > This repository contains a GitHub profile generator that creates a unique and whimsical README for profiles, showcasing recent commits, repository titles, and descriptions within a visually appealing word cloud. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Automated README updates and improvements to commit history and summary generation with parameterization and pagination.
+  > README generation and automation improvements, including commit history pagination, README identity parameterization, and handling missing summaries.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">💻jarvis-mcp</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">⚡jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a fully-functional, end-to-end Telegram bot implementation, starting from environment variable setup to automated testing and troubleshooting. <br/>
+  > This repository contains an implementation of a Telegram bot for processing audio files, including text echoing, audio info display, voice message handling, and command handling with support for help and status queries, with ongoing development to incorporate advanced features such as file storage, database integration, and AI-powered responses. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Improved code organization, infrastructure removal, and bug resolution with enhanced documentation and natural language integration.
+  > Implementation of async task execution, SQLite persistence layer, and Todoist natural language integration, along with improvements to Telegram command health status and code quality removal.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">⭐agentic-travel-planner</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">✈agentic-travel-planner</a></strong></summary>
   <br/>
-  > This repository contains an application that replaces manual trip planning with AI-driven day-by-day itinerary creation through a conversational interface and a clean, editible format. <br/>
+  > This repository contains a day-by-day itinerary creation app with conversational interface and AI-driven conflict detection, aiming to replace manual Google Doc planning and serve as a single source of truth for trip organization. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Improved frontend layout and functionality with state and routing refactoring, added Google calendar integration, and resolved itinerary page issues.
+  > Frontend improvements including refactor, drag and drop fix, new research and select page, and endpoint additions.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">⭐agentic-travel-planner-backend</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">🔍agentic-travel-planner-backend</a></strong></summary>
   <br/>
-  > This repository contains a travel planner backend that uses a decision-and-step graph to ask relevant questions, research, and produce a structured travel plan based on user input and preferences. <br/>
+  > This repository contains a machine-learning backed travel planner backend system that can take user input, ask follow-up questions, conduct research, and produce a structured plan through a workflow that involves clarification, research, planning, and validation stages. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Improved code structure and logging, refactored agent code, added status report and FastAPI best practices plan, enhanced question selection and plans.
+  > Major refactoring and cleanup including removal of v1 dead code, improved logging, added plans, and implementation of FastAPI best practices.
   </details>
   
 <br>
