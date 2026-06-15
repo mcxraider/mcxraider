@@ -9,43 +9,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚨mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⚔️mcxraider</a></strong></summary>
   <br/>
-  > README summary unavailable. <br/>
+  > This repository contains a tool that creates a unique and whimsical README for your GitHub profile by transforming your recent commits and repository titles into an engaging summary with auto-generated emojis and a word cloud, aiming to bring fun and personality to a standard GitHub profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Automated README updates and fixes were implemented for repository summaries, including parameterization, pagination, and content handling, in conjunction with LLM and Groq integrations and automation workflow hardening.
+  > Commits improved README automation, parameterized template identity, paginated commit history, and handled missing summaries explicitly with retries and fallbacks.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains an open-source, Telegram-based bot that provides text message echoing, audio file information, voice message handling, and command handling for help and status. <br/>
+  > This repository contains a Telegram bot set up using ngrok for local development and testing, with automated integration tests and a clear structure for handling webhook requests and bot logic. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Removed 430 lines of dead code and refactored app to improve organization and clean up sloppy code. Added SQLite persistence layer and improved Telegram command health status.
-  </details>
-  
-  <details>
-  <summary><strong><a href="https://github.com/mcxraider/attention-mechanism-visually-explained">🤔attention-mechanism-visually-explained</a></strong></summary>
-  <br/>
-  > This repository contains an interactive educational tool to visually explain the six core attention mechanisms used in transformer-based language models. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Enhanced UI and functionality for visualizing attention mechanisms, including improved animation, deep dive pages, and updated chart scales for clearer visuals.
+  > Refactored codebase to remove dead MCP infrastructure and improve Telegram command health status with Todoist and Notion integration improvements.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">⭐agentic-travel-planner-backend</a></strong></summary>
   <br/>
-  > This repository contains a travel planning backend system that guides users through a structured workflow, asking follow-up questions, conducting research, producing an itinerary, and validating the output based on user constraints and preferences. <br/>
+  > This repository contains a dynamic backend travel planner system that asks clarifying questions, conducts research, and produces structured plans based on user input. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Removed v1 versioning artifacts, renamed identifiers, and cleaned up code comments. Implemented status report and created a FastAPI best practices plan with 10 TODOs.
+  > Removed v1 naming artifacts, updated status report and created FastAPI best practices plan with 10 TODOs and code examples across all agents and infrastructure.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">✈️agentic-travel-planner</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">⭐agentic-travel-planner</a></strong></summary>
   <br/>
-  > This repository contains an app that creates personal day-by-day itineraries using a conversational interface and provides a clean, editable format with automatic conflict detection. <br/>
+  > This repository contains an application that uses conversational interfaces to create day-by-day itineraries with automatic conflict detection and a single source of truth for the entire trip. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Refactoring frontend state and routing for smoother travel planning.
+  > Refactoring frontend state and routing.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/interview-preparation">📝interview-preparation</a></strong></summary>
+  <br/>
+  > This repository contains materials for studying data science interviews, including coding practice platforms, video lessons, reading materials on machine learning algorithms, and resources on reinforcement learning, neural networks, and recommendation systems. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Renamed Paypal agentic qns.md to agentic qns.md.
   </details>
   
 <br>
