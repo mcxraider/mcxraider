@@ -9,43 +9,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⚔️mcxraider</a></strong></summary>
-  <br/>
-  > This repository contains a tool that creates a unique and whimsical README for your GitHub profile by transforming your recent commits and repository titles into an engaging summary with auto-generated emojis and a word cloud, aiming to bring fun and personality to a standard GitHub profile. <br/>
-  ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Commits improved README automation, parameterized template identity, paginated commit history, and handled missing summaries explicitly with retries and fallbacks.
-  </details>
-  
-  <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis-mcp">🤖jarvis-mcp</a></strong></summary>
   <br/>
-  > This repository contains a Telegram bot set up using ngrok for local development and testing, with automated integration tests and a clear structure for handling webhook requests and bot logic. <br/>
+  > This repository contains a Telegram-based personal assistant that integrates with Todoist for managing tasks using natural language processing. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Refactored codebase to remove dead MCP infrastructure and improve Telegram command health status with Todoist and Notion integration improvements.
+  > Refactors for scalable nodes and improved tool calling. Adds DeepSeek API for chat completions and Groq for audio transcription. Simplifies Todoist tool calling, adds new tool search. Improves logging, Telegram command health status, and fixes bugs. Removes legacy MCP infrastructure, enhances LangGraph.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">⭐agentic-travel-planner-backend</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a dynamic backend travel planner system that asks clarifying questions, conducts research, and produces structured plans based on user input. <br/>
+  > This repository contains a self-service GitHub profile enhancement tool called CoolProfiles, which automatically generates a unique and whimsical README for your profile based on your recent commits, READMEs, and repository titles, updated monthly. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Removed v1 naming artifacts, updated status report and created FastAPI best practices plan with 10 TODOs and code examples across all agents and infrastructure.
+  > Automated README updates and various fixes improve readability, accuracy, and reliability of GitHub profile summaries with enhanced automation and error handling.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner">⭐agentic-travel-planner</a></strong></summary>
   <br/>
-  > This repository contains an application that uses conversational interfaces to create day-by-day itineraries with automatic conflict detection and a single source of truth for the entire trip. <br/>
+  > This repository contains an application that helps users create and manage day-by-day itineraries with a conversational interface and drag-drop editing. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Refactoring frontend state and routing.
+  > Refactored frontend state and routing for smoother travel planning experience.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/agentic-travel-planner-backend">⭐agentic-travel-planner-backend</a></strong></summary>
+  <br/>
+  > This repository contains a travel planner backend that uses a workflow modeled as a decision-and-step graph to generate structured plans based on user prompts, and dynamically asks for clarifications to adapt to the user's needs. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Implementation changes to enhance research graph functionality.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/interview-preparation">📝interview-preparation</a></strong></summary>
   <br/>
-  > This repository contains materials for studying data science interviews, including coding practice platforms, video lessons, reading materials on machine learning algorithms, and resources on reinforcement learning, neural networks, and recommendation systems. <br/>
+  > This repository contains a wide range of study materials and information on various data science concepts including supervised and unsupervised learning algorithms, reinforcement learning algorithms, neural networks, and recommendation systems. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Renamed Paypal agentic qns.md to agentic qns.md.
+  > The commit history indicates a file renaming.
   </details>
   
 <br>
