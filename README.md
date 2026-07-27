@@ -9,11 +9,11 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">☠️mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a system that creates an engaging and visually appealing README for a GitHub profile by transforming repository information into a unique and whimsical summary with emojis, word clouds, and auto-generated summaries. <br/>
+  > This repository contains a GitHub profile generator that creates a unique and whimsical summary of recent commits and READMEs from the past three months, with features like emoji auto-generation and word clouds. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > READMEs are being auto-updated, possibly by a cron-scheduled script, with llama3-generated content.
+  > README is being automatically updated by llama3.
   </details>
   
 <br>
