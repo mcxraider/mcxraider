@@ -9,11 +9,11 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🐍mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⭐mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a tool called coolprofiles that creates a custom README for GitHub profiles by analyzing recent commits and generating a personalized summary, emoji, and word cloud of a user's repository work and contributions. <br/>
+  > This repository contains a GitHub profile enhancer that utilizes AI to generate a personalized and whimsical README, based on recent repository commits, README files, and emoji auto-generation, all designed to bring a smile to your GitHub profile. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > READMEs are being automatically updated.
+  > README files have been automatically updated multiple times.
   </details>
   
 <br>
