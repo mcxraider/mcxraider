@@ -11,9 +11,9 @@
   <details>
   <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a tool that generates whimsical profile READMEs by summarizing recent commits, transforming repository READMEs, auto‑generating matching emojis, creating word clouds, and updating monthly via GitHub Actions with configurable Groq LLM credentials. <br/>
+  > This repository contains a GitHub‑profile enhancer that forks your repos, generates whimsical summaries, emojis and word clouds from recent activity, and updates a personalized README monthly via configurable GitHub Actions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > README file was repeatedly auto-updated, and the default LLM was changed to OpenAI GPT‑OSS 120B.
+  > Updated the README automatically across multiple commits and changed the default language model to OpenAI GPT‑OSS 120B
   </details>
   
 <br>
