@@ -11,17 +11,25 @@
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis">🤖jarvis</a></strong></summary>
   <br/>
-  > This repository contains a multi‑user Telegram assistant built on a Python LangGraph agent that manages Todoist tasks and Google Calendar events via text, voice, and photo inputs, featuring robust audio transcription, routing, and confirmation workflows. <br/>
+  > This repository contains a multi‑user Telegram assistant built with a Python LangGraph agent that manages Todoist tasks and Google Calendar events via text, voice, and photo inputs, featuring request idempotency, audio transcription, and approval workflows. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Extensive cleanup, added keyword tool selector, audio chunking, vision routing, OpenAI/Groq support, Google Calendar, conversation gating, DB layer, HITL confirm gate, LangGraph API, and deployment scripts
+  > Improved routing and forward buffer, added concurrent mutations, web search, poll forwarding, keyword selector, LangSmith tracing, image handling, OpenAI support, Google Calendar, deployment docs, HITL confirm gate, allowlist, DeepSeek/Groq migration
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🎮mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a tool that generates whimsical, automatically updated GitHub profile READMEs by summarizing recent commits, enhancing repository READMEs with emojis and word clouds, and includes setup instructions for GitHub Actions and required secrets. <br/>
+  > This repository contains a system that automatically generates whimsical GitHub profile READMEs by summarizing recent commits, transforming repository READMEs, adding matching emojis, creating word clouds, and updating monthly via GitHub Actions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Repeatedly auto-updated the README documentation and changed the default language model to OpenAI GPT-OSS 120B.
+  > Automatically updated the README multiple times and changed the default language model to OpenAI GPT‑OSS 120B.
+  </details>
+  
+  <details>
+  <summary><strong><a href="https://github.com/mcxraider/everything-llms">🤖everything-llms</a></strong></summary>
+  <br/>
+  > README summary unavailable. <br/>
+  ------------------------------------------------------------------------------------------------------------------------------ <br/>
+  > Added initial project files and later updated the .gitignore to refine ignored patterns.
   </details>
   
 <br>
