@@ -11,33 +11,33 @@
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis">🤖jarvis</a></strong></summary>
   <br/>
-  > This repository contains a multi‑user Telegram assistant built on a Python LangGraph agent that integrates Todoist tasks and Google Calendar events via text, voice, and photo inputs, with robust routing, transcription, and confirmation features. <br/>
+  > This repository contains a Telegram‑based AI assistant named Jarvis that uses Groq Whisper and GPT‑6 Luna to transcribe voice, process images, and orchestrate Todoist and Google Calendar tasks via a FastAPI service with routing, approval, and durable thread memory. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Implemented lazy image recall, per‑turn prompts, switched default model to gpt‑6‑luna, added concurrent mutation execution, enhanced routing, audio/video handling, Telegram fixes, Google Calendar, deployment scripts
+  > Implemented slim no‑domain prompts, lazy image recall, upgraded default model to gpt‑6‑luna, added thread memory via Supabase, improved router, Telegram UI fixes, concurrent tool execution, and extensive documentation updates
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">💻mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⭐mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a tool that generates whimsical profile READMEs by summarizing recent commits, converting repository READMEs, auto‑adding matching emojis and word clouds, and automating updates via GitHub Actions with configurable secrets. <br/>
+  > This repository contains a system that generates whimsical GitHub profile READMEs by summarizing recent commits, transforming repository READMEs, auto‑adding matching emojis, creating word clouds, and updating the profile monthly via GitHub Actions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Repeatedly auto-updated the README documentation and switched the default language model to OpenAI GPT-OSS 120B
+  > Updated default LLM to OpenAI GPT-OSS 120B and performed numerous automatic README.md updates.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/live-translate-diarize-poc">🌐live-translate-diarize-poc</a></strong></summary>
   <br/>
-  > This repository contains a FastAPI backend and browser interface for real‑time speech translation with speaker diarization using Alibaba Qwen 3.8 LiveTranslate, plus an evaluation pipeline for audio synthesis, dual‑model translation, and automated judging. <br/>
+  > This repository contains a FastAPI backend and browser UI that capture microphone audio, perform real‑time translation and speaker diarization using Alibaba's Qwen 3.8 LiveTranslate model via DashScope, plus an evaluation pipeline with synthesis, dual‑model translation, and Claude‑based judgment. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added corpus bias experiments, cost reporting, eval pipelines, new polyclinic dataset, Gemini API auth, OpenAI/Gemini realtime speech-to-speech, UI theme, language swap button
+  > Added audio evals, bias experiment, cost reporting, polyclinic dataset, Gemini API auth, live‑translate updates, OpenAI and Gemini 3.5 realtime providers, UI theme and swap controls
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/everything-llms">🤖everything-llms</a></strong></summary>
   <br/>
-  > This repository contains code examples and scripts for hand‑writing code targeting large language models, providing utilities and demonstrations under the everything‑llms project. <br/>
+  > README summary unavailable. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added RoPE and GPT-3 code templates, updated papers and .gitignore, and performed initial repository setup.
+  > Initial commit followed by adding RoPE and GPT‑3 code templates, then updating documentation papers and the .gitignore file.
   </details>
   
 <br>
