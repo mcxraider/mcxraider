@@ -9,43 +9,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/qmd">💻qmd</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/qmd-TAP">💻qmd-TAP</a></strong></summary>
   <br/>
   > README summary unavailable. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Recent work recorded across 208 commits in the last 90 days.
+  > Recent work recorded across 201 commits in the last 90 days.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis">🤖jarvis</a></strong></summary>
   <br/>
-  > This repository contains a Telegram‑based AI assistant named Jarvis that transcribes voice, processes images, and orchestrates Todoist and Google Calendar actions using Groq Whisper and GPT‑6 Luna with a configurable routing and safety framework. <br/>
+  > This repository contains a Telegram‑based natural‑language command center named Jarvis that transcribes voice, processes audio, images and text, routes requests via a GPT‑6 Luna router, and integrates with Todoist and Google Calendar for task and event management, including approval safeguards and durable thread memory. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Improved Telegram image handling, added lazy cross‑thread image recall, slim per‑turn prompts, switched default model to gpt‑6‑luna, and enabled concurrent tool execution.
+  > Improved Telegram image handling, added lazy cross‑thread image recall, switched default model to gpt‑6‑luna, refined per‑turn prompts, enhanced routing, forward‑buffer hardening, concurrent mutations, web‑search exposure, and added keyword tool selector
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/modernbert-tetris">💻modernbert-tetris</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/modernbert-tetris">🎮modernbert-tetris</a></strong></summary>
   <br/>
-  > This repository contains the ModernBERT model fine‑tuned for Tetris move selection, training scripts, data generation tools, inference and ONNX export utilities, and a web interface for playing against the model. <br/>
+  > This repository contains a fine‑tuned ModernBERT encoder and accompanying training, inference, and serving code that scores Tetris placement candidates using a word‑based description and distillation from heuristic and Jev teachers. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added model training script, ONNX serving, config refactor, extensive solo batch tooling, heuristic upgrades, Git LFS data tracking, and updated README for ModernBERT fine‑tuning
+  > Added fine‑tuning pipeline, ONNX serving, difficulty curriculum, solo batch tooling, config refactor, extensive data batches, and updated docs/readme.
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⭐mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⛏️mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a system that generates whimsical GitHub profile READMEs by summarizing recent commits, transforming repository READMEs, auto‑generating matching emojis, creating word clouds, and updating the profile monthly via GitHub Actions. <br/>
+  > This repository contains a tool that generates whimsical, automatically updated GitHub profile READMEs by summarizing recent commits, enhancing README files with emojis and word clouds, and provides setup via GitHub Actions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple README auto‑updates were performed, and the default language model was switched to OpenAI GPT‑OSS 120B
+  > Repeatedly auto-updated the README documentation and switched the default LLM model to OpenAI GPT-OSS 120B
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/live-translate-diarize-poc">🌐live-translate-diarize-poc</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/everything-llms">🤖everything-llms</a></strong></summary>
   <br/>
-  > This repository contains a FastAPI backend and browser interface that capture microphone audio, send it to Alibaba Qwen 3.8 LiveTranslate via DashScope WebSocket for real‑time translation with speaker diarization, plus a full evaluation pipeline with configurable API keys, audio synthesis, and cost reporting. <br/>
+  > README summary unavailable. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Added audio evals, corpus bias experiment, cost reporting, polyclinic dataset, Gemini API auth, OpenAI and Gemini 3.5 realtime speech‑to‑speech providers, UI theme and language swap features
+  > Initial project setup, added RoPE and GPT‑3 code templates, updated papers and .gitignore.
   </details>
   
 <br>
