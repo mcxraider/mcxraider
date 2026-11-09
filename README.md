@@ -9,43 +9,43 @@
 ## 🔨 AI-generated summary of what I've been working on:
 
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/qmd-TAP">💻qmd-TAP</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/qmd-TAP">⌨️qmd-TAP</a></strong></summary>
   <br/>
   > README summary unavailable. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Recent work recorded across 202 commits in the last 90 days.
+  > Recent work recorded across 200 commits in the last 90 days.
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/jarvis">🤖jarvis</a></strong></summary>
   <br/>
-  > This repository contains a Telegram‑based AI assistant named Jarvis that transcribes voice and audio, processes text and images, routes requests via a GPT‑6 Luna classifier, and automates Todoist and Google Calendar actions with approval safeguards. <br/>
+  > This repository contains a Telegram‑based AI assistant that transcribes voice, processes text and images, routes requests through a configurable classifier, and integrates Todoist and Google Calendar actions via a FastAPI backend with Docker deployment. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Improved image handling and lazy recall, added per-turn prompts, switched default model to gpt‑6‑luna, enhanced forward buffer, concurrent mutations, routing and documentation updates.
+  > Added image‑aware routing, durable Telegram intake with forward buffer fixes, lazy image recall, slim per‑turn prompts, default gpt‑6‑luna model, concurrent mutations, poll forwarding, keyword selector, and audio transcription upgrades
   </details>
   
   <details>
   <summary><strong><a href="https://github.com/mcxraider/modernbert-tetris">💻modernbert-tetris</a></strong></summary>
   <br/>
-  > This repository contains a fine‑tuned ModernBERT encoder for Tetris move selection, training scripts, data generation tools, inference utilities, ONNX export, and a web UI that integrates the model as a gameplay opponent. <br/>
+  > This repository contains the fine‑tuned ModernBERT model for Tetris placement selection, training scripts, data pipelines, inference utilities, ONNX export tools, and a web interface for solo and battle gameplay. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Updated README, refactored config, added training script, expanded solo battle data, added LFS tracking, introduced blended curriculum with Dellacherie‑Thiery heuristic, solo batch runner, ONNX serving, and platform opponent support
+  > Updated docs, refactored config, added solo batch tooling, integrated ONNX serving, expanded difficulty curriculum, added Git LFS for data, and incorporated platform opponent support
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/mcxraider">🚀mcxraider</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/mcxraider">⭐️mcxraider</a></strong></summary>
   <br/>
-  > This repository contains a system that generates whimsical, automatically updated GitHub profile READMEs by summarizing recent commits, transforming repository READMEs, adding matching emojis, creating word clouds, and providing setup instructions for GitHub Actions and secret configuration. <br/>
+  > This repository contains a tool that generates whimsical, automatically updated GitHub profile READMEs by summarizing recent commits, enhancing README files with emojis and word clouds, and providing setup via GitHub Actions. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Multiple automated README updates were applied, and the default LLM model was switched to OpenAI GPT‑OSS 120B
+  > Updated README automatically multiple times and switched the default LLM model to OpenAI GPT‑OSS 120B
   </details>
   
   <details>
-  <summary><strong><a href="https://github.com/mcxraider/everything-llms">🤖everything-llms</a></strong></summary>
+  <summary><strong><a href="https://github.com/mcxraider/modded-nanochat">💻modded-nanochat</a></strong></summary>
   <br/>
-  > README summary unavailable. <br/>
+  > This repository contains a reproducible study on grouped‑query attention and partial RoPE at depth 8, including LaTeX report source, experiment configurations, training and inference code, verification scripts, and saved result artifacts. <br/>
   ------------------------------------------------------------------------------------------------------------------------------ <br/>
-  > Initial repository created; added RoPE and GPT‑3 code templates, updated documentation papers, and refined the .gitignore file.
+  > Updated documentation and final report; switched default budget to FLOPs; added gradient tolerance fixes, paired analysis, async data loader, expanded experiments (E5/E6), and hardened pipeline
   </details>
   
 <br>
