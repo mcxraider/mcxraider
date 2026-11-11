@@ -6,7 +6,7 @@ require("dotenv").config();
 type LLMProvider = "groq";
 
 const DEFAULT_LLM_PROVIDER: LLMProvider = "groq";
-const DEFAULT_LLM_MODEL = "openai/gpt-oss-120b";
+const DEFAULT_LLM_MODEL = "qwen/qwen3.8-27b";
 
 interface LLMClient {
   complete(prompt: string, content: string): Promise<string | null>;
